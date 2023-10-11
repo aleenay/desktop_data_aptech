@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class PersonsData {
+            constructor(pname, pgender, pinfo, pid) {
+                this.PersonsName = "ebad",
+                    this.PersonsGender = "male",
+                    this.Personsinfo = "masters",
+                    this.PersonsId = "01"
+            }
+        }
+
+
+        class Anotherstudent extends PersonsData() {
+            constructor(pname, pgender, pinfo, pid) {
+                super(pname, pgender, pinfo, pid);
+            }
+        }
+
+        var personData = new PersonsData("Ali", "male", "student", 88);
+        var anotherstudent = new Anotherstudent("rameez", "male", "Aptech Student", 22);
+
+        console.log(personData);
+        console.log(anotherstudent);
+
+    </script>
+</body>
+
+</html>

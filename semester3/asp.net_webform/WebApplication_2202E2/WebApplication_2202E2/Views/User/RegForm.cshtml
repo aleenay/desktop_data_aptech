@@ -1,0 +1,25 @@
+﻿@model WebApplication_2202E2.Models.UserForm
+
+@{
+    ViewData["Title"] = "RegForm";
+}
+
+<h1>RegForm</h1>
+
+<form asp-action="RegForm" asp-controller="user" method="post">
+    <div class="myforma">
+        <label asp-for="Name"  class="">Your name:</label>
+        <input asp-for="Name" />
+    </div>
+    <div class="myforma">
+        <label asp-for="Email">Your email:</label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <p></p>
+        <button type="submit">Submit form</button>
+        <p></p>
+    </div>
+
+</form>
+@ViewData["user_name"]

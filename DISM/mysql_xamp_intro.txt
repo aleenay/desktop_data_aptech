@@ -1,0 +1,30 @@
+======================
+XAMPP
+======================
+XAMPP is a cross-platform web server that is free and open-source.
+XAMPP is a short form for Cross-Platform, Apache, MySQL, PHP, and Perl. 
+XAMPP is a popular cross-platform web server that allows programmers to write
+and test their code on a local webserver.
+=======================
+What is MySQL?
+=======================
+MySQL is a relational database management system.
+MySQL is open-source.
+MySQL is free.
+MySQL is ideal for both small and large applications.
+MySQL is very fast, reliable, scalable, and easy to use.
+MySQL is cross-platform.
+======================
+What is RDBMS?
+======================
+RDBMS stands for Relational Database Management System.
+RDBMS is a program used to maintain a relational database.
+RDBMS is the basis for all modern database systems such as MySQL, Microsoft SQL Server,
+Oracle, and Microsoft Access.
+RDBMS uses SQL queries to access the data in the database.
+=======================
+What is a Database Table?
+A table is a collection of related data entries, and it consists of columns and rows.
+A column holds specific information about every record in the table.
+A record (or row) is each individual entry that exists in a table.
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Javascript</title>
+</head>
+
+<body>
+
+
+    <script>
+       class Marksheet{
+        Rollno;
+        name;
+        TotalMarks = 0;
+        English ;
+        Urdu;
+        Maths;
+
+         GetData(std_rollno , std_name){
+            this.Rollno = std_rollno;
+            this.name = std_name;
+         }
+         GetStdMarks(subE,subU,subM){
+            this.English = subE;
+            this.Urdu = subU;
+            this.Maths = subM;
+            this.TotalMarks = this.English + this.Urdu + this.Maths;
+         }
+         DataPrint(){
+            document.write("Student Name is " + this.name + '<br>')
+            document.write("Student Roll no is " + this.Rollno)
+            document.write("Student Total Marks no is " + this.TotalMarks)
+
+
+         }
+       }
+
+       var ObjMarksheet = new Marksheet();
+       ObjMarksheet.GetData(101,"Hareem");
+       ObjMarksheet.GetStdMarks(80,60,70);
+       ObjMarksheet.DataPrint();
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+<!--
+
+
+     class students {
+            name = "hareem <br>";
+            stdname() {
+                document.write("Ibrahim <br>");
+            }
+        }
+        var objStd = new students();
+        objStd.stdname();
+        //  objStd.name = "Mohtasham";
+        document.write(objStd.name);
+    var sum = 0;
+        DataInsert(30, 20);
+        display();
+
+        function DataInsert(x , y){
+            sum = x + y;
+        }
+
+
+
+        function display() {
+            document.write("x and y sum is " + sum );
+        }
+
+     <input type="text" id="ID_input">
+
+    <button type="button" class="btn " onclick="btnGetname()">Get Name</button>
+    <ul id="ID_name"></ul>
+var arr = [];
+        function btnGetname() {
+            var ID_input = document.getElementById("ID_input").value; //ali
+            var ID_name = document.getElementById("ID_name"); // print -> ali
+
+            if (ID_input == "") {
+                alert("empty")
+            }
+            else {
+                var duplication = arr.some(x => x === ID_input);
+
+                if(duplication){
+                    console.log("true");
+
+                }
+                else{
+                    console.log("false");
+                    ID_name.innerHTML += '<li>' + ID_input + '</li>';
+                    arr.push(ID_input);
+                }
+               
+                
+               
+            }
+
+        }
+
+
+
+
+    // var carname = prompt("Enter your car name");
+        //loops
+        for(var i = 1 ; i <= 10 ; i++){
+            document.write( i + '<br>');
+        }
+       //    var i = 0
+    //     while (i > 10) {
+    //         document.write("batch 2211b2" + '<br>' );
+    //         i++
+    //     }
+
+        // do {
+        //     document.write(" 2211b2" + '<br>' );
+        //     i++
+        // } while (i > 10);
+ 
+    
+    
+    
+    var tbl_num = prompt("Enter your table number");
+var num = parseInt(tbl_num);
+
+for (var i = 1; i <= 10; i++) {
+    document.write(num + 'x' + i + '=' + num * i + '<br>');
+
+} -->
+<!--
+     switch (carname) {
+            case 'city':
+                document.write("city")
+                break;
+            case 'civic':
+                document.write("civic")
+                break;
+            case 'alto':
+                document.write("alto")
+                break;
+            default:
+            document.write("not found")
+
+                break;
+        }
+     if (carname != "" ) {
+            
+
+            if (carname == "city") {
+                document.write("it's city");
+            }
+          else if(carname == "civic"){
+                document.write("it's civic");
+
+            }
+            else {
+                document.write("car not found");
+            }
+            
+        }
+        else {
+            document.write("not found")
+        }
+    
+
+// document.getElementById("ID_HTML").innerHTML = "<h1> Welcome inner HTML </h1>";
+// document.getElementById("ID_TXT").innerText = "<h1> Welcome inner TXT </h1>";
+
+// var batchcode = prompt('Enter Your batch code')
+// var num1 = prompt('Enter your num 1');
+// var res = parseInt(num1);
+// if(res >= 0 ){
+//     alert("Positive Value");
+
+// }
+// else{
+//     alert("negative values")
+// } -->

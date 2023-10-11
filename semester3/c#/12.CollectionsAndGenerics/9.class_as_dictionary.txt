@@ -1,0 +1,40 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+namespace ConsoleApp1
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+
+            Employee obj = new Employee();
+            obj.Addng(1, "hamza");
+            obj.Addng(2, "naseer");
+            obj.Addng(3, "sahab");
+            obj.rem(2);
+            obj.printing_details();
+        }
+    }
+
+    class Employee : DictionaryBase
+    {
+        public void Addng(int key,string value)
+        {
+            Dictionary.Add(key, value);
+        }
+        public void rem(int key)
+        {
+            Dictionary.Remove(key);
+        }
+        public void printing_details()
+        {
+            IDictionaryEnumerator obj = Dictionary.GetEnumerator();
+            while (obj.MoveNext())
+            {
+                Console.WriteLine(obj.Key.ToString()+":- "+obj.Value);
+            }
+        }
+    }
+}

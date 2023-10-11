@@ -1,0 +1,26 @@
+String a, b;
+        lab2:    a = Console.ReadLine();
+        lab1: b = Console.ReadLine();
+            try
+            {
+               int aa = Convert.ToInt32(a);
+               int bb = Convert.ToInt32(b);
+                Console.WriteLine("The division is: " + (aa / bb));
+            }
+         
+            catch (ArithmeticException o)
+            {
+                Console.WriteLine("please enter number 2 again");
+                goto lab1;
+               
+            }
+            catch (FormatException o)
+            {
+                Console.WriteLine("ener both numbers again");
+                goto lab2;
+            }
+            catch (Exception o)
+            {
+                Console.WriteLine("e3");
+
+            }

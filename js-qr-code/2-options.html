@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Generate</title>
+
+    <!-- (A) LOAD QRCODEJS LIBRARY -->
+    <!-- https://cdnjs.com/libraries/qrcodejs -->
+    <!-- https://github.com/davidshimjs/qrcodejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </head>
+  <body>
+    <!-- (B) GENERATE QR CODE HERE -->
+    <div id="qrcode"></div>
+
+    <!-- (C) CREATE QR CODE ON PAGE LOAD -->
+    <script>
+    window.addEventListener("load", () => {
+      var qrc = new QRCode(document.getElementById("qrcode"), {
+        text: "https://code-boxx.com/",
+        width: 100,
+        height: 100,
+        colorDark: "#ff0000",
+        colorLight: "#ffffff",
+        // QRCode.CorrectLevel.L | QRCode.CorrectLevel.M | QRCode.CorrectLevel.H
+        correctLevel : QRCode.CorrectLevel.H
+      });
+    });
+    </script>
+  </body>
+</html>

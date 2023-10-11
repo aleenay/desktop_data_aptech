@@ -1,0 +1,35 @@
+.Cl_Border{
+    border: 2px solid green;
+}
+#ID_progress{
+    margin: 0;
+}
+.bgLightGrey{
+    background: #f7f7f7;
+}
+.progress{
+    height: 2% !important;
+    background: #000705 !important;
+}
+.progress > .progress-bar{
+    background: #24c68e !important;
+}
+.btn{
+    border-radius: 0% !important;
+}
+
+.IconContainer {
+    display: flex
+}
+.IconContainer div{
+    color: white;
+    background: #24c68e;
+    padding: 20px;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

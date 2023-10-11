@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <!-- with CDN -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div class="container mt-5 ">
+
+
+        <div class="row">
+            <div class="col-lg-12 mb-4 text-center">
+
+                <h1> jQuery Selectors</h1>
+            </div>
+            <div class="col-lg-12" id="ID_box">
+                <div class="p-4 border">
+                    <h1>Dummy Heading</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="p-5 Cl_list" id="ID_List">
+                    <ul>
+                        <li class="li">Orange</li>
+                        <li>Mango</li>
+                        <li>Apple</li>
+                    </ul>
+                </div>
+                <button type="button" id="ID_btn">Change CSS</button>
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        $(document).keypress(function (e) {
+            if (e.which == 13) {
+
+
+                // $('#ID_btn').click(function(){
+                $('.Cl_list ul .li').css("color", "blue");
+                // })
+            }
+
+        })
+
+        // $(document).ready(function(){
+        //   $('.Cl_list ul li').css("background-color","red")
+        // })
+
+
+        // $(document).ready(function () {
+        //     $('#ID_box ').css("color","red");
+
+        //     // $('#ID_box').css("border","1px solid red");
+
+        // });
+
+
+    </script>
+</body>
+
+</html>

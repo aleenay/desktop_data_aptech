@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class>	
+	<students  xmlns:a="http://abc.com">
+			<student id="1">
+					<a:name>	Ali		</a:name>
+					<a:id>	1			</a:id>
+			</student>
+			<student id="2" xmlns:b="http://xyz.com">
+					<b:name>	Ahmed	</b:name>
+					<b:id>	2		</b:id>
+			</student>
+			<student id="9" xmlns:c="http://abc.com">
+			<c:name> omer</c:name>
+			<c:id> 9 </c:id>
+			</student>
+			
+			<student id="10">
+			<a:id>6</a:id>
+			<a:name>amir</a:name>
+			</student>
+			
+	</students>
+</class>

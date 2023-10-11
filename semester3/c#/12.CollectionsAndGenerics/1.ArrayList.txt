@@ -1,0 +1,15 @@
+  ArrayList obj = new ArrayList();
+            obj.Add("Saba");
+            obj.Add("Sana");
+            obj.Add("Hira");
+            obj.Add("gfh");
+
+
+
+            for(int i=0;i<obj.Count;i++)
+            Console.WriteLine(obj[i]);
+
+            Console.WriteLine("WITH FOREACH");
+
+            foreach(string s in obj)
+                Console.WriteLine(s);

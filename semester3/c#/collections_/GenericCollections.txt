@@ -1,0 +1,15 @@
+Generic Collections
+ //Generic Collection 
+            Dictionary<string, string> ObjDic = new Dictionary<string, string>();
+            ObjDic.Add("name", "Ali");
+            ObjDic.Add("courses", "HTml");
+            //Console.WriteLine(ObjDic["courses"]);
+            //foreach(KeyValuePair<string, string> item in ObjDic)
+            //{
+            //    Console.WriteLine("Key is:  " + item.Key +" And value is " + item.Value);
+            //}
+
+            foreach (var item in ObjDic)
+            {
+                Console.WriteLine("Key is:  " + item.Key + " And value is " + item.Value);
+            }

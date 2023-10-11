@@ -1,0 +1,15 @@
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\bin\Debug\AccessModifiers.exe.config
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\bin\Debug\AccessModifiers.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\bin\Debug\AccessModifiers.pdb
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.pdb
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.csproj.SuggestedBindingRedirects.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.exe
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\obj\Debug\AccessModifiers.pdb
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\bin\Debug\AccessModifiers.exe.config
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\bin\Debug\AccessModifiers.exe
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\AccessModifiers\AccessModifiers\bin\Debug\AccessModifiers.pdb

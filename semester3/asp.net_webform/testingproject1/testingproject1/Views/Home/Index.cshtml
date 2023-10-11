@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @{
+        var name = "Hatim";
+        string[] demolist = { "Mobile ", "Bottle", "Files " };
+        for (int i = 0; i < demolist.Length; i++)
+        {
+            <h2> @demolist[i] </h2>
+        }
+       
+    }
+    @ViewData["data2"]
+    <br />
+    @ViewData["data3"]
+    <br />
+  @{
+      foreach (var item in (string[])ViewData["data4"])
+        {
+            @item
+        }
+  }
+  <br />
+    
+    <br />
+    @{
+        foreach (var item in ViewBag.data6)
+        {
+            @item
+        }
+    }
+    <br />
+    @ViewData["data1"]
+    <br />
+    @ViewBag.data5
+
+    <br />
+    @TempData["tempdata"]
+
+
+</div>

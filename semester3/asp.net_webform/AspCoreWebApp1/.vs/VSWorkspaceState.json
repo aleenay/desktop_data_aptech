@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AspCoreWebApp1",
+    "\\AspCoreWebApp1\\Controllers",
+    "\\AspCoreWebApp1\\Views",
+    "\\AspCoreWebApp1\\Views\\Home",
+    "\\AspCoreWebApp1\\Views\\Shared",
+    "\\AspCoreWebApp1\\Views\\User"
+  ],
+  "SelectedNode": "\\AspCoreWebApp1\\Views\\Shared\\_Layout.cshtml",
+  "PreviewInSolutionExplorer": false
+}

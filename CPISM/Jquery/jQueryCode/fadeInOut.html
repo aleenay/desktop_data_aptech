@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <style>
+        .box {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <a href="abc.txt" download>download</a> -->
+    <button id="ID_btn">Click to fade in/out </button>
+    <br><br>
+
+    <div id="div1" class="bg-danger box"></div>
+    <br>
+    <div id="div2" class="bg-primary box"></div>
+    <br>
+    <div id="div3" class="bg-secondary box"></div>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#ID_btn").click(function () {
+                $("#div").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(8000);
+                // fadeIn , fadeOut
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

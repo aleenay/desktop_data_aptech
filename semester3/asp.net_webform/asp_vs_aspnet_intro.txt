@@ -1,0 +1,16 @@
+====Asp vs Asp.net======
+~~~~~~~ASP~~~~~~~~~~~~
+-Asp stands for Active server page. 
+-It is development framework used for building web pages. 
+-Asp was introduced in  1998 by Microsoft as its first server side 
+scripting language . 
+-The file extensions of ASP pages are .asp
+-It i020l for making dynamic web pages. 
+ASP is a technology (much like php) for executing scripts on web server.
+
+~~~~~~ASP.NET~~~~~~~~~~
+-Asp.net released in 2002 by Microsoft as a successor to ASP.
+-It is also Server side web framework , open source which is designed for 
+generation of dynamic web pages. 
+file extension of Asp.net pages are .aspx and are normally written in c#
+-To create web application, web services and dynamic content websites

@@ -1,0 +1,44 @@
+using System;
+namespace ConsoleApp8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee obj = new Employee();
+
+            try
+            {
+                obj.xyz(-2);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(""+e.Message);
+            }
+
+            
+            Console.WriteLine("gggg");
+            
+        }
+
+
+
+    }
+
+    class Employee
+    {
+        public void xyz(int x)
+        {
+            if (x < 0)
+            {
+                throw new ArithmeticException("Invalid ID");
+            }
+            else
+            {
+                Console.WriteLine("Your Id is: Studennt" + x);
+            }
+        }
+    }
+  
+
+}

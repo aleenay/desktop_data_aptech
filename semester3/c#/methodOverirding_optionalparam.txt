@@ -1,0 +1,31 @@
+//optional parameter
+    class optionalparameter
+    {
+        public void message(string message = "default value")
+        {
+            Console.WriteLine( message);
+        }
+    }
+//in main method
+optionalparameter optionalparameter = new optionalparameter();
+            optionalparameter.message();
+
+//method overriding
+class mobile1
+{
+    public virtual void working()
+    {
+        Console.WriteLine("working android version 10");
+    }
+}
+class mobile2 : mobile1
+{
+    public override void working()
+    {
+        base.working();
+        Console.WriteLine("working android version 12");
+    }
+}
+//in main method
+mobile1 mobile2 = new mobile2();
+ mobile2.working(); 

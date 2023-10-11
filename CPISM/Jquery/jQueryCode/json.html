@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Tables</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+
+            <button type="button" id="btnSave" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          
+
+            // var employeeData = {
+            //     "firstName": "Muhammad",
+            //     "lastName": "Ahmed",
+            //     "gender": "MALE",
+            //     "SALARY": 4000,
+            //     "valid" : true,
+
+            // }
+            // alert(employeeData.firstName)
+            // console.log(employeeData)
+              // $('#btnSave').click(function () {
+            //     debugger
+            //     var exampleInputEmail1 = document.getElementById("exampleInputEmail1").value
+
+
+            // })
+            // using Json Array
+
+            var UserData = [
+                {
+                    "firstName": "Muhammad",
+                    "lastName": "Ahmed",
+                    "gender": "MALE",
+                    "SALARY": 4000,
+                },
+                {
+                    "firstName": "Abdul",
+                    "lastName": "Wahab",
+                    "gender": "MALE",
+                    "SALARY": 40000,
+                },
+
+            ]
+        
+            console.log(UserData[1].firstName + " " + UserData[1].lastName )
+            var jsonDataSet = JSON.stringify(UserData)
+                localStorage.setItem("userdata",jsonDataSet)
+
+                var getLocalStorageData = localStorage.getItem("userdata")
+                alert(JSON.parse(getLocalStorageData))
+
+
+            // var result = UserData[1].lastName;
+            // // converting an Object or array into JSON string 
+            // var Jsonresult = JSON.stringify(UserData);
+            // localStorage.setItem("userData",Jsonresult)
+            // document.write(Jsonresult[0].firstName)
+            
+    
+
+            // localStorage.setItem("userData",Jsonresult);
+            // var ab = localStorage.getItem("userData")
+            // alert(JSON.parse(ab))
+
+        })
+    </script>
+</body>
+
+</html>

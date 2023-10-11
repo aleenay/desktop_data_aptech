@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+    .abc{
+        
+        width: 200px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1 id="item"></h1>
+    <p id="ID_p"></p>
+    <h3 id="ID_arraylength"></h3>
+    <img src="" id="myImg" alt="" style="width:500px">
+    <button type="button" onclick="btnS(100,'pizza 1','img/Capture.PNG')">Pizza </button>
+    <button type="button" onclick="btnS(300,'pizza 4','img/img.jpg')">Pizza </button>
+    <button type="button" onclick="btnS(400,'pizza 6','img/img2.jpg')">Pizza </button>
+    <button type="button" onclick="btnS(500,'pizza55','img/img3.jpg')">Pizza </button>
+    <button type="button" onclick="btnS(600,'pizza43','img/img3.jpg')">Pizza </button>
+    <button type="button" onclick="btnS(700,'pizza453','img/Capture.PNG')">Pizza </button>
+
+
+    <br>
+    <br>
+    <div id="ID_div"></div>
+    <img src="" id="ID_img" type="file" multiple="multiple" accept="image/jpeg, image/png, image/jpg" alt="" />
+    <button type="button" onclick="btnGet()">GET</button>
+
+    <script>
+        let total = 0;
+        let arraycart = []
+        function btnS(x, y, img) {
+
+
+            document.getElementById("item").innerHTML += x + y;
+
+            total += x;
+            var obj = {
+                name: y,
+                price: x,
+                img: img
+            }
+            arraycart.push(obj);
+            console.log(arraycart)
+
+            document.getElementById("ID_p").innerHTML = total;
+            document.getElementById("ID_arraylength").innerHTML = arraycart.length;
+            localStorage.setItem("cart", JSON.stringify(arraycart));
+            document.getElementById("myImg").src = img;
+
+        }
+        function btnGet() {
+            var cartvalue = JSON.parse(localStorage.getItem("cart"));
+            console.log(cartvalue);
+            debugger
+            for (var i in cartvalue) {
+                document.getElementById("ID_div").innerHTML += cartvalue[i].name;
+                $('#ID_div').append('<img class="abc" src=' + cartvalue[i].img + '>');
+            }
+            
+        }
+
+    </script>
+</body>
+
+</html>

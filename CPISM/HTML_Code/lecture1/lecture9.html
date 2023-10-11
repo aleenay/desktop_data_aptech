@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            background: grey;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 200px 800px auto;
+            grid-template-rows: 100px 100px auto;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+        }
+
+        .grid-item {
+            border: 1px solid white;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #grid-1 {
+            /* grid-column-start: 1;
+        grid-column-end: 3; */
+            /* grid-column: 1/ span 3;
+            grid-column: 1/3; */
+
+
+        }
+
+        .flexContainer {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .flexContainer .FlexItem {
+            width: 20%;
+            border: 1px solid white;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .Navbar {
+            /* width: 100%; */
+            background: teal;
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+            font-size: 20px;
+            position: relative;
+            /* top: 50%; 
+            left: 50%; */
+        }
+        .Cl_before:hover::before{
+            content: '😀';
+
+        }
+        .Cl_after::after{
+            content: 'after note';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Navbar"> NavBar</div>
+    <p class="Cl_before">Note: </p>
+    <p class="Cl_after">Note: </p>
+
+    <!-- <marquee behavior="" direction="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis sapiente itaque tempora soluta
+        commodi, sint esse laborum, doloribus magnam inventore dolorum consectetur eligendi quia, consequatur odio
+        mollitia quos sed.
+    </marquee> -->
+
+    <br>
+    <br>
+    <div class="grid-container">
+        <div class="grid-item" id="grid-1">1</div>
+        <div class="grid-item" id="grid-2">2</div>
+        <div class="grid-item" id="grid-3">3</div>
+        <div class="grid-item" id="grid-4">4</div>
+        <div class="grid-item" id="grid-5">5</div>
+        <div class="grid-item" id="grid-6">6</div>
+        <div class="grid-item" id="grid-7">7</div>
+        <div class="grid-item" id="grid-8">8</div>
+        <div class="grid-item" id="grid-9">9</div>
+        <div class="grid-item" id="grid-10">10</div>
+
+
+    </div>
+    <div class="flexContainer">
+        <div class="FlexItem">1</div>
+        <div class="FlexItem">2</div>
+        <div class="FlexItem">3</div>
+        <div class="FlexItem">4</div>
+        <div class="FlexItem">5 😋</div>
+
+
+    </div>
+    <h1>Emoji</h1>
+    <h2> 😀</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo ipsum non inventore molestiae
+        quisquam sapiente omnis, illo eius laborum eos hic porro voluptatibus neque. Molestias modi accusantium dolorum
+        architecto.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo ipsum non inventore molestiae
+        quisquam sapiente omnis, illo eius laborum eos hic porro voluptatibus neque. Molestias modi accusantium dolorum
+        architecto.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo ipsum non inventore molestiae
+        quisquam sapiente omnis, illo eius laborum eos hic porro voluptatibus neque. Molestias modi accusantium dolorum
+        architecto.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo ipsum non inventore molestiae
+        quisquam sapiente omnis, illo eius laborum eos hic porro voluptatibus neque. Molestias modi accusantium dolorum
+        architecto.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo ipsum non inventore molestiae
+        quisquam sapiente omnis, illo eius laborum eos hic porro voluptatibus neque. Molestias modi accusantium dolorum
+        architecto.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo ipsum non inventore molestiae
+        quisquam sapiente omnis, illo eius laborum eos hic porro voluptatibus neque. Molestias modi accusantium dolorum
+        architecto.
+    </p>
+</body>
+
+</html>

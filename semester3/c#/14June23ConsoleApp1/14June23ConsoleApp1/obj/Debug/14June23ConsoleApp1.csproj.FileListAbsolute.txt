@@ -1,0 +1,15 @@
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\bin\Debug\14June23ConsoleApp1.exe.config
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\bin\Debug\14June23ConsoleApp1.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\bin\Debug\14June23ConsoleApp1.pdb
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\obj\Debug\14June23ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\obj\Debug\14June23ConsoleApp1.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\obj\Debug\14June23ConsoleApp1.pdb
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\obj\Debug\14June23ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\bin\Debug\14June23ConsoleApp1.exe.config
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\bin\Debug\14June23ConsoleApp1.exe
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\bin\Debug\14June23ConsoleApp1.pdb
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\obj\Debug\14June23ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\obj\Debug\14June23ConsoleApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\obj\Debug\14June23ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\obj\Debug\14June23ConsoleApp1.exe
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\14June23ConsoleApp1\14June23ConsoleApp1\obj\Debug\14June23ConsoleApp1.pdb

@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>JSON (javascript Object Notation)</h2>    
+    <button type="button"  id="btnFetchData">Fetch Data</button>
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>description</th>
+
+    </tr>
+    <tr>
+        <td id="id"></td>
+        <td id="title"></td>
+        <td id="des"></td>
+
+    </tr>
+</table>
+
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+       $.ajax({
+        url : "demo.json",
+        type : "GET",
+        success : function(data){
+            console.log(data.title);
+            $('#id').html(data.id);
+            $('#title').html(data.title);
+            $('#des').html(data.description);
+
+        }
+
+       })
+    })
+
+
+
+     // $('#btnFetchData').click(function(){
+        //     var obj = [ {
+        //         "ID" : 101,
+        //         "name" : "Hamza",
+        //         "Age" : 22,
+        //         "Cousrses" : ["HTML","CSS"] 
+        //     } ,
+        //     {
+        //         "ID" : 102,
+        //         "name" : "Rafay",
+        //         "Age" : 21,
+        //         "Cousrses" : ["HTML5","CSS3"] 
+        //     } 
+
+
+        // ]
+        //     // document.write( "ID " + obj.ID + "<br> " + "name" + obj.name);
+
+        //    for(var i = 0 ; i < 3 ; i++){
+        //     document.write( obj[i].name );
+        //     document.write('<br>')
+        //    }
+
+        // })
+</script>
+</body>
+</html>

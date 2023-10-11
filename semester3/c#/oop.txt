@@ -1,0 +1,22 @@
+OOP stands for Object-Oriented Programming.
+-OOp refers to creation of reusable software object/types /
+classes that can be efficiently developed and easily incorporated into multiple programs
+
+Pillars of OOP
+Encapsulation
+Inheritance
+Polymorphism
+Abstraction
+
+what is namespace?
+Namespace are used to organize your program 
+also, provide assitance in avoiding the name confict.
+1.Internal  ---- > using system
+2. External -----> we created
+
+what is class ?
+class is nothing but a seprate template 
+
+what is object !
+Object is an instance of a class. All the members 
+of the class can be accessed through object.

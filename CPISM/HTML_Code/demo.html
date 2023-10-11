@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            /* background: linear-gradient(70deg, #e31717,purple, #832c2c); */
+        }
+
+        .container {
+            height: 100%;
+            background:linear-gradient(70deg, #1f1b1bbf,#07070752), url('img/img3.jpg'  );
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+
+        }
+
+        .FlexContainer {
+            display: flex;
+
+        }
+
+        .FlexContainer div {
+            margin: 10px;
+        }
+
+        .FlexContainer div label {
+            color: yellow;
+        }
+
+        .FlexContainer div input {
+            background: white;
+            border: none;
+
+        }
+
+        h2 {
+            color: white;
+            margin: 0;
+        }
+
+        p {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem ex nam, quos molestiae possimus eius
+            beatae consequuntur laborum ut quidem recusandae voluptas velit neque repudiandae itaque, quis quam et!</p>
+        <div class="FlexContainer">
+            <div>
+                <label for="">First Name</label> <br>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Last Name</label> <br>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

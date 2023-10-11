@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .bgNavbarPurple {
+            background-color: #7952b3;
+        }
+
+        .BannerCard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .bannerImg {}
+
+        .btnPink {
+            background-color: #e2225b;
+            color: white;
+            border-radius: 20px;
+            box-shadow: 6px 6px 14px #e2225b63;
+            padding: 8px 44px;
+            letter-spacing: 1px;
+
+        }
+
+        .PinkTxt {
+            color: #ae4268;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        .BannerCard h1 {
+            font-weight: bold;
+        }
+
+        img {
+            height: 60vh;
+        }
+
+        #ID_userError,
+        #ID_userErroremail,
+        #ID_userErrorPhoneno,
+        #ID_userErrorPass,
+        #ID_userErrorCP,
+        #ID_PasswordError {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <br>
+        <br>
+
+
+        <div class="container">
+
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control" id="Id_username">
+                    <p id="ID_userError">*Enter username</p>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control" id="Id_email">
+                    <p id="ID_userErroremail">*Enter Email</p>
+
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Phone no</label>
+                    <input type="number" class="form-control" id="Id_Phoneno">
+                    <p id="ID_userErrorPhoneno">*Enter Phone no</p>
+
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="text" class="form-control" id="Id_pass">
+                    <p id="ID_userErrorPass">*Enter Password</p>
+
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Confirm Password</label>
+                    <input type="text" class="form-control" id="ID_CP">
+                    <p id="ID_userErrorCP">*Enter Confirm Password</p>
+                    <p id="ID_PasswordError">*Password and Confirm Password not matched</p>
+
+                </div>
+                <button type="button" class="btn btn-primary" onclick="btnValidate()">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    <script>
+
+        function btnValidate() {
+            var Id_username = document.getElementById("Id_username").value;
+            var Id_email = document.getElementById("Id_email").value;
+            var Id_Phoneno = document.getElementById("Id_Phoneno").value;
+            var Id_pass = document.getElementById("Id_pass").value;
+            var ID_CP = document.getElementById("ID_CP").value;
+
+            // pattern Regular Expressions
+            var patterUsername = /^[A-z ._]{3,}$/ ;
+            var CheckUsername = patterUsername.test(Id_username);
+            
+            var patteremail =/^[A-z.]{3,}[0-9]{0,5}@[A-z]{4,7}.[A-z]{2,4}$/gm ;
+            var Checkemail = patteremail.test(Id_email);
+            var patterPhoneno =/^[0-9]{11}$/gm ;
+            var CheckPhoneno = patterPhoneno.test(Id_Phoneno);
+
+            var patterpass =/^[A-z.]{3,}[0-9]{0,5}$/gm ;
+            var Checkpass = patterpass.test(Id_pass);
+
+            var pattercp =/^[A-z.]{3,}[0-9]{0,5}$/gm ;
+            var Checkcp = pattercp.test(ID_CP);
+
+            if (Id_username == "" || CheckUsername == false) {
+                document.getElementById("ID_userError").style.display = "block";
+            }
+            else if (Id_email == "" || Checkemail == false) {
+                document.getElementById("ID_userErroremail").style.display = "block";
+                document.getElementById("ID_userError").style.display = "none";
+            }
+
+            else if (Id_Phoneno ==  ""  ||CheckPhoneno == false ) {
+                document.getElementById("ID_userErrorPhoneno").style.display = "block";
+                document.getElementById("ID_userErroremail").style.display = "none";
+                document.getElementById("ID_userError").style.display = "none";
+            }
+            else if (Id_pass == "" || Checkpass == false) {
+            
+                document.getElementById("ID_userErrorPass").style.display = "block";
+                document.getElementById("ID_userErrorPhoneno").style.display = "none";
+                document.getElementById("ID_userErroremail").style.display = "none";
+                document.getElementById("ID_userError").style.display = "none";
+            }
+
+            else if (ID_CP == "" || Checkcp == false  ) {
+                document.getElementById("ID_userErrorCP").style.display = "block";
+                document.getElementById("ID_userErrorPass").style.display = "none";
+                document.getElementById("ID_userErrorPhoneno").style.display = "none";
+                document.getElementById("ID_userErroremail").style.display = "none";
+                document.getElementById("ID_userError").style.display = "none";
+            }
+            else if(Id_pass != ID_CP ){
+                document.getElementById("ID_PasswordError").style.display = "block";
+                document.getElementById("ID_userErrorCP").style.display = "none";
+                document.getElementById("ID_userErrorPass").style.display = "none";
+                document.getElementById("ID_userErrorPhoneno").style.display = "none";
+                document.getElementById("ID_userErroremail").style.display = "none";
+                document.getElementById("ID_userError").style.display = "none";
+            }
+            else{
+                alert("form Submitted ")
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Query</title>
+    <style>
+        body {
+            background: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* @media screen and (max-width:500px) {
+        body{
+            background: red;
+            color:white
+        }
+    }
+    @media screen and (min-width:600px) and (max-width:800px) {
+        body{
+            background: blue;
+            color:white
+        }
+        .cl_h1{
+
+        }
+    } */
+
+
+@media screen and (min-width : 800px) and (max-width : 1200px) {
+    body {
+        background: red;
+    }
+    .DivFlex{
+        font-size: 10vh;
+        display: block;
+    }
+}
+@media screen  and (max-width : 800px) {
+    body {
+        background: blue;
+    }
+    .DivFlex{
+        display: none;
+    }
+}
+
+
+        /* @media screen and (min-width: 1000px) and (max-width:1200px) {
+            body {
+                background: blueviolet;
+            }
+        }
+
+        @media screen and (min-width: 500px) and (max-width:800px) {
+            body {
+                background: pink;
+            }
+        } */
+
+
+        /* @media screen and (min-width: 1300px) and (max-width:1400px){
+        body{
+            background: black;
+            color: white;
+        }
+    }
+    @media screen  and (max-width: 1200px) {
+        body{
+            background: pink;
+            color: blue;
+            font-weight: bold;
+
+        } 
+        .Cl_h1{
+        font-size: 20vh;
+    }
+
+    }
+    @media screen and (max-width: 1000px) {
+        body{
+            background: blue;
+            color: black;
+        }
+        .Cl_h1{
+        font-size: 5vh;
+    }
+    }
+    @media screen  and (max-width: 480px) {
+        body{
+            background: orange;
+        }
+        .Cl_h1{
+        font-size: 2vh;
+    }
+    } */
+    </style>
+</head>
+
+<body>
+
+
+    <div class="DivFlex">
+        <p>DEMO</p>
+    </div>
+    <br>
+
+
+</body>
+
+</html>

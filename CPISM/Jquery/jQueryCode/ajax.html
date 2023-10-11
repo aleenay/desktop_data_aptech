@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <style>
+        #box {
+            border: 2px solid;
+        }
+
+        .boxbg {
+            background: #ecfdff;
+        }
+
+        #ID_loader {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-2">Jquery Append and Prepend Method</h1>
+        <div id="box" class="p-5 boxbg">
+            <h2>Dummy Box</h2>
+            <Div class="text-center " id="ID_loader">
+                <div class="spinner-border text-info" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </Div>
+            <table class="table" id="ID_userTable">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <button type="button" id="ID_FetchData" class="btn btn-primary mt-5">
+                Get Data
+            </button>
+<p id="ID_p"></p>
+
+        </div>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $('#ID_FetchData').on("click", function () {
+               
+            
+            
+                $.ajax({
+                    url : "dummy.json",
+                    type : "GET",
+                    success : function (data){
+                        
+                        console.log(data);
+                        for(var i = 0 ; i < data.length ; i++){
+                             document.getElementById('ID_p').innerHTML += data[i].title + '<br>';
+                        }
+                   
+                    },
+                    error : function (error){
+                        console.log(error);
+
+                    }
+                })
+
+
+
+
+
+//    var obj = {
+            //     "id": 1, 
+            //     "title": "iPhone 9",
+            //      "description": "An apple mobile which is nothing like apple", 
+            //      "price": 549, 
+            //      "discountPercentage" : 10,
+            // }
+            // console.log(obj.description);
+                // $.ajax({
+                //     url: "https://jsonplaceholder.typicode.com/users", //API URL
+                //     type: "GET", //Get or Post
+                //     beforeSend: function () {
+
+                //         $('#ID_loader').show()
+                //     },
+                //     success: function (response, status) {
+                //         // Api Call Successfully
+                //         $('#ID_loader').hide()
+                //         debugger
+                //         console.log(response)
+                //         console.log(status)
+                //     },
+                //     error: function (error, status) {
+                //         // if API get any error
+                //         console.log(error)
+
+                //     },
+
+                // })
+
+            })
+        });
+    </script>
+</body>
+
+</html>

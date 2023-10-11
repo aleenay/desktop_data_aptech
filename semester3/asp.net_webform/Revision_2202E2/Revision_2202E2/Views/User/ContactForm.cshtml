@@ -1,0 +1,35 @@
+﻿@model Revision_2202E2.Models.User
+@{
+    ViewData["Title"] = "ContactForm";
+}
+
+<h1>ContactForm</h1>
+
+<form asp-action="ContactForm" asp-controller="user" method="post">
+    <div class="myforma">
+        <label asp-for="name" class="">Your name:</label>
+        <input asp-for="name" />
+        <span asp-validation-for="name" style="color:red;"></span>
+    </div>
+    <div class="myforma">
+        <label asp-for="email">Your email:</label>
+        <input asp-for="email" />
+        <span asp-validation-for="email" style="color:red;"></span>
+
+    </div>
+    <div class="myforma">
+        <label asp-for="phoneno">Your Phone no:</label>
+        <input asp-for="phoneno" />
+    </div>
+    <div class="myforma">
+        <label asp-for="password">Your password:</label>
+        <input type="password" asp-for="password" />
+    </div>
+    <div>
+        <p></p>
+        <button type="submit">Submit form</button>
+        <p></p>
+    </div>
+
+</form>     
+<p>@ViewData["username"] </p>

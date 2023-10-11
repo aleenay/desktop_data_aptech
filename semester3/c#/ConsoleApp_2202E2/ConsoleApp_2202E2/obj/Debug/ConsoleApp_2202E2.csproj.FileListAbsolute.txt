@@ -1,0 +1,7 @@
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ConsoleApp_2202E2\ConsoleApp_2202E2\bin\Debug\ConsoleApp_2202E2.exe.config
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ConsoleApp_2202E2\ConsoleApp_2202E2\bin\Debug\ConsoleApp_2202E2.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ConsoleApp_2202E2\ConsoleApp_2202E2\bin\Debug\ConsoleApp_2202E2.pdb
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ConsoleApp_2202E2\ConsoleApp_2202E2\obj\Debug\ConsoleApp_2202E2.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ConsoleApp_2202E2\ConsoleApp_2202E2\obj\Debug\ConsoleApp_2202E2.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ConsoleApp_2202E2\ConsoleApp_2202E2\obj\Debug\ConsoleApp_2202E2.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ConsoleApp_2202E2\ConsoleApp_2202E2\obj\Debug\ConsoleApp_2202E2.pdb

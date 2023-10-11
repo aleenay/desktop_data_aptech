@@ -1,0 +1,25 @@
+﻿@model IEnumerable<mini_project_core6.Models.TblProduct>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div class="row">
+
+@foreach (var item in Model) {
+     <div class="col-lg-3">
+        <div class="card" style="width: 18rem;">
+                <img src="@Url.Content(item.PImg)" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"> @Html.DisplayFor(modelItem => item.PName)</h5>
+                <p> @Html.DisplayFor(modelItem => item.PPrice)</p>
+                <p class="card-text"> @Html.DisplayFor(modelItem => item.PDes)</p>
+                <a asp-action="add_to_cart" class="btn btn-success" asp-route-id="@item.PId">Add to cart</a>
+            </div>
+        </div>
+    </div>   
+}
+ 
+</div>

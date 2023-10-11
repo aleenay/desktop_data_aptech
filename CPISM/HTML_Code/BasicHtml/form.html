@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400&family=Mouse+Memoirs&family=Rubik&display=swap"
+        rel="stylesheet">
+    <title>Forms</title>
+    <style>
+        fieldset {
+            width: 363px;
+            border: 4px solid green;
+        }
+
+        body {
+            font-family: 'Libre Franklin', sans-serif;
+            font-family: 'Mouse Memoirs', sans-serif;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        .containerFlex {
+            display: flex;
+        }
+
+        .containerFlex .form {}
+
+        .containerFlex div {
+            width: 50%;
+        }
+
+        .bgImg {
+            background-image: url(img/img3.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .btn:hover {
+            transform: scale(1.5);
+            background: whitesmoke;
+            color: green;
+            border: 2px solid green;
+        }
+
+        .btn {
+            transition: .8s;
+            background: green;
+            color: white;
+            border: none;
+            padding: 10px 40px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="bgImg">
+    <div class="containerFlex">
+        <div class="form">
+            <h2>HTML Form</h2>
+            <form method="POST" action="loginform.html">
+                <fieldset>
+                    <legend>Contact details</legend>
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter Your name" name="username" id="name" required> <br> <br>
+                    <label>Number</label>
+                    <input type="number" min="2" max="10" placeholder="Enter Your number" name="number" value=""
+                        id="IDnumber" required> <br> <br>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter Your email" name="email" value="" id="IDemail" required> <br>
+                    <br>
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Your password" name="password" value="" id="IDpass"> <br>
+                    <br>
+                    <label>Gender</label>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <br> <br>
+                    <label>Course</label>
+                    <input type="checkbox" name="course">CSS
+                    <input type="checkbox" name="course">HTML
+                    <input type="checkbox" name="course">CSS 3
+                    <input type="checkbox" name="course">HTML 3
+                    <br> <br>
+                    <label>City</label>
+                    <select>
+                        <option value="karachi">karachi</option>
+                        <option value="Hyd">Hyderabad</option>
+                    </select>
+
+                    <br> <br>
+
+                    <label>Address</label><br>
+                    <textarea rows="3" placeholder="Enter your Address"></textarea>
+
+                    <br> <br>
+                    <input type="submit" class="btn" value="submit">
+                </fieldset>
+            </form>
+            <br>
+            <form method="POST" action="loginform.html">
+                <fieldset>
+                    <legend>DataList</legend>
+                    <label>
+                        Select city
+                    </label>
+                    <input type="text" name="cityjkkjj" list="city" />
+                    <datalist id="city">
+                        <option value="karachi">karachi</option>
+                        <option value="hyerabad">hyerabad</option>
+                        <option value="lahore">lahore</option>
+                        <option value="islamabad">islamabad</option>
+                    </datalist>
+                    <input type="submit"  value="submit">
+                </fieldset>
+            </form>
+        </div>
+        <!-- <div class="bgImg">
+            It's Dummy Text
+            <progress value="20" max="100"></progress>
+            <label for="file">Downloading progress:</label>
+            <progress id="file" value="32" max="100"> 32% </progress>
+        </div> -->
+
+    </div>
+    <div>
+
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium eligendi iusto harum, laboriosam
+            cum ex aperiam veritatis rem voluptatem sunt, ipsum maiores pariatur cupiditate expedita delectus aut culpa
+            sequi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium eligendi iusto harum, laboriosam
+            cum ex aperiam veritatis rem voluptatem sunt, ipsum maiores pariatur cupiditate expedita delectus aut culpa
+            sequi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium eligendi iusto harum, laboriosam
+            cum ex aperiam veritatis rem voluptatem sunt, ipsum maiores pariatur cupiditate expedita delectus aut culpa
+            sequi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium eligendi iusto harum, laboriosam
+            cum ex aperiam veritatis rem voluptatem sunt, ipsum maiores pariatur cupiditate expedita delectus aut culpa
+            sequi?</p>
+
+    </div>
+
+</body>
+
+</html>

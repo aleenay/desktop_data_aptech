@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .progress-bar {
+      position: relative;
+      height: 20px;
+      width: 200px;
+      background: white;
+      border-radius: 25px;
+      border: 2px solid white;
+      background-color: rgb(194, 191, 191);
+      box-shadow: 0 0 32px rgb(194, 194, 194);
+    }
+
+    .progress-fill {
+      position: absolute;
+      height: 20px;
+      width: 0%;
+      animation: progress_animation 3s infinite;
+      background: linear-gradient(90deg, rgb(41, 2, 43) 0%, rgb(253, 45, 236) 100%);
+      border-radius: 15px;
+    }
+
+    @keyframes progress_animation {
+      0% {
+        width: 0%;
+      }
+
+      25% {
+        width: 50%;
+      }
+
+      50% {
+        width: 75%;
+      }
+
+      75% {
+        width: 85%;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Loading...</h1>
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+</body>
+
+</html>

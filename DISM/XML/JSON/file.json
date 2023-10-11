@@ -1,0 +1,10 @@
+{
+    "Name" : "Ahmed",
+    "Mobile" :"03215656565",
+    "City" :"Khi",
+    "Courses": ["HTML","CSS"],
+    "Address": {
+        "Area": "Defence",
+        "Flat no": "Phase 5"
+    }
+}

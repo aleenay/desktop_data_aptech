@@ -1,0 +1,34 @@
+Collections in C# Programing
+
+-> A collection is a set of related data that may not nesscessary
+belong to the same data type that can be set or modified dynamically 
+at run time
+-> In other words, Collection is dynamic array.
+	==Its length can increase on runtime. AUTO RESIZING
+->Normal Array Length is fixed , Its means we cannot the change
+the length after declaring an array
+-> Array.Resize()
+-> Resize method of an array destroys old array and create a new 
+array with new length 
+
+We have two kinds of collections
+=====================
+Non Generic Aesi Classes jo ksi bh data type k data ko Store krleti hain 
+
+1.Non-Generic collections (old)
+-Stack,ArrayList ,hashtable,SortedList etc
+-if we use non generic above classes thn we use system namespace 	
+System.Collections namespace have non-generic 
+
+=====================
+generic collections only store same data type data
+2.Generic Collection (new)
+-List<T>, LinkedList<T>, Queue<T>,SortedList<K,V> ,Dictonary<K,V>
+-System.Collections.Generic namespace have generic collections.
+	
+Array : It is a collection of homogeneous elements 
+Homogeneous elements means Same Data type 
+Collections: It is a collection of heterogeneous elements
+heterogenous means different Data type 
+Collections ki Non generic collections main ksi bh type ka data 
+daal skty hain 

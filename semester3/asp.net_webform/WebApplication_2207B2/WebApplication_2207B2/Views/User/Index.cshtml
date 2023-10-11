@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>User Index</h1>
+
+@{
+    foreach (var item in  (List<User>)ViewData["StdList"])
+    {
+        @item.id <br />
+    }
+}
+

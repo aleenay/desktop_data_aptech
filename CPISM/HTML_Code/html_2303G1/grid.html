@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            background-color: antiquewhite;
+            display: grid;
+            /* grid-template-columns: repeat(3, 200px) auto ; */
+            grid-template-columns: repeat(2, 300px) 100px ;
+            grid-template-rows: 200px auto;
+            grid-column-gap: 40px;
+            grid-row-gap: 10px;
+            width: 900px;
+            /* grid-gap:40px; */
+
+
+        }
+        .item1{
+            background: green;
+        }
+        .item2{
+            background: lightcoral;
+        }
+        .item3{
+            background: lightgreen;
+        }
+        .item4{
+            background: lightblue;
+            grid-row: 2/span 3;
+        }
+        .item5{
+            background: yellow;
+        }
+        .item6{
+            background: blue;
+        }
+        .item7{
+            background: green;
+           /* grid-column: 1/ span 2; */
+        }
+        .item8{
+            background: lightgreen;
+            grid-column: 2/span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="items item1">one</div>
+        <div class="items item2">two</div>
+        <div class="items item3">three</div>
+        <div class="items item4">four</div>
+        <div class="items item5">five</div>
+        <div class="items item6">six</div>
+        <div class="items item7">seven</div>
+        <div class="items item8">eight</div>
+
+
+    </div>
+</body>
+</html>

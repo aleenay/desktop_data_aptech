@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        #ID_Div {
+            font-size: 20px;
+
+        }
+
+        .Cl_p::before{
+            content: '	😀';
+           /* background: red;  */
+           font-size: 20vh;
+        }
+        .Cl_p:hover::after{
+            content:'world';
+           background: red; 
+        }
+        .FirstLetter::first-letter{
+            font-size: 20vh;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Cl_Div textCenter" style="border: 1px solid red;">
+        <h2>It's Class Task</h2>
+    </div>
+    <p class="Cl_Div textCenter">Its testing</p>
+    <!-- <div ID="ID_Div">
+        <p>It's Class Task</p>
+    </div>
+<h4 class="Cl_Div">demo</h4> -->
+    <table>
+        <tr>
+            <td>
+                <div class="Card">
+                    <img src="img/img.jpg" alt="image" />
+                    <h1>It's Heading</h1>
+                    <p class="Cl_p">
+                        This is dummy text
+                    </p>
+                    <button type="button" class="btn">View More</button>
+                </div>
+            </td>
+            <td>
+                <div class="Card">
+                    <img src="img/img.jpg" alt="image" />
+                    <h1>It's Heading</h1>
+                    <p class="Cl_p">
+                        This is dummy text
+                    </p>
+                    <button type="button" class="btn">View More</button>
+
+                </div>
+            </td>
+            <td>
+               
+            </td>
+
+        </tr>
+    </table>
+
+    <div class="Div_WidthInc">
+        Hello
+    </div>
+  <p class="FirstLine">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, nulla, enim quisquam architecto obcaecati velit dolorem cumque exercitationem repudiandae delectus et consectetur! Aliquam tempore a velit fuga, praesentium sequi tenetur?
+  </p>
+  <p class="FirstLetter">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, nulla, enim quisquam architecto obcaecati velit dolorem cumque exercitationem repudiandae delectus et consectetur! Aliquam tempore a velit fuga, praesentium sequi tenetur?
+</p>
+
+<p class="Cl_Before">
+This is Before Text
+</p>
+
+
+</body>
+
+</html>

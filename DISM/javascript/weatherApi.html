@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="input" id="ID_Input">
+    <button type="button" class="btn " onclick="btnGetWeather()">Submit</button>
+    <p id="IDtemp">
+
+    </p>
+    <span id="ID_weatherDescription" class="small" style="color: #868B94"></span>
+    <span id="ID_country" class="small" style="color: #868B94"></span>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <script>
+
+        function btnGetWeather() {
+
+
+            var ID_Input = document.getElementById("ID_Input")
+            var APIKEY = "3b920372297f4a8b5cf32bda258ce7d4";
+            var new_api = 'https://api.openweathermap.org/data/2.5/weather?q=' + ID_Input.value + '&appid=' + APIKEY;
+            
+            // var IDtemp = document.getElementById("IDtemp");
+            // var ID_weatherDescription = document.getElementById("ID_weatherDescription");
+            // var ID_country = document.getElementById("ID_country")
+            // debugger
+            // $.ajax({
+            //     url: new_api,
+            //     type: 'GET',
+            //     success: function (response) {
+            //         var temp = response.main.temp;
+            //         var C = temp - 273.15
+            //         IDtemp.innerText = (Math.round(C * 10) / 10).toFixed(1) + '°C';
+            //         ID_weatherDescription.innerText = response.weather[0].description
+            //         ID_country.innerText = response.sys.country
+            //         // IDtemp.innerText = C
+
+            //         console.log(Math.round(C))
+            //         console.log(response)
+            //         // var Temp_C = (data.main.temp - 273.15);
+            //         // document.getElementById('temp').innerHTML = Temp_C;
+            //         // console.log(Temp_C);
+            //     }
+            // })
+
+
+
+
+            fetch(new_api).then(response => response.json()).then(response => {
+                debugger
+                console.log(response)
+                // response.name
+                // response.sys.country
+                // response.weather
+                // response.weather[0].description
+                // response.weather[0].id
+                // response.main
+                // response.main.humidity
+                // response.main.feels_like
+            })
+            
+        }
+    </script>
+</body>
+
+</html>

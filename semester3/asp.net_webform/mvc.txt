@@ -1,0 +1,8 @@
+
+====MVC with asp.net core 6====
+MVC stands for Model view and Controller.
+It is an architectural design pattern that means 
+this design pattern is used at the architecture level
+of an application
+MVC is not a programming language
+MVC is a design pattern 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>JSON</title>
+</head>
+
+<body>
+    <button type="button" onclick="btnFetchData()">Fetch Data</button>
+    <table id="ID_table" border="1"></table>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+ <img src="" alt="">
+  
+  <script>
+        function btnFetchData() {
+            var ID_table = document.getElementById("ID_table");
+            $.ajax({
+                url : 'products.json',
+                type : 'GET',
+                success : function(data){
+                    var allproducts = data.products
+                   debugger
+                    for (let index = 0; index < allproducts.length; index++) {
+                        var element = allproducts[index];
+                        ID_table.innerHTML += '<tr> <td> ' + element.id + '  </td> <td> '+ element.title + ' </td> <td> '+ 
+                            element.description +' </td><td><img width="50" src="'+ element.thumbnail +'"/> </td> </tr>' 
+                        console.log(element.title);
+                    }
+                }, 
+                error: function(){
+
+                }
+            })
+              
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var objStudent = {
+        //     "name": "ali",
+        //     "age": 12,
+        //     "area": "Nazimabad",
+        //     "block": "5e"
+        // }
+        // function btnFetchData() {
+            
+        //        for (var i in objStudent) {
+        //     document.getElementById("ID_div").innerHTML += objStudent[i] + '<br>';
+                
+        //        }
+
+        //     // document.getElementById("ID_div").innerHTML ="name: " + objStudent.name + '<br>' + objStudent.age;
+        // }
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

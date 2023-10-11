@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE Students [
+<!ELEMENT Students (student, name, firstname, lastname, id, batch)>
+<!ELEMENT student (name, id, batch)>
+<!ELEMENT name (firstname, lastname)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT batch (#PCDATA)>
+<!ENTITY sign "hareem amin">
+<!ENTITY key "1611D1">
+<!ENTITY abc "class 1709f1">
+<!ENTITY ert "APTECH COMPUTER EDUCATION NORTH NAZIMABAD KARACHI">
+]>
+
+<Students>
+	<student>
+		<name>
+			<firstname size="5">Ahmed</firstname>
+			<lastname size="3">Ali</lastname>
+		</name>
+		<id>1 &sign;</id>
+		<batch>1605F1 &abc; &ert;</batch>
+		
+	</student>
+	<student>
+		<name>
+			<firstname size="6"> Zohaib	</firstname>
+			<lastname size="4">	Khan	</lastname>
+		</name>
+		
+		<id>2</id>
+		<batch>1605F1 &sign;</batch>
+	<batch> &ert; </batch>
+	</student>
+</Students>

@@ -1,0 +1,16 @@
+//get and set method with properties
+class batch
+    {
+        private string name;
+        public string std_name {
+           
+            set { name = value; }  // set method
+            get { return name; }   // get method
+        }
+    }
+
+///in main method
+ batch obj = new batch();
+            obj.std_name = "ali";
+            Console.WriteLine(obj.std_name);
+            Console.ReadLine();

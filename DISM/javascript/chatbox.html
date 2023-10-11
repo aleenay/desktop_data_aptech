@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="Id_input">
+    <button type="button" class="btn" onclick="btnChat()">send</button>
+    <div id="ID_0"></div>
+    <div id="ID_1"></div>
+
+    <script>
+        // var x = true;
+        var chatlist = [];
+        var senderID = 0;
+        function btnChat() {
+            var ID_0 = document.getElementById("ID_0");
+            var ID_1 = document.getElementById("ID_1");
+            var Id_input = document.getElementById("Id_input").value;
+
+
+            var obj = {
+                inputval: Id_input,
+                senderid: senderID
+            }
+            chatlist.push(obj);
+ 
+            // var arrKeys = chatlist.map(el => el.senderid);
+
+            for (let i = 0; i < chatlist.length; i++) {
+           
+                var lastIndexValue = chatlist[i].senderid;
+                var inputValue = chatlist[i].inputval;
+
+            }
+            if (lastIndexValue == 0) {
+                senderID = 1;
+                // if(senderID == 1){
+                //     ID_0.innerHTML += '<h5>' + inputValue + '</h5>';
+                // }
+            }
+            else {
+                senderID = 0;
+            //     if(senderID == 0){
+            //         ID_1.innerHTML += inputValue;
+            //     }
+           }
+
+            console.log(chatlist);
+
+            // if(x == true){
+            //     ID_1.innerHTML += "first text";
+            //     x = false;
+            // }
+            // else{
+            //     ID_2.innerHTML += "second text";
+            //     x = true;
+
+            // }
+
+        }
+
+    </script>
+</body>
+
+
+</html>

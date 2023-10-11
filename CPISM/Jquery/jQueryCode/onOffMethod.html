@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+
+    <style>
+        #box {
+            border: 2px solid;
+        }
+        .boxbg{
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-2">Jquery On() Method</h1>
+
+        <div id="box" class="p-5">
+            <h2>Dummy Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut, officiis laboriosam necessitatibus
+                culpa
+                sapiente vitae aut tempora impedit tenetur eaque laborum natus. Quos porro, vel sit ullam necessitatibus
+                praesentium!</p>
+        </div>
+        <div>
+            <button type="button" id="ID_btn" class="btn btn-primary mt-5">
+                Remove Event
+            </button>
+        </div>
+    </div>
+    <script>
+
+        $(document).ready(function () {
+       
+
+             $("#box").on({
+                 "click":function(){
+                    $(this).css("background","orange")
+                 },
+                 "mouseover":function(){
+                    $(this).css("background","pink")
+                 },
+                 "mouseout":function(){
+                    $(this).css("background","lightblue")
+                 }
+
+            });
+         
+            $('#ID_btn').click(function(){
+                $('#box').off("mouseover mouseout")
+            })
+
+        });
+    </script>
+</body>
+
+</html>
+
+<!-- // on method 
+// $("#box").on("click",function () {
+//     $(this).css("background","orange");
+
+
+// });
+
+// $("#box").on("mouseover mouseout",function () {
+//     $(this).toggleClass("boxbg");
+
+
+// }); -->

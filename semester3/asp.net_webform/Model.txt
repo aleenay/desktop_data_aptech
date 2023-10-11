@@ -1,0 +1,11 @@
+-Model -> c# classes -> datasource -> database/ Manual list or collection
+-Model is a class with .cs extension having both properties and method
+-example
+-- student ( Model class)
+	- roll no  ] 
+	- name 	   ]
+	- gender   ]---	Properties
+	- class	   ]
+- Models are used to set or get the data
+- if your application does not have data then there is no need for a model
+- if you has data , then you need for a model

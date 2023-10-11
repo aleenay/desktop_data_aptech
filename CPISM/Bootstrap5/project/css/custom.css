@@ -1,0 +1,109 @@
+.BgNav{
+ 
+    background: #172a47;
+    color: rgb(218, 218, 218) !important;
+
+}
+.active{
+    color: white !important;
+}
+.nav-link{
+    color: rgb(218, 218, 218) !important;
+}
+img{
+    width: 100%;
+}
+.Cl_divSlider{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+
+}
+.Blue{
+    color: #248de9;
+}
+.btnCustomBlue{
+    background: #248de9;
+    color: white;
+}
+.BgGrey{
+    background-color: #efefef;
+}
+.ContainerNum h1{
+    margin: 0%;
+}
+.ContainerNum {
+    text-align: center;
+    padding: 20px;
+
+}
+
+.ClCard{
+    /* background: linear-gradient(1deg, #248de9, #00bcd4); */
+    border: none;
+    border-radius: 10px;
+    color: black;
+}
+.ClCard p{
+    color: grey;
+
+}
+.ClCard i{
+    background: #248de92b;
+    color: #248de9;
+
+    padding: 20px;
+    font-size: 21px;
+    border-radius: 50px;
+}
+
+.activeCard {
+    background: linear-gradient(1deg, #248de9, #00bcd4);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 6px 9px 11px 3px #e5e5e5;
+    color: white;
+}
+.activeCard p{
+    color: white;
+}
+.activeCard i{
+    background: #2493c5f5;
+    color: white;
+    padding: 20px;
+    font-size: 21px;
+    border-radius: 50px;
+}
+.form-check-label{
+    font-weight: bold;
+}
+
+.imgDiv{
+    background: url('../img/cardImg.PNG');
+    height: 42vh;
+    color: orange;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    text-align: right;
+    padding: 14px;
+    font-weight: bold;
+}
+.noBorder{
+    border: none;
+}
+.ClCard2{
+    border: none;
+    box-shadow: 2px 2px 10px #dbdbdb;
+    border-radius: 10px;
+}
+.textSmall{
+    font-size: 15px;
+}
+.card-footer{
+    border: none;
+    background: none;
+}

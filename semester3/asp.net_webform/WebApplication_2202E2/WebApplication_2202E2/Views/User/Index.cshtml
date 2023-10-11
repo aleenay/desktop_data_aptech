@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>User Index</h1>
+
+@{
+    foreach (var item in (List<User>)ViewData["UserList"])
+    {
+        @item.name <br />
+    }
+    //foreach (var item in (string[]) ViewData['g'])
+    //{
+        
+    //}
+}

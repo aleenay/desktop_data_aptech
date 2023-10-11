@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Accessing JSON Object value using dot(" . ") notation</h1>
+    <script>
+        var obj = {
+            "Name": "Ahmed",
+            "Mobile": "03215656565",
+            "City": "Khi",
+            "Courses": ["HTML", "CSS"],
+            "Address": {
+                "Area": "Defence",
+                "Flatno": "Phase 5"
+            }
+        }
+        // . notation
+        // var Name = obj.Name;
+        // var City = obj.City;
+        //  [] Notation
+        var Name = obj["Name"];
+        var City = obj["City"];
+        var Address = obj.Address.Area;
+
+        console.log('Name: ' + Name + ' ' + 'City: ' + City + ' ' + 'Address: ' + Address)
+    </script>
+</body>
+
+</html>

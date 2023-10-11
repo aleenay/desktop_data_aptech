@@ -1,0 +1,15 @@
+ //Hashtable data store in  Key value
+            Hashtable hashtable = new Hashtable()
+            {
+                { "id", 101},
+                { "name","ali"},
+                {"Salary" ,250000 }
+            };
+            foreach(object x in  hashtable)
+            {
+                Console.WriteLine(x);
+            }
+            //hashtable.Add("ID", 101);
+            //hashtable.Add("Name", "Ali");
+            //hashtable.Add("Salary", 250000);
+            Console.WriteLine(hashtable["Salary"]);

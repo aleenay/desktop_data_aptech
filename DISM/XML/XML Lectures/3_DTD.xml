@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE students SYSTEM "3_DTD.dtd">
+
+
+<students>
+	<student >
+		<name>	Ali	</name>
+		<id>	1	</id>
+	</student>
+	
+	<student>
+		<name>	Ahmed	</name>
+		<id>	2 	</id>
+	</student>
+	
+	<student>
+	
+		<id>	3	</id>
+		<name>	Asad   	</name>
+	</student>
+	
+</students>

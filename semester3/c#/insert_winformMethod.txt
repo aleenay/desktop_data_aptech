@@ -1,0 +1,24 @@
+private void btnInsert_Click(object sender, EventArgs e)
+        {
+            string name = u_name.Text;
+            int age = Convert.ToInt32(u_age.Text);
+            string city = u_city.SelectedItem.ToString();
+            try
+            {
+                using(db_empEntities connection = new db_empEntities())
+                {
+                    tbl_std objstd = new tbl_std();
+                    objstd.name = name;
+                    objstd.age = age;
+                    objstd.city = city;
+                    connection.tbl_std.Add(objstd);
+                    connection.SaveChanges();
+                    MessageBox.Show("Data Inserted");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }

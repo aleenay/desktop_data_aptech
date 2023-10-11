@@ -1,0 +1,69 @@
+-------------
+Encapsulation 
+-------------
+Encapsulation is the concept of wrapping data into a single unit.
+It collects data members and member functions into a single unit
+called class. The purpose of encapsulation is to prevent alteration
+of data from outside.
+
+
+Inheritance
+-(taking) the properties of one class into another is called inheritance
+-The existing class is called a base class, and the inherited class is called a derived or inherited class. 
+--types of inheritance
+1.Single inheritance
+	Class A{
+	//Base class
+	}
+	Class B : A {
+	//derived class
+	}
+2.Hierarchical inheritance
+This is the type of inheritance in which there are multiple classes derived from one base class
+	Class A{
+	//Base class
+	}
+	Class B : A {
+	//derived class
+	}
+	Class C : A {
+	//derived class
+	}
+3.Multilevel inheritance
+When one class is derived from another, this type of inheritance is called multilevel inheritance.
+	Class A{
+	//Base class
+	}
+	Class B : A {
+	//derived class
+	}
+	Class C : B {
+	//derived class
+	}
+4.Multiple inheritances using Interfaces
+	interface A
+	{
+	
+	}
+	interface B
+	{
+	
+	}
+	class C : A,B {
+
+	}
+------------
+Polymorphism
+------------
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+For example, 
+think of a base class called Animal that has a method called animalSound(). Derived classes of Animals
+could be Cats Birds - And they also have their own implementation of an animal sound
+
+
+4 pillars in OOP
+Encapsulation
+Inheritance
+Polymorphism
+Abstraction
+

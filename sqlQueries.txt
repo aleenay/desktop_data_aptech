@@ -1,0 +1,25 @@
+select * from std_record;
+select * from std_record where std_id = 3;
+select std_id, std_name ,std_city from std_record;
+select * from std_record where std_city = 'karachi';
+select * from std_record where std_age >= 18;
+select * from std_record where std_city != 'hyd';
+select * from std_record where std_age < 18 AND std_age <21;
+select * from std_record where std_age < 18 OR std_age <21;
+select * from std_record where (std_age >= 18 AND std_age < 21) AND std_city = 'hyd';
+ select * from std_record where not std_city = 'karachi' and std_age < 19; 
+select * from emp where emp_salary between 10000 AND 30000;
+
+select * from std_record where std_id not in (1,3,5);
+select * from std_record where std_id between 2 AND 5;
+select * from std_record where std_id not between 2 AND 3;
+
+  select * from emp where emp_name LIKE '_h%';
+  
+select * from emp where emp_name LIKE 'a%';
+select * from emp where emp_name LIKE '%a';
+select * from emp where emp_name LIKE 'a%i';
+select * from emp where emp_name LIKE '%am%';
+select * from emp where emp_name LIKE '_a%';
+select * from emp where emp_name LIKE '__m%';
+select * from emp where emp_name LIKE '___e%';

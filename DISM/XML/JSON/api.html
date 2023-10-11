@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ID_weather"></p>
+    <input type="text" id="ID_input">
+    <button type="button" onclick="btnFetchWatherApi()">Fetch</button>
+    <script>
+        function btnFetchWatherApi(){
+    var ID_weather = document.getElementById("ID_weather");
+    var ID_input = document.getElementById("ID_input");
+
+    ID_weather.innerHTML = ID_input.value;
+
+            var api = 'dummy1.json';
+            fetch(api).then(response => response.json()).then(response => {
+                 console.log(response.name)
+            })
+
+       }
+    </script>
+</body>
+</html>

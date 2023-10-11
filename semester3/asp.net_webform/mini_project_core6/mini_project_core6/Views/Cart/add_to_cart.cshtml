@@ -1,0 +1,22 @@
+﻿@model mini_project_core6.Models.TblProduct
+@{
+    ViewData["Title"] = "add_to_cart";
+}
+
+<h1>add_to_cart</h1>
+@using (Html.BeginForm())
+{
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="@Url.Content(Model.PImg)" style="width:100%" />
+        </div>
+        <div class="col-lg-8">
+            <h3>Product Name: @Model.PName </h3>
+                <h5>Price:@Model.PPrice </h5>
+            <input type="number" name="qty" value="1" id="qty"/>
+            <input type="submit" value="submit" class="btn btn-success"/>
+        </div>
+    </div>
+</div>
+}

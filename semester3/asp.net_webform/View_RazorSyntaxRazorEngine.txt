@@ -1,0 +1,17 @@
+View 
+
+-View provides the user interface ui of the user
+-View View is used to display content of an application
+-View uses model data to create this UI.
+-View contains both HTML markup and c# code that run.
+-View has a file extension .cshtml
+.cshtml => csharp + html
+Razor 
+-Razor is a syntax, based on the ASP.NET core
+framwork that allow creating views.
+-Razor is used to simplify the process of creating views
+- Razor is simple and easy to understand for users 
+Razor engine
+-MVC framework uses a view engine to convert code
+of a view into HTML markup that a brower can understand.
+-

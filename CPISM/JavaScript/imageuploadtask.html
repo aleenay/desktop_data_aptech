@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Select File to upload</h2>
+    <input type="file" id="ID_file">
+    <button type="button" onclick="btnFileUpload()">Upload File</button>
+    <script>
+        function btnFileUpload(){
+            var ID_file = document.getElementById("ID_file").value;
+            console.log(ID_file);
+        }
+    </script> 
+</body>
+</html>

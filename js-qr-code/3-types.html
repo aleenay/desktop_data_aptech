@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code Generate</title>
+
+    <!-- (A) LOAD QRCODEJS LIBRARY -->
+    <!-- https://cdnjs.com/libraries/qrcodejs -->
+    <!-- https://github.com/davidshimjs/qrcodejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  </head>
+  <body>
+    <!-- (B) GENERATE QR CODE HERE -->
+    Website <div id="qrA"></div>
+    Tel <div id="qrB"></div>
+    SMS <div id="qrC"></div>
+    VCARD <div id="qrD"></div>
+
+    <!-- (C) CREATE QR CODE ON PAGE LOAD -->
+    <!-- https://github.com/zxing/zxing/wiki/Barcode-Contents -->
+    <script>
+    window.addEventListener("load", () => {
+      // (C1) WEBSITE
+      new QRCode(document.getElementById("qrA"), "https://code-boxx.com/");
+
+      // (C2) TEL
+      new QRCode(document.getElementById("qrB"), "tel:+12345678");
+
+      // (C3) SMS
+      new QRCode(document.getElementById("qrC"), "sms:+12345678");
+
+      // (C4) VCARD
+      let card = "BEGIN:VCARD\r\n";
+      card += "VERSION:3.0\r\n";
+      card += "FN:John Doe\r\n";
+      card += "TEL;TYPE=home:tel:+1-123-456-789";
+      card += "EMAIL;TYPE=internet:john@doe.com";
+      new QRCode(document.getElementById("qrD"), card);
+    });
+    </script>
+  </body>
+</html>

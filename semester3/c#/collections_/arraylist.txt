@@ -1,0 +1,23 @@
+//ArrayList basically a object 
+            //Object received any type of data 
+            //Non Generic Collection Class ArrayList
+            ArrayList MyList = new ArrayList();
+            MyList.Add(10);
+            MyList.Add("Ali");
+            
+            foreach(object x in MyList)
+            {
+            Console.WriteLine(x);
+
+            }
+           
+            MyList.Insert(1, "Fatima"); //New Value insert on index number
+           
+            Console.WriteLine("New Array list");
+            //Remove Ali in Mylist
+            MyList.Remove("Ali");
+            foreach (object x in MyList)
+            {
+                Console.WriteLine(x);
+
+            }

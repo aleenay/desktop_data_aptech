@@ -1,0 +1,29 @@
+Constructor is a special type of method whose name is same as class name
+it is invoked automatically at the time of object creation.
+
+Note : The main purpose of custructor is used to initialize the data , member 
+of new object
+
+Typs of Constructor
+Default Constructor 
+Parameterize Constructor
+
+Syntax 
+
+1.Default 
+Class A 
+{
+    A(){
+
+	}
+
+}
+
+2. Parameterize 
+Class A
+{
+  A(int a){
+
+ }
+
+}

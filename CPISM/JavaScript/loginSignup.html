@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <input type="text" class="input" id="ID_input" />
+    <button type="button" class="btn" onclick="btnSetItem()">Sign UP</button>
+    <input type="text" class="input" id="ID_inputLogin" />
+    <button type="button" class="btn" onclick="btnGetItem()">Login</button>
+    <p id="ID_name"></p>
+    <script>
+        var UserArray = [];
+        function btnSetItem() {
+            
+            var ID_input = document.getElementById("ID_input").value;
+            var ID_name = document.getElementById("ID_name").innerHTML;
+            ID_name = ID_input;
+            if (UserArray.length > 0) {
+    
+                UserArray = JSON.parse(localStorage.getItem("user"));
+            }
+
+            var obj =
+            {
+                "name": ID_input,
+
+            }
+
+            UserArray.push(obj)
+            localStorage.setItem("user", JSON.stringify(UserArray));
+            console.log(UserArray)
+
+        }
+        function btnGetItem() {
+            var GetUserData = JSON.parse(localStorage.getItem("user"));
+            var ID_inputLogin = document.getElementById("ID_inputLogin").value; //D
+
+            var username = GetUserData.some(x => x.name === ID_inputLogin);
+
+            //  var dummyArray = ["A","B","C","D"]
+            // alert(username)
+            if (username) {
+                alert("login !");
+
+            }
+            else {
+                alert("Create Account")
+            }
+            // for (let index = 0; index < GetUserData.length; index++) {
+            //     username = GetUserData[index].name;
+            //     debugger
+            //     console.log(username)
+            //     if(GetUserData.length > 0){
+
+
+            //     if (ID_inputLogin == username) {
+            //         alert("login")
+            //         // break;
+
+            //     }
+            //     else{
+            //         alert("not")
+            //         // break;
+            //     }
+            //      }
+            // }
+
+            // if(ID_inputLogin != username)
+            //     alert("not")
+
+
+        }
+    </script>
+</body>
+
+</html>
+<!-- // var aNumber = !!localStorage.getItem('number') ? JSON.parse(localStorage.getItem('number')) : [];
+            // var number = document.getElementById('ID_input').value;
+            // aNumber.push(number);
+            // localStorage.setItem('number', JSON.stringify(aNumber)); -->

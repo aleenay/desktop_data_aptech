@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!DOCTYPE studentDetail[
+ <!ELEMENT studentDetail (student*)>
+ <!ELEMENT student ( name , age , course )>
+ <!ELEMENT name (#PCDATA)>
+ <!ELEMENT age (#PCDATA)>
+ <!ELEMENT course (#PCDATA)>
+ <!ATTLIST student id CDATA "ID_st1">
+ <!ATTLIST student id CDATA "ID_st2">
+ <!ENTITY age "18">
+ 
+ ]>
+
+
+<studentDetail>
+
+<student id="ID_st1">
+<name> Ibrahim </name>
+<age> &age; </age>
+<course> HTML </course>
+</student>
+
+<student id="ID_st2">
+<name> Battu </name>
+<age> &age; </age>
+<course> Css/ HTML </course>
+</student>
+
+</studentDetail>

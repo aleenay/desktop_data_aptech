@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+ 
+    
+
+<script>
+class marksheet{
+    rollno;
+    name;
+    eng;
+    urdu;
+    maths;
+    TotalMarks =0;
+    percentage;
+    GetData(std_r,std_n){
+        this.rollno = std_r;
+        this.name = std_n;
+    }
+    GetMarks(e,u,m){
+       this.eng = e ;
+       this.urdu = u;
+       this.maths = m;
+       this.TotalMarks = e +u + m;
+    }
+    print(){
+        document.write("Student name: " + this.name + '<br>' + "Student Rollno: " + this.rollno + '<br>');
+        document.write("Student Total Marks: " + this.TotalMarks + '<br>');
+        document.write("Student Percentage: " + this.percentage + '%' + '<br>');
+
+    }
+    std_percentage(){
+        this.percentage = this.TotalMarks * 100/300;
+   
+    }
+}
+
+var obj = new marksheet();
+obj.GetData(1001,"Ali");
+obj.GetMarks(100,70,80);
+obj.std_percentage();
+obj.print();
+
+
+
+</script>
+
+
+</body>
+
+</html>
+
+ <!--
+    class batch2211c3{
+    stdname = "ali";
+    totalsum = 0;
+    totalsub = 0;
+
+    sum(num1 , num2, num3){ //10 20 30
+    this.totalsum = num1 + num2 +num3;
+    }
+    sub(num1 , num2, num3){
+    this.totalsub = num1 - num2 - num3;
+    }
+    
+    print(){
+      document.write(this.stdname+ '<br>');
+      document.write("Total sum " + this.totalsum + '<br>');
+      document.write("Total sub " + this.totalsub );
+     
+    }
+
+
+}
+
+var ObjStd = new batch2211c3();
+ObjStd.sum(10,100,30);
+ObjStd.sub(10,100,30);
+
+ObjStd.print();
+    
+    
+    
+    
+    
+    
+    
+    
+    <form action="">
+        <fieldset>
+            <legend>Marksheet</legend>
+            Urdu
+            <input type="number" id="ID_urdu">
+            Maths
+            <input type="number" id="ID_Maths">
+
+            <button type="button" onclick="btn()">submit</button>
+        </fieldset>
+    </form>
+    <br>
+    <h2>Marksheet Data</h2>
+    <table border="1">
+        <tr>
+            <th>Urdu</th>
+            <th>Maths</th>
+
+        </tr>
+        <tr>
+            <td id="Urdu"></td>
+            <td id="Maths"></td>
+        </tr>
+        <tr>
+            <td> Total</td>
+            <td id="ID_total"> </td>
+
+        </tr>
+        <tr>
+            <td> Percentage</td>
+            <td id="ID_percentage"> </td>
+
+        </tr>
+        <tr>
+            <td> Grade</td>
+            <td id="ID_grade"> </td>
+
+        </tr>
+    </table>
+
+    <script>
+
+        function btn() {
+            var ID_urdu = document.getElementById("ID_urdu").value;
+            var ID_Maths = document.getElementById("ID_Maths").value;
+
+            document.getElementById("Urdu").innerHTML = ID_urdu;
+            document.getElementById("Maths").innerHTML = ID_Maths;
+
+            var urduInt = parseInt(ID_urdu);
+            var MathsInt = parseInt(ID_Maths);
+
+            calculation(urduInt, MathsInt);
+
+        }
+
+        function calculation(num1, num2) {
+            var result = num1 + num2;
+            var per = result * 100 / 200;
+            document.getElementById("ID_total").innerHTML = result;
+            document.getElementById("ID_percentage").innerHTML = per;
+            grade(per);
+        }
+        function grade(per) {
+            // 80 -100 A1 
+            // 70-80 A
+            // 60-70 B
+            //50-60 C
+            //40-50 D
+            // 40 F
+        }
+
+
+    </script> 
+
+
+
+
+      <input type="text" id="ID_input">
+    <p id="ID_p"></p>
+    <button type="button" onclick="btnGetName()">Get name</button>
+     function btnGetName() {
+           
+            var ID_p = document.getElementById("ID_p");
+            var ID_input = document.getElementById("ID_input").value;
+
+            ID_p.innerHTML = "<h1> " + ID_input + "</h1>";
+
+        }
+
+
+        // ID_p.innerHTML= "<h1> batch 2211c3 </h1>";
+        ID_p.innerText= "<h1> batch 2211c3 </h1>";
+     var i = 1;
+    //    while (i > 10) {
+    //     document.write( i +  '<br>');
+    //     i++
+    //    }
+
+       do {
+        document.write( i +  '<br>');
+        i++;
+       } while (i > 10);
+     for (var i = 1; i <= 10; i++) {
+
+            document.write( '2' + 'x' + i + '='+  2 *i +  '<br>');
+        }
+
+// 2 x 1 = 2
+// 2 x 2 = 4
+
+    var carname = prompt("Enter your value");
+
+        switch (carname) {
+            case "civic":
+                document.write("civic")
+                break;
+            case "city":
+                document.write("city")
+                break;
+            case "alto":
+                document.write("alto")
+                break;
+            default:
+                document.write("not found")
+                break;
+        }
+     if (carname != "") {
+
+            if (carname == "city") {
+                document.write("city"); 
+                
+
+            }
+            else {
+                document.write("car not found");
+            }
+        }
+        else {
+            document.write("not found");
+        }
+// var batchcode = prompt("Enter your batch code");
+// document.write("<h1> welcome "  + batchcode+ " </h1>"); 
+
+// var num1 = prompt("Enter your First Value");
+// var num2 = prompt("Enter your 2nd Value");
+// var result = parseInt(num1) + parseInt(num2);
+// document.write(" Result: " + num1 + '+' + num2 + '=' + result);
+     
+//       //Result:  20 + 30 = 50
+
+// -->

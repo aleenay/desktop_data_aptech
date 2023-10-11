@@ -1,0 +1,4 @@
+   Hashtable obj=new Hashtable();
+      obj.Add("01","Aatikaa");
+       obj.Add("02","Liaquat");
+       Console.WriteLine(obj["01"]);

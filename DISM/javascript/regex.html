@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="ID_input">
+    <button class="btn" onclick="BtnSearch()">Search</button>
+    <p id="ID_p">Lorem ipsum dolor  </p>
+    <script>
+        function BtnSearch() {
+            var ID_input = document.getElementById("ID_input").value;
+            var ID_p = document.getElementById("ID_p").innerHTML;
+           
+        
+        }
+
+        var pattern = /cat/g; //i is a modifiar that change only first word and g is global variable change all words 
+        var str = "this is cat";
+        var result = str.match(pattern);
+        document.write(result);
+
+
+        //     // var res = pattern.test(str);
+        //     // var res = str.search(pattern);
+        //     var res = str.replace(pattern,"ali");
+
+     
+// var c = "aleena lateef";
+// var r = c.search(/lateef/i);
+// document.write(r);
+
+
+    </script>
+
+
+</body>
+
+</html>

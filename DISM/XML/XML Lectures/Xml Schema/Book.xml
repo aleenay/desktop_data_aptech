@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Book xmlns="http://www.booksworld.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="C:\Users\aisha.APTECHNN\Desktop\Xml Schema\Book.xsd"> 
+<Title>12</Title> 
+<Author>23</Author> 
+<Chapter>The plot of the story starts from here.</Chapter>
+</Book>	
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<Class>
+	<Students>
+		<Student>
+			<ID>	1		</ID>
+			<Name>	Areeb	</Name>
+			<Batch>	1605F1	</Batch>
+		</Student>
+		<Student>
+			<ID>	2		</ID>
+			<Name>	Muneeb	</Name>
+			<Batch>	1605F2	</Batch>
+		</Student>
+		<Student>
+			<ID>	3		</ID>
+			<Name>	ammir	</Name>
+			<Batch>	1605F2	</Batch>
+		</Student>
+			<Student>
+			<ID>	3		</ID>
+			<Name>	ammir	</Name>
+			<Batch>	1605F2	</Batch>
+		</Student>
+			<Student>
+			<ID>	3		</ID>
+			<Name>	ammir	</Name>
+			<Batch>	1605F2	</Batch>
+		</Student>
+	
+	</Students>
+</Class>

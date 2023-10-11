@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    .bgNavbarPurple {
+      background-color: #7952b3;
+    }
+
+    .BannerCard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .bannerImg {}
+
+    .btnPink {
+      background-color: #e2225b;
+      color: white;
+      border-radius: 20px;
+      box-shadow: 6px 6px 14px #e2225b63;
+      padding: 8px 44px;
+      letter-spacing: 1px;
+
+    }
+
+    .PinkTxt {
+      color: #ae4268;
+      margin: 0;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+
+    .BannerCard h1 {
+      font-weight: bold;
+    }
+
+    img {
+      height: 60vh;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bgNavbarPurple">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Services 1</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/bgimg.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Web worker</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/banner2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/img3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/banner2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Four slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container-fluid">
+    <br>
+    <br>
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+        style="width: 25%;">25%</div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+
+    
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" >
+       
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+</div>
+<br>
+<br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signup">
+  Launch demo modal
+</button>
+<div class="modal fade" id="signup">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+       <h6>Modal Title</h6>
+       <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+     </div>
+     <div class="modal-body">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+      
+      </form>
+     </div>
+     <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+
+      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Save</button>
+     </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+  <!-- <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="BannerCard">
+                    <div>
+
+                    
+                    <p class="PinkTxt">Summer season</p>
+                    <h1>Smoothies that</h1>
+                    <h4>Everyone loves!</h4>
+                    <p class="text-muted">Huge range of organic Smoothies for customers.</p>
+                    <button type="button" class="btn btnPink">Start Ordering</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="bannerImg">
+                    <img src="img/strawbreey.PNG" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- <div class="container-sm container-md container-lg">
+        <div class="bg-warning text-info border-start">Demo</div>
+        <br>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+        <br>
+        <br>
+        <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm">Secondary</button>
+        <button type="button" class="btn btn-outline-success" disabled>Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        <br>
+        <br>
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary " aria-current="page">Active link</a>
+            <a href="#" class="btn btn-primary">Link</a>
+            <a href="#" class="btn btn-primary active">Link</a>
+        </div>
+        <br>
+        <br>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">Left</button>
+            <button type="button" class="btn btn-warning">Middle</button>
+            <button type="button" class="btn btn-success">Right</button>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-12 col-lg-3 col-md-4 col-sm-12">
+
+              
+                    <div class="card " >
+                        <img src="img/img_avatar2.png" class="card-img-top cardImg" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-success">Go somewhere</a>
+                        </div>
+                      </div>
+                
+
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+
+                <div class="bg-danger text-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eveniet provident debitis quos optio
+                    nisi asperiores sint sed tempore perspiciatis eos accusamus unde ut! Exercitationem incidunt id
+                    ipsam commodi voluptates?
+                </div>
+
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+
+                <div class="bg-success text-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eveniet provident debitis quos optio
+                    nisi asperiores sint sed tempore perspiciatis eos accusamus unde ut! Exercitationem incidunt id
+                    ipsam commodi voluptates?
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="bg-success text-light">
+                    Column
+                </div>
+
+            </div>
+
+        </div>
+    </div> -->
+
+</body>
+
+</html>

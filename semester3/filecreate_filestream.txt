@@ -1,0 +1,12 @@
+string path = "C:\myfile.txt";
+FileStream file = new FileStream(path, FileMode.Create);
+Console.WriteLine("File created");
+file.Close();
+Console.Readline();
+====
+string path = "C:\myfile.txt";
+using(FileStream file = new FileStream(path, FileMode.Create))
+{
+Console.WriteLine("File created");
+}
+Console.Readline();

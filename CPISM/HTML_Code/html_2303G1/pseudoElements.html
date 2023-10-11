@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1::first-letter {
+            color: teal;
+            font-size: 100px;
+        }
+
+        .Cl_p {
+            word-spacing: 20px;
+        }
+
+        .Cl_p::first-line {
+            background: yellow;
+        }
+
+        li:first-child {
+            color: red;
+        }
+
+        li:last-child {
+            color: red;
+        }
+
+        li:nth-child(3) {
+            color: blue;
+        }
+
+        .btn {
+            font-size: 20px;
+            letter-spacing: 1;
+            padding: 10px 20px;
+            background: teal;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: .8s;
+        }
+
+        .btn:hover {
+            background: blueviolet;
+            color: white;
+            transform: scale(1.5);
+        }
+        #ID_p{
+            color: yellow;
+            background: teal;
+        }
+
+        /* *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        li:first-child{
+            color: red;
+        }
+
+        li:last-child{
+            color: red;
+
+        }
+        li:nth-child(3){ 
+            color: red; 
+        }
+        p:first-child{
+            color: red;
+        } */
+        a:hover{
+            background: blue;
+            color: white;
+            text-decoration: underline;
+
+        }
+        a:visited{
+            color: red;
+         
+
+        }
+        a{
+            text-decoration: none;
+        }
+        .cl_h1:hover::after{
+            content: '😀';
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="cl_h1">
+        TOPIC : PSEUDO CLASSES
+    </h1>
+    <p class="Cl_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa expedita totam ratione commodi
+        officiis,
+        pariatur debitis facere neque porro quidem perspiciatis. Maiores quibusdam autem saepe animi sequi repudiandae
+        deserunt.</p>
+    <button class="btn" type="button">Save</button>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor sit amet Iusto culpa expedita totam .</li>
+        <li>Lorem ipsum dolor sit.</li>
+
+    </ul>
+    <p id="ID_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto culpa expedita totam ratione commodi officiis,
+        pariatur debitis facere neque porro quidem perspiciatis. Maiores quibusdam autem saepe animi sequi repudiandae
+        deserunt.</p>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor sit amet Iusto culpa expedita totam .</li>
+        <li>Lorem ipsum dolor sit.</li>
+
+    </ul>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis cupiditate ratione suscipit ab
+            repudiandae velit praesentium molestias consectetur, fugit aliquam hic vero consequatur eligendi possimus
+            atque! Explicabo unde expedita assumenda.</p>
+
+    </div>
+    <a href="sementictags.html">Go to Task 1 page</a>
+</body>
+
+</html>

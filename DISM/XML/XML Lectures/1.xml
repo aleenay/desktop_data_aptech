@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<class>
+	<students>
+		<student id="1">
+			<name> Ali	</name>
+			<id>	1	</id>
+		</student>
+		<student>
+	
+			<name>	Ahmmed	</name>
+			<id>	2		</id>
+		</student>
+		<student id="3">
+		<name> UZAIMA </name>
+		<id> 3</id>
+		</student>
+		<student>
+		
+		<name>najam</name>
+		<id>123</id>
+	</student>
+	
+	</students>
+

@@ -1,0 +1,20 @@
+fieldset {
+    border: 10px solid teal;
+}
+body{
+ /* background: linear-gradient(147deg,#107a0a,#791010,grey);; */
+    height: 100%;
+   }
+   html{
+    height: 100%;
+   }
+   .Cl_Icon{
+    background: white;
+    /* padding: 10px; */
+    color: grey;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+   }

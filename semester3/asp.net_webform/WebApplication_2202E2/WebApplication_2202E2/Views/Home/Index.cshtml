@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+   @* @{
+        var name = "abc";
+    }
+    @name
+    <br />
+    @ViewData["data1"]
+
+    <br />
+    @ViewData["data2"]
+    <br />
+    @{
+        foreach (var item in (string[])ViewData["stdList"])
+        {
+            @item <br />
+        }
+    }*@
+   @* <br />
+    @ViewBag.data1
+    <br />
+    @{
+        foreach (var item in ViewBag.stdlist)
+        {
+            @item <br />
+        }
+    }*@
+
+   @* @ViewData["Message"]
+    <br />
+    @ViewBag.data1
+    <br />
+    @TempData["demo1"]*@
+    <br />
+@TempData["demo1"]
+</div>

@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "servicepage";
+}
+
+<h1>servicepage</h1>
+
+<p>@TempData["data2"]</p>
+<p>@ViewBag.data3</p>
+
+@ViewData["data1"]
+
+
+
+
+
+
+@*<p>@ViewBag.std_name</p>
+
+<p>@ViewBag.std_age</p>
+
+@{
+    foreach (var item in ViewBag.stdlist)
+    {
+        @item <br />
+    }
+}*@
+
+
+@*<h1>
+@ViewData["username"]
+
+</h1>
+<h1>
+  Age:  @ViewData["age"]
+
+</h1>
+    <ul>
+@{
+    foreach (var item in (string[])ViewData["stdlist"])
+    {
+            <li>@item</li>
+        }
+}
+    </ul>
+*@

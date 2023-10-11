@@ -1,0 +1,28 @@
+using System;
+using System.Collections;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+           
+            Hashtable mylist = new Hashtable();
+            mylist.Add("name", "sana");
+            mylist.Add("enrollment", "Studen12345");
+            mylist.Add("batch", "2109c1");
+
+            IDictionaryEnumerator kuchbhi_interface = mylist.GetEnumerator();
+            while (kuchbhi_interface.MoveNext())
+            {
+                Console.WriteLine(kuchbhi_interface.Key+"\t"+kuchbhi_interface.Value);
+            }
+
+
+        }
+
+
+    }
+    }

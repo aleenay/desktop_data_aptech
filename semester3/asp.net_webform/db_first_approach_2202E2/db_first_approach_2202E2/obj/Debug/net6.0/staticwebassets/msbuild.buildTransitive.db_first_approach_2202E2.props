@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\db_first_approach_2202E2.props" />
+</Project>

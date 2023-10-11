@@ -1,0 +1,3 @@
+//session set and get
+HttpContext.Session.SetString("user", "ali");
+ViewBag.user_name = HttpContext.Session.GetString("user");

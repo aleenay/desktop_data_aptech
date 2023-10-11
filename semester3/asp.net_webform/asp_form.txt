@@ -1,0 +1,16 @@
+<form asp-action="contactus" asp-controller="user" method="post">
+    <div class="myforma">
+        <label asp-for="Name" class="">Your name:</label>
+        <input asp-for="Name" />
+    </div>
+    <div class="myforma">
+        <label asp-for="Email">Your email:</label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <p></p>
+        <button type="submit">Submit form</button>
+        <p></p>
+    </div>
+
+</form>

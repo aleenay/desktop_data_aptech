@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <style>
+        #ID_div2 {
+            margin-top: 10px;
+            border: 1px solid grey;
+            background-color: ghostwhite;
+            padding: 10px;
+        }
+
+        #panel,
+        #btnflip {
+            padding: 5px;
+            text-align: center;
+            background-color: #ebfdff;
+            border: solid 2px blueviolet;
+            cursor: pointer;
+        }
+
+        #panel {
+            padding: 50px;
+            /* display: none; */
+            background-color: teal;
+            color: white;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div id="ID_div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quod impedit nobis illum voluptatem
+        molestias quidem rerum quae blanditiis eius assumenda vero, molestiae, sit tempora iure debitis vel aut ea.
+    </div>
+    <button type="button" id="ID_btn">hide</button>
+    <button type="button" id="ID_show">show</button>
+    <button type="button" id="ID_toggle">Toggle</button>
+    <br>
+    <br>
+    <h4>User Input</h4>
+    <input type="text" id="ID_input">
+    <button type="button" class="btn">Get User Name</button>
+
+    <div id="ID_div2">
+        <h2>Batch 2211b2</h2>
+    </div>
+    <button type="button" class="btn1" id="ID_btn2">add</button>
+
+    <br>
+    <br>
+    <br>
+
+    <div id="btnflip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>
+    <br>
+    <br> -->
+    <!-- fade in fade out -->
+    <button id="ID_btn123" type="button">Click to fade in/out </button>
+    <br><br>
+
+    <div id="div1" class="bg-danger box"></div>
+    <br>
+    <div id="div2" class="bg-primary box"></div>
+    <br>
+    <div id="div3" class="bg-secondary box"></div>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#ID_btn123").click(function () {
+                
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(5000);
+                // fadeIn , fadeOut
+            });
+            $('#btnflip').click(function () {
+                $('#panel').slideUp('slow');
+            })
+
+
+            $('#ID_btn2').click(function () {
+                $('#ID_div2').prepend('<h1> demo text add </h1>');
+            })
+
+            $('#ID_btn').click(function () {
+                $('#ID_div').hide();
+            })
+
+            $('#ID_show').click(function () {
+                $('#ID_div').show();
+            })
+
+            $('#ID_toggle').click(function () {
+                $('#ID_div').toggle();
+
+            })
+            $('.btn').click(function () {
+                var x = $('#ID_input').val();
+                alert(x);
+
+            })
+
+        })
+
+    </script>
+
+</body>
+
+</html>

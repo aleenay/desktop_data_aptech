@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .box {
+            background: #98bf21;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="btn btn-secondary">Click Here</button><br>
+    <div id="box" class="box">HTML</div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+    <script>
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("div").animate({ left: '250px' });
+        //     });
+        // });
+        $(document).ready(function () {
+
+            $("button").click(function () {
+             $('#box').animate({
+                 top:'100px',
+                 left:'400px',
+                 opacity:'0.8',
+                 fontSize:'50px',
+
+                 width:'250px',
+                 height:'250px'
+               
+             })
+
+                // $('#box').animate({
+                //     left:'200px',
+                //     fontSize:'5vh'
+                // })
+                    // $('#box').animate({
+                    //     left:'300px',
+                    //     opacity: '0.5',
+                    //     fontSize:'5vh',
+                    //          height: '150px',
+                    // width: '150px'
+                    // })
+
+            });
+        });
+    </script>
+</body>
+
+</html>

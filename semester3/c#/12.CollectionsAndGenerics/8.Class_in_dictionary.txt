@@ -1,0 +1,28 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+namespace ConsoleApp1
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Dictionary<int, cOUNTRIES> dict = new Dictionary<int, cOUNTRIES>();
+            {
+                dict.Add(56, new cOUNTRIES { Population = "2.9", capital = "islamabad" });
+                dict.Add(57, new cOUNTRIES { Population = "3.9", capital = "delhi" });
+                foreach (var x in dict.Keys)
+                {
+                    Console.WriteLine(dict[x].Population+" "+dict[x].capital);
+                }
+            }
+        }
+    }
+
+    class cOUNTRIES
+    {
+        public String Population { get; set; }
+        public String capital { get; set; }
+    }
+}

@@ -1,0 +1,6 @@
+There are some important points about Abstract Base Class.
+An Abstract Base class cannot be instantiated; it means the object of that class cannot be created.
+The class having the Abstract keyword with all its methods is a pure Abstract Base Class.
+The method of the abstract class that has no implementation is known as "operation". 
+It can be defined as an abstract void method ();
+An abstract class holds the methods, but the actual implementation is made in the derived class.

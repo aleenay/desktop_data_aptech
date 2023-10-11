@@ -1,0 +1,30 @@
+using System;
+
+
+namespace Practiice
+{
+    class Program
+    {
+        public static void Main()
+        {
+        
+           int a = Convert.ToInt32(Console.ReadLine());
+            againn:
+           int b = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                Console.WriteLine(a / b);
+            }
+           
+            catch (Exception e)
+            {
+                Console.WriteLine("This code has an exception "+e.Message);
+                Console.WriteLine("enter teh number again");
+                goto againn;
+            }
+
+        }
+
+    }
+}
+

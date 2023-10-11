@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Work+Sans:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Calligraffitti', cursive;
+/* font-family: 'Work Sans', sans-serif; */
+        }
+        .OuterContainer {
+            display: flex;
+            margin: 30px;
+            background: #fff9f9;
+            box-shadow: 10px 10px 10px #fddde7;
+            border-radius: 15px;
+        }
+
+        .InnerContainer {}
+
+        .InnerContainer ul {
+            list-style: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .Card {
+            text-align: center;
+            text-align: center;
+            padding: 39px;
+        }
+
+        .Card .imge {
+            box-shadow: 6px 6px 9px #cbcbcb;
+            border-radius: 50px;
+            height: 100px;
+            width: 100px;
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .Container {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            background: #fff2f6;
+        }
+
+        .Div1 {
+            background: #cd4c2d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 36px;
+            white-space: pre;
+        }
+
+        .btn {
+            background: #cd4c2d;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .Hide {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        #ID_Home,
+        #ID_ContactUs,
+        #ID_AboutUs {
+            width: 80%;
+        }
+
+        .Form {
+            display: flex;
+            justify-content: space-evenly;
+            /* width: 100%; */
+            align-content: center;
+            flex-direction: row;
+        }
+
+        .Form input {
+            width: 100%;
+            background: #dddcdc;
+            border: 1px solid #cdc6c6;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .cardContainer {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
+        }
+        .cardContainer img{
+            height: 19vh;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .cardbody {
+            padding: 2px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+
+
+        <div class="OuterContainer">
+            <div class="Div1">
+                <div class="InnerContainer">
+                    <ul>
+                        <li onclick="btnGo('H')">Home</li>
+                        <li onclick="btnGo('AU')">About Us</li>
+                        <li onclick="btnGo('CU')">Contact Us</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="ID_Home" class="Hide">
+                <div class="Card">
+                    <img class="imge" src="img/pimg.jpg" alt="profile image" />
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eaque saepe fuga. Alias,
+                        praesentium, doloremque magnam voluptate iure at laborum hic recusandae neque consequuntur ut
+                        voluptatem, numquam libero laboriosam impedit?</p>
+                    <button type="button" class="btn">Read More</button>
+                </div>
+            </div>
+
+            <div id="ID_ContactUs" class="Hide">
+                <div class="Card">
+                    <h3>Get In Touch</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eaque saepe fuga. Alias,
+                        praesentium, doloremque magnam voluptate iure at laborum hic recusandae neque consequuntur ut
+                        voluptatem, numquam libero laboriosam impedit?</p>
+
+                    <form action="">
+                        <div class="Form">
+                            <input type="text" id="ID_name" placeholder="your Name">
+                            <input type="text" id="ID_Email" placeholder="your Email">
+
+                        </div>
+                        <div class="Form">
+                            <input type="text" id="ID_Address" placeholder="Enter Your Address">
+
+                        </div>
+                    </form>
+                    <button type="button" class="btn" onclick="btnSubmit()">Submit</button>
+                </div>
+            </div>
+
+            <div  id="ID_AboutUs" class="Hide">
+                <div class="Card">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eaque saepe fuga. Alias,
+                        praesentium, doloremque magnam voluptate iure at laborum hic recusandae neque consequuntur ut
+                        voluptatem, numquam libero laboriosam impedit?</p>
+
+
+                    <div class="cardContainer">
+                        <img src="img/img_avatar2.png" alt="Avatar" style="width:100%">
+                        <div class="cardbody">
+                            <h4><b>Frontend Developer</b></h4>
+                            <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("ID_Home").classList.add("active")
+
+        function btnGo(params) {
+            debugger
+            if (params == 'H') {
+                document.getElementById("ID_Home").classList.remove("Hide")
+
+                document.getElementById("ID_Home").classList.add("active")
+                document.getElementById("ID_ContactUs").classList.add("Hide")
+                document.getElementById("ID_ContactUs").classList.remove("active")
+                document.getElementById("ID_AboutUs").classList.add("Hide")
+                document.getElementById("ID_AboutUs").classList.remove("active")
+
+            }
+            if (params == 'CU') {
+                document.getElementById("ID_Home").classList.add("Hide")
+                document.getElementById("ID_Home").classList.remove("active")
+
+                document.getElementById("ID_ContactUs").classList.remove("Hide") //none
+                document.getElementById("ID_ContactUs").classList.add("active") //block
+                
+                document.getElementById("ID_AboutUs").classList.add("Hide")
+                document.getElementById("ID_AboutUs").classList.remove("active")
+            }
+
+            if (params == 'AU') {
+                document.getElementById("ID_Home").classList.add("Hide")
+
+                document.getElementById("ID_ContactUs").classList.add("Hide")
+                document.getElementById("ID_ContactUs").classList.remove("active")
+                document.getElementById("ID_Home").classList.remove("active")
+                document.getElementById("ID_AboutUs").classList.remove("Hide")
+                document.getElementById("ID_AboutUs").classList.add("active")
+            }
+        }
+
+        function btnSubmit(){
+
+        }
+    </script>
+</body>
+
+</html>

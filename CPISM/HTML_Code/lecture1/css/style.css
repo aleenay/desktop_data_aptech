@@ -1,0 +1,172 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* a:link {
+    color: white;
+    background-color: black;
+    border: 1px solid rebeccapurple;
+}
+
+a:visited {
+    color: white;
+    background-color: teal;
+    border: none;
+}
+
+a:hover {
+    color: black;
+    background-color: aqua;
+} */
+
+.Cl_pFirstline::first-line {
+    font-size: 30px;
+    background-color: teal;
+
+}
+
+.Cl_pFirstLetter::first-letter {
+    font-size: 50px;
+    background-color: teal;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    justify-content: end;
+}
+
+.navbar ul li {
+    /* border: 1px solid grey; */
+    padding: 20px 20px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+nav {
+    background-color: #2d3e52;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo h1{
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+}
+.logo img {
+    width: 61px;
+    padding: 11px;
+}
+.NavbarList{
+    display: flex;
+    align-items: center;
+}
+.NavbarList ul li a {
+    color: white;
+}
+.Cl_secondLetter{
+    color: yellow;
+}
+.cl_container{
+    display: flex;
+}
+.cl_container section{
+    background: rgb(219, 219, 219);
+    padding: 20px;
+}
+.cl_container aside{
+    background: teal;
+    color: white;
+    padding: 20px;
+
+}
+hr{
+    border-top: 1px solid #adacac;
+}
+.FooterRow{
+    background-color: #151414;
+    display: flex;
+}
+.FooterRow div{
+    width: 30%;
+    padding: 10px;
+}
+.FooterCard{
+    color: white;
+    background-color: #202020;
+    padding: 40px;
+    border-radius: 5px;
+    margin: 20px;
+
+
+}
+.TextCenter{
+    text-align: center;
+}
+.Fimg{
+    width: 100% !important;
+    padding: 0 !important;
+}
+.Cl_IconsDiv{
+    display: flex;
+    width: 100% !important;
+}
+.Cl_IconsDiv .facebook{
+    background-color: #3b5998;
+}
+.Cl_IconsDiv .twitter{
+    background-color: #55acee;
+}
+.Cl_IconsDiv .youtube{
+    background-color: #b72329;
+
+}
+
+.Cl_IconsDiv button{
+    border: none;
+    color: white;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.btnArrow{
+    
+    background-color: teal;
+    border: 5px solid #5fb4f5;
+    padding: 7px 17px;
+    border-radius: 100px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 26px;
+    right: 19px;
+
+}
+.btnArrow a{
+    border: none !important;
+}
+/* object {
+    width: 100%;
+} */
+
+    object{
+         height : 85px;
+         width : 100%;
+         overflow : hidden;
+     }

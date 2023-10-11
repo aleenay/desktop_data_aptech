@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Big for loop</title>
+</head>
+
+<body>
+
+    <p id="ID_bigdata"></p>
+    <p id="ID_hi"></p>
+    <input type="button" onclick="bigLoop();" value="start" />
+    <input type="button" onclick="sayHello();" value="Say Hello" /> 
+    <script>
+
+        var worker = new Worker('bigloop.js');
+
+        function bigLoop(){
+            worker.postMessage('sart');
+        }
+        worker.onmessage = function (param){
+            document.getElementById("ID_bigdata").innerHTML = param.data;
+        }
+        
+        function sayHello() {
+            document.getElementById("ID_hi").innerHTML = "hey class";
+
+        }
+        
+        // var worker = new Worker('bigloop.js');
+        // function bigLoop() {
+        //     worker.postMessage('start');
+        // }
+        // worker.onmessage = function (event){
+        //     document.getElementById("ID_bigdata").innerHTML = event.data;
+        // }
+
+
+
+
+        
+
+
+
+       
+
+        // function bigLoop() {
+        //     var j = 0;
+        //     for (var i = 0; i <= 1009898900; i += 1) {
+        //         j += i;
+
+        //     }
+        //     document.getElementById("ID_bigdata").innerHTML = j;
+        // }
+
+      
+
+
+
+
+    </script>
+</body>
+
+</html>

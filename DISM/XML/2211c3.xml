@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE employeeDetail[
+<!ELEMENT employeeDetail (employee*)>
+<!ELEMENT employee (emp_name , emp_salary , emp_email)>
+<!ELEMENT emp_name (#PCDATA)>
+<!ELEMENT emp_salary (#PCDATA)>
+<!ELEMENT emp_email (#PCDATA)>
+<!ATTLIST employee id CDATA "em1">
+<!ATTLIST employee id CDATA "em2">
+<!ENTITY salary "1000,000">
+]>
+
+
+<employeeDetail>
+
+<employee id="em1">
+    <emp_name> Ibad </emp_name>
+    <emp_salary> &salary; </emp_salary>
+    <emp_email>Ibad@gmail.com </emp_email>
+</employee>
+
+<employee id="em2">
+    <emp_name> Sami </emp_name>
+    <emp_salary> &salary; </emp_salary>
+</employee>
+
+</employeeDetail>
+

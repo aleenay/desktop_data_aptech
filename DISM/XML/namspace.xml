@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE employeedetail[
+    <!ELEMENT employeedetail (employee*)>
+    <!ELEMENT  employee (emp_name,emp_age,emp_salary)>
+    <!ELEMENT emp_name (#PCDATA)>
+    <!ELEMENT emp_age (#PCDATA)>
+    <!ELEMENT emp_salary (#PCDATA)>
+    <!ATTLIST employee id CDATA "1">
+
+]>
+
+<employeedetail xmlns:emp1="http://www.employee.com" xmlns:emp2="http://www.employee.com">
+<emp1:employee id="1">
+    <emp1:emp_name >Fuzail </emp1:emp_name>
+    <emp1:emp_age>20 </emp1:emp_age>
+    <emp1:emp_salary>500000</emp1:emp_salary>
+</emp1:employee>
+<emp2:employee>
+    <emp_name>Zahid </emp_name>
+    <emp_age>21 </emp_age>
+    <emp_salary>500000</emp_salary>
+</employee>
+</employeedetail>
+
+
+
+<!-- <!DOCTYPE booklist [
+<!ELEMENT booklist(book*)>]> -->
+
+
+<!-- 
+<booklist xmlns:b1="http://www.bookstore.com"
+xmlns:b2="http://www.bookstore.com/b2">
+<b1:book id="12">
+<b1:title>English</b1:title>
+<b1:author>john</b1:author>
+<b1:pages>120</b1:pages>
+
+</b1:book>
+<b2:book id="2">
+<b2:title>English</b2:title>
+<b2:author>john 2</b2:author>
+<b2:pages>120</b2:pages>
+
+</b2:book>
+
+
+</booklist> -->

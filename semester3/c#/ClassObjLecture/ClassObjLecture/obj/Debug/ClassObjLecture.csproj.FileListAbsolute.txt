@@ -1,0 +1,7 @@
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ClassObjLecture\ClassObjLecture\obj\Debug\ClassObjLecture.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ClassObjLecture\ClassObjLecture\obj\Debug\ClassObjLecture.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ClassObjLecture\ClassObjLecture\bin\Debug\ClassObjLecture.exe.config
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ClassObjLecture\ClassObjLecture\bin\Debug\ClassObjLecture.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ClassObjLecture\ClassObjLecture\bin\Debug\ClassObjLecture.pdb
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ClassObjLecture\ClassObjLecture\obj\Debug\ClassObjLecture.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\ClassObjLecture\ClassObjLecture\obj\Debug\ClassObjLecture.pdb

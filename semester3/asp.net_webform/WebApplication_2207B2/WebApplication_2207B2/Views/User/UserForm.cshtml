@@ -1,0 +1,35 @@
+﻿@model WebApplication_2207B2.Models.std
+@{
+    ViewData["Title"] = "UserForm";
+}
+
+<h1>UserForm</h1>
+
+
+<form asp-action="UserForm" asp-controller="user" method="post">
+    <div class="myforma">
+        <label asp-for="name" class=""></label>
+        <input asp-for="name"  />
+        <span asp-validation-for="name" style="color:red;"></span>
+    </div>
+    <div class="myforma">
+        <label asp-for="email">Your email:</label>
+        <input asp-for="email" />
+        <span asp-validation-for="email" style="color:red;"></span>
+
+    </div>
+      <div class="myforma">
+        <label asp-for="phoneno">Your email:</label>
+        <input asp-for="phoneno" />
+    </div>  <div class="myforma">
+        <label asp-for="password">Your email:</label>
+        <input asp-for="password" />
+    </div>
+    <div>
+        <p></p>
+        <button type="submit">Submit form</button>
+        <p></p>
+    </div>
+
+</form>
+@ViewData["username"] 

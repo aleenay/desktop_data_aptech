@@ -1,0 +1,7 @@
+<!DOCTYPE students [
+<!ELEMENT students (student,name,id)>
+<!ELEMENT student (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ENTITY trt "APTECH COMPUTER EDUCATION NORTH NAZIMABAD KARACHI">
+]>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <style>
+        #box {
+            border: 2px solid;
+        }
+
+        .boxbg {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-2">Jquery Append and Prepend Method</h1>
+        <div id="box" class="p-5 boxbg">
+            <h2>Dummy Box</h2>
+            <input type="text" id="ID_Input">
+        </div>
+        <div>
+            <button type="button" id="ID_Append" class="btn btn-primary mt-5">
+                Append
+            </button>
+            <button type="button" id="ID_Prepend" class="btn btn-success mt-5">
+                Prepend
+            </button>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+// alert("jsh")
+           var courses = [
+               {id: 1 , value : "c++"}
+           ]
+             
+            $('#ID_Input').autocomplete({
+                source: courses
+            })
+        });
+    </script>
+</body>
+
+</html>

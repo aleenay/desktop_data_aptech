@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/keyboardeventstyle.css">
+</head>
+<body>
+
+    <div class="Divform">
+        <form id="form">
+            <div class="heading">
+                     Keyboard Events
+               <!--pg 296  -->
+            </div>
+            <br>
+            <div>
+                <label>On key Down</label> <br>
+              
+                <input type="text" onkeydown="btnkey(this.value)" >
+                <!-- it fires when user pressing key -->
+            </div>
+            <div>
+                <label>On key Press</label> <br>
+                <input type="text" onkeypress="btnOnKeyPress(this.value)">
+            
+            </div>
+            <div>
+                <label>On key up</label> <br>
+                <input type="text" onkeyup="btnOnKeyUp(this.value)">
+            
+            </div>
+
+
+        </form>
+    </div>
+
+<script>
+
+function btnkey(x){
+    alert(x)
+}
+
+function btnOnKeyDown(params) {
+    alert( params);
+    // document.write(params)
+    
+}
+function btnOnKeyPress(params) {
+    alert(params)
+    
+    
+}
+function btnOnKeyUp(params) {
+    alert(params)
+    
+    
+}
+function btnOnkey(params) {
+    
+}
+</script>
+
+</body>
+</html>

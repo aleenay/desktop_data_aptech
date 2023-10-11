@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="input" id="maths1" />
+    <input type="text" class="input" id="urdu2" />
+    <input type="text" class="input" id="eng3" />
+    <button onclick="btnsum()"> sum</button>
+    <script>
+        class studentMarks {
+
+            sum(eng, urdu, maths) {
+                var sum = parseInt(eng) + parseInt(urdu) + parseInt(maths);
+                this.sum = sum;
+            }
+
+            print() {
+                document.write(this.sum)
+            }
+
+
+        }
+        function btnsum() {
+            var maths1 = document.getElementById("maths1").value; //10
+            var urdu2 = document.getElementById("urdu2").value;//20
+            var eng3 = document.getElementById("eng3").value;
+            var obj = new studentMarks();
+            obj.sum(maths1, urdu2, eng3);
+            obj.print();
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

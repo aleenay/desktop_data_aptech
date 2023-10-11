@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="" onclick="btnFetchData()">Fetch Data</button>
+    <table border="2" id="ID_table"></table>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <script>
+        function btnFetchData() {
+            var ID_table = document.getElementById("ID_table");
+            debugger
+            $.ajax({
+                url: 'products.json',
+                type: 'GET',
+                success: function (data) {
+                  
+                    for (var index = 0; index < data.products.length; index++) {
+                        var element = data.products[index];
+                        ID_table.innerHTML += '<tr> <td> ' + element.id +' </td> <td> '+  element.title +' </td><td> ' + element.description+' </td> </tr>';
+                        console.log(element);
+                    }
+                }
+            })
+
+
+        }
+    </script>
+
+
+
+    <!-- // var obj = {
+    //     "firstname" :"Muhammad",
+    //     "lastname" : "mohtashim",
+    //     "age" : 18,
+    //     "courses" : ['HTML','CSS','JS'],
+    //     "address" :{
+    //         "area" :'North nazimabad',
+    //         "block" :"A"
+    //     },
+    //     "married" : false
+    // }
+
+    // for (var i in obj) {
+    //     document.write( i  + ': '+ obj[i]  + '<br>')
+        
+    // }
+
+
+
+    // document.write("Full name: "  + obj.firstname + ' ' + obj.lastname + '<br>' + " age: " + obj.age + '<br>' +"courses : " + obj.courses); -->
+</body>
+
+</html>

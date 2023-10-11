@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Lecture 1 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .Cl_Heading {
+            background-color: steelblue;
+        }
+
+        .btn {
+            background-color: teal;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+
+        }
+
+        .FlexCOntainer {
+            border: 1px solid grey;
+            background-color: wheat;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .FlexCOntainer div {
+            background-color: teal;
+            border: 2px solid black;
+            text-align: center;
+            margin: 10px;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: grey;
+        }
+
+        .bgImg {
+            background: url('img/dummy_image.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+       
+
+        .NavBar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .NavBar ul li {
+            padding: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .NavBar ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn1 {
+            background: teal;
+            color: white;
+            font-size: 30px;
+            border: none;
+            padding: 10px;
+            letter-spacing: 1px;
+            transition: .5s;
+        }
+
+        .btn1:hover {
+            background-color: tomato;
+            transform: scale(2.5);
+        }
+
+        .cl_h2:hover::before {
+            content: '😀';
+        }
+
+        .cl_h2:hover::after {
+            content: 'Ahmed';
+        }
+
+        .cl_paragraph::first-line {
+            background-color: teal;
+            font-size: 50px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        .DivFlexNav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .img {
+            padding: 10px;
+            width: 50px;
+        }
+
+        .NavbarList {
+            display: flex;
+            align-items: center;
+        }
+
+        .Cl_Logo {
+            display: flex;
+        }
+        .NavBar {
+            background-color: navy;
+            color: white;
+        /* position: sticky;
+        top: 0px;
+        width: 100%; */
+        /* bottom: 20%;
+        right: 30%; */
+        }
+        .btnIcon{
+            width: 50px;
+            height: 50px;
+            background: teal;
+            font-size: 30px;
+            border-radius: 100px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+   
+    <button type="button" class="btnIcon"><i class="fa fa-ellipsis-v"></i></button>
+    <nav class="NavBar">
+        <div class="DivFlexNav">
+            <div class="Cl_Logo">
+                <img class="img" src="img/icons8-apple-logo-94.png" alt="logo" />
+                <h3>Apple</h3>
+            </div>
+            <div class="NavbarList">
+
+                <ul>
+                    <li>
+                        <a href="lecture2.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>Contact Us</li>
+                    <li>Aout Us</li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <h2>Lecture 7</h2>
+    <h2>
+        Datalist
+    </h2>
+    <form action="">
+        <label>
+            Select city
+        </label>
+        <select>
+            <option value="khi">Karachi</option>
+            <option>Hyderabad</option>
+            <option>lahore</option>
+
+        </select>
+        <br>
+        <br>
+        <input type="text" name="city" list="IDcity" />
+        <datalist id="IDcity">
+            <option value="karachi">karachi</option>
+            <option value="hyerabad">hyerabad</option>
+            <option value="lahore">lahore</option>
+            <option value="islamabad">islamabad</option>
+        </datalist>
+    </form>
+
+
+    <h2>
+        Audio
+    </h2>
+    <audio src="audio/abc.mp3" controls autoplay loop>
+        html5 audio not supported
+
+    </audio>
+
+    <audio controls autoplay loop>
+        <source src="">
+        <source src="">
+        <source src="">
+    </audio>
+
+    <h2>
+        Video
+    </h2>
+    <video controls src="">
+        browser does not supported
+    </video>
+    <video controls loop>
+        <source src="kjkl">
+    </video>
+
+    <div>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+    </div>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14472.575952339412!2d67.01285773955074!3d24.9271643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1672727835889!5m2!1sen!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57890.260161829334!2d66.98659293083398!3d24.927257249291998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f9b60573d51%3A0xc6942f61e4beeabb!2sThe%20City%20School%20North%20Nazimabad%20Junior%20B!5e0!3m2!1sen!2s!4v1672727880760!5m2!1sen!2s"
+         style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+
+    <h2 class="cl_h2">
+        Lecture 6
+    </h2>
+    <p class="cl_paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus blanditiis quae animi reiciendis? Dolore
+        quas necessitatibus, eveniet, ipsum consequuntur quidem, perferendis molestiae magnam ex odio illum sunt
+        asperiores totam! Sapiente!
+    </p>
+    &nbsp;&nbsp;&nbsp; &nbsp; <button type="button" class="btn1">Submit</button>
+
+    <br>
+    <br>
+
+
+
+
+
+    <H2>LECTURE 5</H2>
+
+
+
+
+
+    <div class="FlexCOntainer bgImg">
+        <div>1 😀</div>
+        <div>2 😂</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>6</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+
+    </div>
+
+
+
+
+    <br>
+    <br>
+
+
+
+    <h2 class="Cl_Heading">
+        Lecture 4
+    </h2>
+    <div>
+        <a class="btn" href="https://www.google.com/" target="_blank">
+            Go to google
+        </a> <br> <br><br><br>
+        <a href="lecture4.html" target="_blank">
+            go to lecture 4
+        </a> <br>
+        <a href="mailto:aleenalateef@aptechnorth.edu.pk">
+            Mail
+        </a> <br>
+        <a href="tel:0321566555">
+            call on +92321566555
+        </a>
+        <br>
+        <a href="DMW_PPT1.pdf" download="">
+            download file
+        </a> <br>
+        <br>
+
+        <a href="img/dummy_image.jpg" target="_blank">
+            <img src="img/dummy_image.jpg" alt="image" />
+        </a>
+    </div>
+
+
+
+
+
+
+    <h2 style="color: aqua;">Lecture 3</h2>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, non, rerum nesciunt molestias natus laborum
+            illum harum, corporis deleniti sint quisquam cum iure suscipit doloribus quia sed vero ad? Eos.
+            illum harum, corporis deleniti sint quisquam cum iure suscipit doloribus quia sed vero ad? Eos.
+        </p>
+        <img src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg?w=2000" width="100"
+            alt="img">
+        <br> <img src="img/dummy_image.jpg" alt="dummy image" style="width:200px;height:200px;border-radius:100px;" />
+    </div>
+
+
+
+
+    <div class="bgImg">
+
+
+        <h2>Lecture 3</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, porro optio, iusto qui officia molestiae vel
+            dignissimos voluptate eveniet accusamus numquam voluptatem hic alias ratione facilis dolorem sint distinctio
+            ipsam!</p>
+        <h2> Order List</h2>
+        <ol type="i">
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Apple</li>
+            <li>Grapes 3</li>
+
+
+        </ol>
+        <h2> UnOrder List</h2>
+
+        <ul type="disc">
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Apple</li>
+            <li>Grapes 3</li>
+        </ul>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat laborum, libero dolores nostrum nulla
+        blanditiis, dolorum accusamus illum, laudantium doloremque dolorem eos. Consequuntur nulla corporis beatae.
+        Officiis voluptates debitis eligendi.
+    </p>
+    <form action="submitsuccessful.html">
+        <fieldset>
+
+            <legend>REGISTRATION FORM</legend>
+            <label>First Name:</label>
+            <input type="text" name="fname" required /> <br> <br>
+            <label>Last Name:</label>
+            <input type="text" name="lname" required /> <br> <br>
+            <label>Email:</label>
+            <input type="email" name="email" required /> <br> <br>
+            <label>Password:</label>
+            <input type="password" name="password" required /> <br> <br>
+            <label>DOB:</label>
+            <input type="date" name="date" /> <br> <br>
+            <label>Phone no:</label>
+            <input type="number" name="date" /> <br> <br>
+            <label>City</label>
+            <select name="" id="">
+                <option value="khi">karachi</option>
+                <option value="hyd">hyderabad</option>
+                <option value="isl">Islamabad</option>
+
+            </select> <br>
+            <label>Address</label>
+
+            <textarea name="" cols="50" rows="10"></textarea>
+            <br> <br>
+            <label>Upload Image</label>
+            <input type="file" name="file" /> <br> <br>
+            <label>Choose Color</label>
+            <input type="color" name="file" /> <br> <br>
+            <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+
+
+    <!--   <br>
+<br>
+<br>
+    <center>
+
+
+        <h1>
+            Lecture 2
+        </h1>
+        <hr>
+        <p>Lorem ipsum dolor <b> sit amet consectetur adipisicing elit</b>. Ratione molestiae eaque amet soluta
+            accusantium ab
+            nam?
+            Impedit,<i> <u>ullam ipsa beatae adipisci inventore </u></i>corrupti aspernatur iure optio obcaecati
+            delectus placeat
+            soluta?
+        </p>
+        <hr>
+
+        <b>lorem</b> <br>
+        <u>lorem</u> <br>
+        <strong>sit amet consectetur adipisicin</strong> <br>
+        <em>sit amet consectetur adipisicin</em> <br>
+        <del>Rs 300</del>
+
+        <ins>Rs 400</ins>
+        <br>
+        <strike>500</strike>
+        <br>
+        <p>H <sub>2</sub>O</p>
+        <p>2 <sup>2</sup> </p>
+    </center>
+    <p>
+        Lorem ipsum Lorem ipsum
+
+        <mark>dolor sit amet consectetur adipisicing.</mark>
+
+
+    </p>
+
+    <hgroup>
+        <h2>Demo</h2>
+        <h2>Demo</h2>
+        <h2>Demo</h2>
+
+    </hgroup>
+    <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate provident fugiat ratione atque blanditiis
+        fuga? Suscipit recusandae, natus ratione quos dolore nam praesentium. Veritatis iusto nobis veniam eaque dolores
+        deleniti!
+    </blockquote>
+
+    <table border="2">
+        <tr>
+            <td>1</td>
+            <td>Sami</td>
+            <td>HTML</td>
+            <td>APtech</td>
+            <td>Batch 2211C3</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ibad</td>
+            <td>HTML/CSS</td>
+            <td>APtech</td>
+            <td>Batch 2211C3</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Shuja</td>
+            <td>HTML/CSS/Js</td>
+            <td>APtech</td>
+            <td>Batch 2211C3</td>
+        </tr>
+    </table> -->
+
+
+    <!-- <div>Note: <marquee> Lorem ipsum dolor </marquee></div> -->
+
+
+
+
+
+
+
+
+
+    <!-- <center>
+        <h1>This is Heading one </h1><small>This is small tag</small>
+        <p>Lorem ipsum <b> dolor sit</b> amet <u> consectetur adipisicing elit.</u> Vel, est. Error ipsa sed odit nihil
+            quia
+            rerum tempora
+            repellendus tenetur provident. Fugit, laudantium iure. Commodi magnam tempore inventore adipisci vel.</p>
+        <p>Lorem ipsum <b> dolor sit</b> amet <u> consectetur adipisicing elit.</u> Vel, est. Error ipsa sed odit nihil
+            quia
+            rerum tempora
+            repellendus tenetur provident. Fugit, laudantium iure. Commodi magnam tempore inventore adipisci vel.</p>
+        <h2>This is Heading two </h2>
+        <h3>This is Heading three </h3>
+        <h4>This is Heading four </h4>
+        <h5>This is Heading five </h5>
+        <h6>This is Heading six </h6>
+        <p>Lorem ipsum <b> dolor sit</b> amet <u> consectetur adipisicing elit.</u> Vel, est. Error ipsa sed odit nihil
+            quia
+            rerum tempora
+            repellendus tenetur provident. Fugit, laudantium iure. Commodi magnam tempore inventore adipisci vel.</p>
+
+        <p>H<sub>2</sub>O </p>
+        <p>2<sup>2</sup></p>
+        <b>demo</b>
+        <u>DEMO</u>
+        <em>Lecture 1</em>
+        <i>Lecture 2</i>
+        <strong>demo</strong><br>
+        <ins>INS tag</ins>
+        <strike>strike tag</strike>
+
+        <p><u>LECTURE 1 END</u></p>
+    </center>
+    <del>Deleted Text</del>
+    <blockquote>
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sequi corrupti harum, inventore tempora enim
+        ducimus unde veritatis quasi perferendis necessitatibus itaque nulla quidem vel adipisci eum beatae, libero
+        voluptatibus."
+        -lecture 2
+    </blockquote>
+    <hgroup>
+        <h1>Demo Heading One</h1>
+        <p>text</p>
+        <h2>Demo Heading Two</h2>
+    </hgroup> -->
+
+
+
+</body>
+
+</html>

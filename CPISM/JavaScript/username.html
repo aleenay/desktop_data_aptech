@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .btn{
+        transition: .8s;
+    }
+    .btn:hover{
+        transform: scale(1.5);
+    }
+    #ID_Validate{
+        display: none;
+        color: red;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    
+    <label>Enter your name</label><br>
+<br>
+    <input type="text" id="username">
+    <p id="ID_Validate">*Enter Username</p>
+</div>
+<div>
+    <br>
+    <button type="button" class="btn" onclick="Validate()">Submit</button>
+
+</div>
+    <script>
+        // function go() {
+        //     var user;  
+        //    user = document.getElementById("username").value;
+        //     alert(user)
+        //     document.getElementById("username").value = ""
+        // }
+
+        function Validate() {
+            var user =  document.getElementById("username").value;
+            if(user == ''){
+                // alert("Invalid")
+                document.getElementById('ID_Validate').style.display = 'block'
+            }
+            
+            else if(user != ''){
+                // alert("valid")
+                document.getElementById('ID_Validate').style.display = 'none'
+
+            }
+            // else if(user.length == 2){
+            //     // debugger
+            //     alert("length should be greater than 2")
+            // }
+        }
+
+    </script>
+</body>
+
+
+</html>

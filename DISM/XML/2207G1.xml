@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<booklist xmlns:b1="http://www.bookstore/b1" xmlns:b2="http://www.bookstore/b2">
+
+<b1:book>
+<b1:title> English </b1:title>
+<b1:author> John </b1:author>
+<b1:price>200</b1:price>
+<b1:pages>120</b1:pages>
+</b1:book>
+<b2:book>
+<b2:title> Urdu </b2:title>
+<b2:author> John </b2:author>
+<b2:price>200</b2:price>
+<b2:pages>120</b2:pages>
+</b2:book>
+
+
+
+</booklist>
+
+
+
+

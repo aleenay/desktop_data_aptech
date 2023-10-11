@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1> User Index</h1>
+@DateTime.Now.ToShortDateString()
+@{
+    var name = "ahmed";
+    //var age = 20;
+    //if(name == "ahmed")
+    //{
+    //    <h3>its true @name </h3>
+    //}
+    //else
+    //{
+    //    <h3>Its false</h3>
+    //}
+    string[] student = { "Ali", "ahmed", "muhammad" };
+    for (int i = 0; i < student.Length; i++)
+    {
+        <h2>@student[i]</h2>        
+    }
+
+}
+<h1>@name</h1>
+

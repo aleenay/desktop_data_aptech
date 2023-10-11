@@ -1,0 +1,14 @@
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\bin\Debug\netcoreapp3.1\jaggeduser.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\bin\Debug\netcoreapp3.1\jaggeduser.deps.json
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\bin\Debug\netcoreapp3.1\jaggeduser.runtimeconfig.json
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\bin\Debug\netcoreapp3.1\jaggeduser.runtimeconfig.dev.json
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\bin\Debug\netcoreapp3.1\jaggeduser.dll
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\bin\Debug\netcoreapp3.1\jaggeduser.pdb
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\obj\Debug\netcoreapp3.1\jaggeduser.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\obj\Debug\netcoreapp3.1\jaggeduser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\obj\Debug\netcoreapp3.1\jaggeduser.AssemblyInfoInputs.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\obj\Debug\netcoreapp3.1\jaggeduser.AssemblyInfo.cs
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\obj\Debug\netcoreapp3.1\jaggeduser.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\obj\Debug\netcoreapp3.1\jaggeduser.dll
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\obj\Debug\netcoreapp3.1\jaggeduser.pdb
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\jaggeduser\jaggeduser\obj\Debug\netcoreapp3.1\jaggeduser.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\bin\Debug\NamespaceLecture.exe.config
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\bin\Debug\NamespaceLecture.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\bin\Debug\NamespaceLecture.pdb
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\obj\Debug\NamespaceLecture.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\obj\Debug\NamespaceLecture.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\obj\Debug\NamespaceLecture.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\obj\Debug\NamespaceLecture.pdb
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\bin\Debug\NamespaceLecture.exe.config
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\bin\Debug\NamespaceLecture.exe
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\bin\Debug\NamespaceLecture.pdb
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\obj\Debug\NamespaceLecture.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\obj\Debug\NamespaceLecture.csproj.SuggestedBindingRedirects.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\obj\Debug\NamespaceLecture.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\obj\Debug\NamespaceLecture.exe
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\NamespaceLecture\NamespaceLecture\obj\Debug\NamespaceLecture.pdb

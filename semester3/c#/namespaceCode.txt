@@ -1,0 +1,26 @@
+ 
+// inside main class and in main method 
+
+static void Main(string[] args)
+        {
+ 	//1st approach
+         first_space.A.func();
+	
+	//second approach
+        A.func();
+            
+	Console.WriteLine("main method runn");
+        Console.ReadLine();
+        }
+
+
+namespace first_space
+{
+    class A
+    {
+         public static void func()
+        {
+            Console.WriteLine("Inside first_space");
+        }
+    }
+}

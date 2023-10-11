@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+    <employee>
+    <emp_id> 1</emp_id>
+    <emp_name> Rabia</emp_name>
+    </employee>
+
+    <employee>
+    <emp_id> 2</emp_id>
+    <emp_name> Ibrahim</emp_name>
+    </employee>

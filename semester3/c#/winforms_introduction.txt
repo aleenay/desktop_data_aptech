@@ -1,0 +1,10 @@
+Windows Forms is a Graphical User Interface(GUI) 
+class library which is bundled in .Net Framework. 
+Its main purpose is to provide an easier interface to develop 
+the applications for desktop, tablet, PCs. It is also termed as 
+the WinForms. The applications which are developed by using Windows 
+Forms or WinForms are known as the Windows Forms Applications that
+ runs on the desktop computer. WinForms can be used only to develop 
+the Windows Forms Applications not web applications. 
+WinForms applications can contain the different type of controls like 
+labels, list boxes, tooltip etc.

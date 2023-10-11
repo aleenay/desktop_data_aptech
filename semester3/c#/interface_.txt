@@ -1,0 +1,26 @@
+An interface is a completely "abstract class", which can only contain abstract methods and properties (with empty bodies):
+// interface
+// Interface
+interface IAnimal 
+{
+  void animalSound(); // interface method (does not have a body)
+}
+
+// Pig "implements" the IAnimal interface
+class cat: IAnimal 
+{
+  public void animalSound() 
+  {
+    
+    Console.WriteLine("The cat sound");
+  }
+}
+
+class Program 
+{
+  static void Main(string[] args) 
+  {
+    cat ObjCat = new cat();  // Create a Pig object
+    cat.animalSound();
+  }
+}

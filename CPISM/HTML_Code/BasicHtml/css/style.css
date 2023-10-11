@@ -1,0 +1,66 @@
+.Cl_p{
+   
+}
+.Card{
+    border: 1px solid #237c27;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    transition: .8s;
+}
+.Card:hover{
+    background: green;
+    color: white;
+    transform: scale(1.1);
+}
+.Card h1{
+
+}
+.Card img{
+    width: 10vh;
+}
+table{
+    width: 100%;
+    padding: 50px;
+}
+td,th{
+    padding: 20px;
+}
+.btn{
+    /* background: green; */
+    color: green;
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    transition: .8s;
+}
+.btn:hover{
+    transform: scale(1.5);
+    background: green;
+    color: white;
+}
+/* .Cl_p::after{
+    content: 'world';
+    background: green;
+    color: white;
+}
+.Cl_p::before{
+    content: 'hello';
+    background: green;
+    color: white;
+} */
+.Div_WidthInc{
+    transition:  3s; 
+    -moz-animation:  3s ; /* Firefox */
+    -webkit-animation:   3s; /* Safari and chrome */
+     -o-transition:   3s; /* Opera */
+     background: red;
+     width: 100px;
+     color: white;
+     padding: 20px;
+     cursor: pointer;
+}
+.Div_WidthInc:hover{
+    width: 200px;
+}

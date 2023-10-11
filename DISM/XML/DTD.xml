@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Document type defination -->
+<!DOCTYPE employeeDetail[
+    <!ELEMENT employeeDetail (employee*)>
+    <!ELEMENT employee ( emp_name , emp_designation , emp_salary )>
+    <!ELEMENT emp_name (#PCDATA)>
+    <!ELEMENT emp_designation (#PCDATA)>
+    <!ELEMENT emp_salary (#PCDATA)>
+    <!ATTLIST employee id CDATA "1">
+    <!ENTITY abc "80,000"> 
+]>
+
+    
+<employeeDetail>
+    <employee id="1">
+    <emp_name>Ali</emp_name>
+    <emp_designation>Manager</emp_designation>
+    <emp_salary>&abc;</emp_salary>
+    </employee>
+     <employee id="2">
+    <emp_name>Ali</emp_name>
+    <emp_designation>Manager</emp_designation>
+    <emp_salary>500</emp_salary>
+    </employee>
+     <employee id="3">
+    <emp_name>Ali</emp_name>
+    <emp_designation>Manager</emp_designation>
+    <emp_salary>&abc;</emp_salary>
+    </employee>
+
+  </employeeDetail>  
+

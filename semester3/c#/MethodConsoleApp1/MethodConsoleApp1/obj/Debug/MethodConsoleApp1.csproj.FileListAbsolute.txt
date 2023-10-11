@@ -1,0 +1,7 @@
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MethodConsoleApp1\MethodConsoleApp1\bin\Debug\MethodConsoleApp1.exe.config
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MethodConsoleApp1\MethodConsoleApp1\bin\Debug\MethodConsoleApp1.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MethodConsoleApp1\MethodConsoleApp1\bin\Debug\MethodConsoleApp1.pdb
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MethodConsoleApp1\MethodConsoleApp1\obj\Debug\MethodConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MethodConsoleApp1\MethodConsoleApp1\obj\Debug\MethodConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MethodConsoleApp1\MethodConsoleApp1\obj\Debug\MethodConsoleApp1.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MethodConsoleApp1\MethodConsoleApp1\obj\Debug\MethodConsoleApp1.pdb

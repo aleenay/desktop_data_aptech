@@ -1,0 +1,22 @@
+-TS is enhanced version of javascript
+-we could say superset of javascript
+-Typescript is building on javascript
+-TS is not a new language . this is just add some new features
+
+--but TS can not run on the browser directly 
+--so what is the benefit of it ? if we can not run it on brower
+
+===Typescript benefit 
+-Check error on compile time.
+-Add type like string number boot etc
+-we can add object oriented way withh TS 
+-code is well managed
+
+? ===== Why typescript ========== ?
+ function add(num1 , num2 )
+{
+return num1 + num2
+}
+console.log("2","3");
+
+Incfluenced by JavaScript

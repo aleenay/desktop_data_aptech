@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <style>
+    #panel,
+    #btnflip {
+      padding: 5px;
+      text-align: center;
+      background-color: #ebfdff;
+      border: solid 2px blueviolet;
+      cursor: pointer;
+    }
+
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="btnflip">Click to slide down panel</div>
+  <div id="panel">Hello world!</div>
+<p></p>
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#btnflip').click(function(){
+        $('#panel').slideDown(2000);
+      })
+    });
+  </script>
+</body>
+
+</html>

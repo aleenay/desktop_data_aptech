@@ -1,0 +1,37 @@
+using System;
+using System.Collections;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            // ArrayList mylist = new ArrayList();
+            // mylist.Add("urooj");
+            //  mylist.Add("hasan");
+            //  mylist.Add("Uzair");
+
+            Hashtable mylist = new Hashtable();
+            mylist.Add(100, "sana");
+            mylist.Add(200, "Studen12345");
+            mylist.Add(300, "2109c1");
+            ICollection intt = mylist.Keys;
+            if (mylist.ContainsKey(300))
+            {
+                mylist[300] = "hamza";
+            }
+
+            foreach(int i in intt)
+            {
+                Console.WriteLine(mylist[i]);
+            }
+
+
+
+        }
+
+
+    }
+    }

@@ -1,0 +1,65 @@
+.Divform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Divform form{
+    background: #00000078;
+    color: white;
+    padding: 26px;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 7px 5px 7px #041556;
+
+}
+body,html{
+    height: 100%;
+    margin: 0;
+}
+body{
+    /* background: url(../img/bgimg.jpg); */
+    background: linear-gradient(179deg,#0a1f97,#0425d9,#089bdd,#00e2ff);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+input {
+    margin: 12px 0px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 7px 5px 7px #041556;
+    border: none;
+}
+.heading{
+    text-align: center;
+    text-decoration: underline;
+    padding: 14px;
+}
+/* Mouse evnt style */
+.FlexContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ClBox{
+width: 150px;
+height: 150px;
+background: aqua;
+margin: 20px;
+padding: 20px;
+font-size: 2vh;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 10px 10px 10px black;
+cursor: pointer;
+transition: .8s;
+}
+.ClBox:hover{
+    transform: scale(1.1);
+}

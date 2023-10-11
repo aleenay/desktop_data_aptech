@@ -1,0 +1,8 @@
+DTD = Document Type Defintion
+-> DTD specifies the format of the XML document.
+-> DTD can be inside an XML file or outside the XML file.
+-> DTD is a XML technique used to define the structure of a XML document.
+-> It contains * Element Declarations
+	       * Attribute Declarations
+	       * Entity Declaration
+

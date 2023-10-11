@@ -1,0 +1,15 @@
+Write a C# Sharp program Create a class of Marksheet to read roll no, name and marks 
+of atleast five subjects and calculate the total,
+ percentage and Remarks (Fail or Pass).
+
+Note : 
+This Task is done with class and object
+
+Methods 
+1. GetData (Roll no,Name)
+2. PrintData -> Roll no and name 
+3. Get All Subject Marks from User and print in one method
+4. Calculate Total Marks 
+5. Calculate Percentage 
+6. Grade 
+7. And last Remarks ( PASS OR FAIL)

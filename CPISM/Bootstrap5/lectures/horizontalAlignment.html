@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+    
+    #ID_RM{
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container-fluid ">
+        <!-- <div class="row Cl_Border p-2 justify-content-center">
+        <div class="col-lg-3 ">
+            <div class="bg-primary text-center text-white">
+                1
+            </div>
+        </div>
+        <div class="col-lg-3 ">
+            <div class="bg-secondary text-center text-white">
+                2
+            </div>
+        </div>
+        <div class="col-lg-3 ">
+            <div class="bg-primary text-center text-white">
+                3
+            </div>
+        </div>
+       
+    </div> -->
+        <div class="row Cl_Border p-2 justify-content-end">
+            <div class="col-lg-3 ">
+                <div class="card">
+                    <div class="card-header">
+                        Card header
+                    </div>
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ipsum illo distinctio,
+                        harum quis corporis tempora qui sed tempore repudiandae officia? Excepturi harum placeat
+                        laboriosam, rerum dicta voluptatibus itaque dolore?
+                        <p id="ID_RM" class="text-primary">This is Read MOre text</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" onclick="btnReadMore()" class="btn btn-success">Read More</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 ">
+                <div class="card">
+                    <img src="img/html_task3.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 ">
+                <div class="card">
+                    <img src="img/html_task3.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    function btnReadMore(){
+       var ID_RM = document.getElementById("ID_RM");
+       ID_RM.style.display = 'block'
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+XML SCHEMA DEFINITION (XSD)
+
+XSD DATA TYPES:
+->Two general data types:
+	* Simple Data
+	  - Numbers, Strings, Dates, Times, etc
+	* Complex Data
+	  - Mixed elements, sequences, etc
+	  - Built upon simple data types.
+
+XML SCHEMA:
+	It is used to describe and validate the structure and the content of XML data. XML schema defines the elements, attributes
+and data types. Schema element supports namespaces. It is similar to a database schema that describes the data in a database. 

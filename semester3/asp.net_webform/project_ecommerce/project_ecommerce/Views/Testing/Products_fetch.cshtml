@@ -1,0 +1,26 @@
+﻿@model IEnumerable<project_ecommerce.Models.TblProduct>
+
+@{
+    ViewData["Title"] = "Products_fetch";
+    Layout = "~/Views/Shared/masterpage2.cshtml";
+}
+
+<h1>Products_fetch</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+
+
+@foreach (var item in Model) {
+       <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="@Url.Content(item.PImg)" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title"> @Html.DisplayFor(modelItem => item.PName)</h5>
+        <p> @Html.DisplayFor(modelItem => item.PPrice)</p>
+        <p class="card-text"> @Html.DisplayFor(modelItem => item.PDes)</p>
+        <a asp-action="Edit" asp-route-id="@item.PId">Add to cart</a>
+    </div>
+</div>
+}

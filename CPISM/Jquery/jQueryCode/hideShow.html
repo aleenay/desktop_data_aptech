@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+
+    <button type="button" class="btn btn-primary" id="ID_hide">
+        hide
+    </button>
+    <button type="button" class="btn btn-success" id="ID_show">
+        Show
+    </button>
+    <button type="button" class="btn btn-outline-secondary" id="ID_toggle">
+        Toggle
+    </button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum enim repellendus officia ipsum quos
+        provident laboriosam?</p>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#ID_hide").click(function(){
+                $("p").hide()
+            })
+          
+            
+            $("#ID_show").click(function () {
+                $("p").show();
+            });
+
+            $("#ID_toggle").click(function(){
+                $("p").toggle()
+            })
+
+        });
+    </script>
+
+</body>
+
+</html>

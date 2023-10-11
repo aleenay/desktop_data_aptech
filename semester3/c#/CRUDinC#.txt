@@ -1,0 +1,18 @@
+Crud in winforms
+
+Create Interface 
+Add connection string in app.config
+connectionstring add in configuration tag
+<connectionString>
+<add name="dbcs" connectionString="" providerName=""/>
+</connectionString>
+===connectionstring
+Goto view => Server Explorer -> right click on data connections -> add connection
+<add name="dbcs" providerName="System.Data.SqlClient" connectionString="" />
+add reference 
+right click on references add references -> check system.configuration 
+========using library 
+using System.Configuration;
+using System.Data.SqlClient;
+--add this line in form1 class to connect connection string
+ string cs = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;

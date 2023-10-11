@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* relative to its normal position and will leave a gap at its normal position */
+        /* absolute : relative to position of its parent container */
+        /* css position static( default) , relative , fixed , sticky, absolute */
+
+        .card {
+          
+            font-size: 20px;
+            font-weight: bold;
+           box-shadow: 10px 10px 20px rgb(211, 211, 211);
+            display: flex;
+            margin-left: 50px;
+            position: relative;
+        }
+        .Cardcount{
+            background-color: white;
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            position: absolute;
+            top: 40px;
+    left: -28px;
+        }
+        .card_leftContent{
+            background: teal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            padding-left: 40px;
+        }
+        .card_RightContent{
+            padding: 10px;
+        }
+        h4{
+            position: relative
+        }
+        h4::after{
+            content: '';
+            border-top: 3px solid orange;
+            width: 43px;
+            position: absolute;
+            top: 20px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <br>
+    <br>
+    <div class="card">
+        <div class="Cardcount">1</div>
+        <div class="card_leftContent">20-30-23</div>
+        <div class="card_RightContent">
+            <h4>Meeting</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, non.</p>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

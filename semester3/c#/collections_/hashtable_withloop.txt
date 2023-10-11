@@ -1,0 +1,12 @@
+ //Non generic
+            Hashtable hashtable = new Hashtable();
+            hashtable.Add( "Phone" , 10);
+            hashtable.Add("Pens" ,20 );
+            hashtable.Add( "Books",3);
+
+            //Console.WriteLine(hashtable["Books"]);
+            foreach (object key in hashtable.Keys)
+            {
+                Console.WriteLine("Keys: " + key + " value: " + hashtable[key]);
+
+            }

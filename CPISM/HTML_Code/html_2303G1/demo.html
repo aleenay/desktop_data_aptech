@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css" href="css/bootstrap.min.c7777ss">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+        
+    
+    header {
+        width: 100%;
+        height: 100vh;
+        background: url(https://img5.goodfon.com/wallpaper/nbig/8/5a/kofemolka-kofeinye-ziorna-sovok-kruzhka-kofe-knigi-svechi-la.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-color: rgba(211, 211, 211, 0.753);
+    }
+
+    nav {
+        width: 100%;
+        height: 70px;
+        padding: 0px 70px;
+        color: black;
+        background: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 0px 5px grey;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+
+    .logo span {
+        color: rgb(255, 255, 255);
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: rgb(248, 244, 244);
+        padding: 10px 40px;
+        font-weight: bold;
+    }
+
+    .menu a:last-child {
+        background: rgba(97, 75, 4, 0.733);
+        color: rgb(252, 250, 250);
+        border-radius: 8px;
+    }
+
+    .h-text {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        padding: 15px;
+    }
+
+    .h-text p {
+        color: rgb(255, 255, 255);
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+
+    .h-text h1 {
+        font-size: 4em;
+        line-height: 1.5em;
+        color: white;
+    }
+
+    .h-text h4 {
+        font-size: 4em;
+        margin-bottom: 0.5em;
+        color: white;
+    }
+
+    #order {
+        text-decoration: none;
+        color: rgb(255, 248, 248);
+        background-color: rgb(255, 255, 255);
+        padding: 10px 30px;
+        line-height: 1.5em;
+
+        border-radius: 8px;
+        margin: 10px;
+    }
+    #About {
+        min-width: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f1f1;
+    }
+
+    .about-section {
+        background: url(https://th.bing.com/th/id/R.4628fbd856a4e779084fc1015373d2d7?rik=2OlxYS5SPEoSqQ&riu=http%3a%2f%2fblog.hdwallsource.com%2fwp-content%2fuploads%2f2014%2f11%2fcoffee-cup-wallpaper-38731-39617-hd-wallpapers.jpg&ehk=z5evNWemrcOYu5rxhTis9pZr7IPJ1e3ANpSaFrEHTog%3d&risl=&pid=ImgRaw&r=0) no-repeat left;
+        background-size: 100%;
+        background-color: #1f1704;
+        overflow: hidden;
+        padding: 50px 0;
+    }
+
+    .inner-container {
+        width: 55%;
+        float: right;
+        background-color: rgba(32, 23, 2, 0.692);
+        color: rgb(255, 254, 254);
+        padding: 150px;
+    }
+
+    .inner-container h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .text {
+        font-size: 13px;
+        color: #fff9f9;
+        line-height: 30px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 13px;
+    }
+
+/* ................. */
+
+/* '''''''''''''''''' */
+
+
+
+    .coffee_section {
+        width: 100%;
+        float: left;
+        background-color: rgb(15, 15, 3);
+        padding: 0px;
+    }
+
+    .coffee_taital {
+        width: 100%;
+        float: left;
+        font-size: 40px;
+        color: #fffafa;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 0px;
+    }
+
+    .coffee_section_2 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .bulit_icon {
+        width: 100%;
+        text-align: center;
+    }
+
+    .coffee_img img {
+        width: 100%;
+        float: left;
+    }
+
+    .types_text {
+        width: 100%;
+        float: left;
+        font-size: 22px;
+        color: #ffffff;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+
+    .looking_text {
+        width: 100%;
+        float: left;
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+        margin: 0px;
+    }
+
+    .read_bt {
+        width: 170px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 20px;
+        display: flex;
+    }
+
+    .read_bt a {
+        width: 100%;
+        float: left;
+        font-size: 16px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid #ffffff;
+        text-transform: uppercase;
+        padding: 8px;
+    }
+
+    .read_bt a:hover {
+        color: #000000;
+        border: 1px solid #070707;
+    }
+
+    #main_slider a.carousel-control-prev {
+        left: -50px;
+        top: 95px;
+    }
+
+    #main_slider a.carousel-control-next {
+        right: -50px;
+        top: 95px;
+        color: #fefefd;
+        background-color: #070707;
+    }
+
+    #main_slider .carousel-control-next,
+    #main_slider .carousel-control-prev {
+        width: 55px;
+        height: 55px;
+        opacity: 1;
+        font-size: 16px;
+        color: #000000;
+        background-color: #efefef;
+    }
+
+    #main_slider .carousel-control-next:focus,
+    #main_slider .carousel-control-next:hover,
+    #main_slider .carousel-control-prev:focus,
+    #main_slider .carousel-control-prev:hover {
+        color: #fefefd;
+        background-color: #fff9f9;
+    }
+
+.heading{
+    font-size: 5rem;
+    text-align: center;
+}
+.heading span{
+    color: var(--font-heading);
+}
+.heading-description{
+    text-align: center;
+    padding: 1.3rem 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+
+}
+
+.blog .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(28rem , 1fr));
+}
+.blog  .container .post .blog-img{
+    width: 100%;
+height: auto;
+overflow: hidden;
+position: relative;
+}
+
+/* //////////////// */
+
+
+.blog_section {
+    width: 100%;
+    float: left;
+}
+
+.blog_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 60px;
+}
+
+.blog_box {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0px;
+    padding: 0px 0px 30px 0px;
+}
+
+.blog_img {
+    width: 100%;
+}
+
+.date_text {
+    width: 100px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    background-color: red;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+}
+
+.prep_text {
+    width: 100%;
+    font-size: 20px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 20px 10px 20px;
+}
+
+.lorem_text {
+    width: 100%;
+    font-size: 14px;
+    color: #3b3b3b;
+    margin: 0px;
+    padding: 0px 20px;
+}
+
+
+/* blog section end */
+
+
+/* contact section start */
+
+.contact_section {
+    width: 100%;
+    float: left;
+}
+
+.contact_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #252525;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 55px;
+}
+
+.padding_left_0 {
+    padding-left: 0px;
+}
+
+.mail_section_1 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.mail_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #2e2e2d;
+    border: 0px;
+    background-color: #efefef;
+    padding: 11px 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input.mail_text::placeholder {
+    color: #2e2e2d;
+}
+
+.massage-bt {
+    color: #2e2e2d;
+    width: 100%;
+    height: 110px;
+    font-size: 18px;
+    background-color: #efefef;
+    padding: 40px 20px 0px 20px;
+    border: 0px;
+    height: 110px;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+textarea#comment.massage-bt::placeholder {
+    color: #2e2e2d;
+}
+
+.send_bt {
+    width: 170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.send_bt a {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #fefefd;
+    background-color: #d07d6b;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.send_bt a:hover {
+    color: #fefefd;
+    background-color: #4a4949;
+}
+
+.map_main {
+    width: 100%;
+    float: left;
+    margin-top: 90px;
+}
+
+
+/* contact section end */
+
+
+/* footer section start */
+
+.footer_section {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-image: url(../images/footer-bg.png);
+    background-size: 100% 100%;
+    padding: 90px 0px 0px 0px;
+}
+
+.address_text {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    color: #fefefd;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.footer_text {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #fefefd;
+    text-align: center;
+}
+
+.location_text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.location_text ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.location_text li {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0px 0px 5px 0px;
+}
+
+.location_text li a {
+    color: #ffffff;
+}
+
+.location_text li a:hover {
+    color: #d07d6b;
+}
+
+.padding_left_10 {
+    padding-left: 10px;
+}
+
+.social_icon {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer_social_icon {
+    width: 100%;
+    float: right;
+    text-align: right;
+}
+
+.footer_social_icon ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.footer_social_icon li {
+    float: left;
+}
+
+.footer_social_icon li a {
+    float: left;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #f75b59;
+    border-radius: 100%;
+    font-size: 19px;
+    margin-right: 5px;
+    width: 44px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer_social_icon li a:hover {
+    background-color: #ffffff;
+    color: #363636;
+}
+
+.update_mail {
+    color: #3b3b3b;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    padding: 10px 20px 0px 20px;
+    background-color: #efefef;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-top: 20px;
+    border: 0px;
+}
+
+textarea#comment.update_mail::placeholder {
+    color: #3b3b3b;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subscribe_bt {
+    width: 70px;
+    float: left;
+    padding-top: 20px;
+}
+
+.subscribe_bt a {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 13px 0px 14px 0px;
+    background-color: #d07d6b;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subscribe_bt a:hover {
+    color: #363636;
+    background-color: #d07d6b;
+}
+
+
+/* footer section end */
+
+
+/* copyright section start */
+
+.copyright_section {
+    width: 100%;
+    float: left;
+    background-color: #d07d6b;
+    height: auto;
+}
+
+.copyright_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.copyright_text a {
+    color: #ffffff;
+}
+
+.copyright_text a:hover {
+    color: #363636;
+}
+
+
+/* copyright section end */
+
+.margin_top90 {
+    margin-top: 90px;
+}
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><span>COFFEE</span></div>
+            <div class="menu">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Services">Services</a>
+                <a href="#Blog">Blog</a>
+                <a href="#Contact">Contact</a>
+            </div>
+        </nav>
+        <!-- home -->
+        <div class="h-text">
+            <p>Now you can feel the energy</p>
+            <h1><span>Start your day with</span></h1>
+            <h4>a COFFEE</h4>
+            
+
+        </div>
+        <!-- home end -->
+        <!-- about start -->
+    </header>
+    <div id="About">
+        <div class="about-section">
+            <div class="inner-container">
+                <h1>ABOUT US</h1>
+                <P class="text">
+                    Coffee is a beverage prepared from roasted coffee beans. Darkly colored, bitter, and slightly
+                    acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the
+                    highest sales in the world market for hot drinks
+                </P>
+                <div class="skills">
+                    <span>HOT COFFEE</span>
+                    <span>COLD COFFEE</span>
+                    <span>BLACK COFFEE</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about end -->
+ 
+    
+    
+    <!-- offer start -->
+
+    <div class="coffee_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <h1 id="Services"
+                class="coffee_taital">Services</h1>
+            </div>
+        </div>
+        <div class="coffee_section_2">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="coffee_img"><img
+                                            src="https://i.pinimg.com/564x/8f/53/92/8f5392b16c479f7ae269772efe68c140.jpg">
+                                    </div>
+                                    <h3 class="types_text">TYPES OF COFFEE</h3>
+                                    <p class="looking_text">looking at its layout. The point of</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="coffee_img"><img
+                                            src="https://i.pinimg.com/564x/32/ad/5e/32ad5ef2cc8c89c34313ea7d08338232.jpg"
+                                            height="350px"></div>
+                                    <h3 class="types_text">BEAN VARIETIES</h3>
+                                    <p class="looking_text">looking at its layout. The point of</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="coffee_img"><img
+                                            src="https://i.pinimg.com/564x/87/a1/92/87a192edc3f6ec006ba710886a4e5e0c.jpg"
+                                            height="350px"></div>
+                                    <h3 class="types_text">COFFEE & PASTRY</h3>
+                                    <p class="looking_text">looking at its layout. The point of</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="coffee_img"><img
+                                            src="https://i.pinimg.com/564x/b4/90/d2/b490d218809172fc7e6b1a72e5aa6745.jpg"
+                                            height="350px"></div>
+                                    <h3 class="types_text">COFFEE TO GO</h3>
+                                    <p class="looking_text">looking at its layout. The point of</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- offer end -->
+                <br>
+                <br>
+                <div id="Blog" style="color: white;">
+                    <div class="container">
+                       <div class="row">
+                          <div class="col-md-12">
+                             <h1 id="about_taital">Our Blog</h1>
+                          </div>
+                       </div>
+                       <div class="blog_section_2">
+                          <div class="row">
+                             <div class="col-md-6">
+                                <div class="blog_box">
+                                   <div class="blog_img"><img src="https://i.pinimg.com/564x/f0/f1/62/f0f1628c3681e63c63c1b814d1c9fe75.jpg" height="300px" width="400px"></div>
+                                   <h4 class="prep_text">PREP TECHNIQUES Coffee</h4>
+                                   <p class="lorem_text">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
+                                </div>
+                             </div>
+                             <div class="col-md-6">
+                                <div class="blog_box">
+                                   <div class="blog_img"><img src="https://i.pinimg.com/564x/d8/99/fc/d899fc2e67196180707eea9c6003a9ce.jpg"height="300px" width="400px"></div>
+                                   <h4 class="prep_text">PREP TECHNIQUES Coffee</h4>
+                                   <p class="lorem_text">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <!-- blog section end -->
+                 <!-- footer section start -->
+                 <div class="footer_section layout_padding">
+                    <div class="container">
+                       <div class="row">
+                          <div class="col-md-12">
+                             <h1 class="address_text">Address</h1>
+                             <p class="footer_text">here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use </p>
+                             <div class="location_text">
+                                <ul>
+                                   <li>
+                                      <a href="#">
+                                      </i><span class="">+111 222 333</span>
+                                      </a>
+                                   </li>
+                                   <li>
+                                      <a href="#">
+                                      </i><span class="">APTECH@GMAIL.COM</span>
+                                      </a>
+                                   </li>
+                                </ul>
+                             </div>
+                             <div class="form-group">
+                                <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment" name="Your Email"></textarea>
+                               
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <!-- footer section end -->
+                 
+                 <!-- Javascript files-->
+                 <script src="js/jquery.min.js"></script>
+                 <script src="js/popper.min.js"></script>
+                 <script src="js/bootstrap.bundle.min.js"></script>
+                 <script src="js/jquery-3.0.0.min.js"></script>
+                 <script src="js/plugin.js"></script>
+                 <!-- sidebar -->
+                 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+                 <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

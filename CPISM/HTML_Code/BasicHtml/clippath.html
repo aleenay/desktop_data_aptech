@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        table{
+            width: 100%;
+        }
+        table tr td {
+            text-align: center;
+        }
+        strike {
+            color: red;
+        }
+        div {
+            background: #f2f2f2;
+             padding:5%;
+        }
+        button {
+            border-radius: 0px;
+            background: red;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+        }
+        img{
+            height: 150px;
+            width: 100px;
+        }
+        .ImgWrap{
+            filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+
+        }
+        .Cl_Img{
+            width: 700px;
+            height: 400px;
+            clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        }
+    </style>
+</head>
+<body>
+    <center>
+
+    <h2>Features Product</h2>
+</center>
+
+    <table >
+        <tr>
+            <td>
+                <div>
+                    <img src="img/cupcake.jpg" alt="">
+                    <p>Cup Cakes</p>
+
+                    <p><strike>Rs 800</strike>Rs 500</p>
+                    <button type="button">Read More</button>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <img src="img/cake.jpg" alt="">
+                    <p>Cake</p>
+                    <p><strike>Rs 1200</strike> Rs 1000</p>
+                    <button type="button">Read More</button>
+
+                </div>
+            </td>
+            <td>
+                <div>
+                    <img src="img/icecream.jpg" alt="">
+                    <p>HTML</p>
+                    <p><strike>Rs 500</strike> <i data-feather="coffee"></i> Rs 200</p>
+                    <button type="button">Read More</button>
+
+                </div>
+            </td>
+        </tr>
+       
+    </table>
+    
+    <table>
+        <tr>
+            <td>
+                <span class="ImgWrap">
+
+                
+                <img src="../html_2303G1/img/dealscakes.jpg" alt="" class="Cl_Img">
+            </span>
+            </td>
+            <td>
+                <h2>About Cake</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quas, minus molestiae accusamus neque praesentium quos aperiam, quaerat omnis placeat iusto doloremque, perspiciatis eos illum deserunt consequuntur totam tempore commodi?</p>
+                <button type="button">Shop Now</button>
+           
+            </td>
+        </tr>
+    </table>
+    <script>
+        feather.replace()
+      </script>
+</body>
+</html>

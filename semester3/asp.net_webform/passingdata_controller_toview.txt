@@ -1,0 +1,26 @@
+Passing Data from Controller to view in ASP.NET Core 6
+
+- you can use the following objects to pass data between controller
+and view
+1. ViewData (passes data controller to view)
+2. ViewBag
+3. TempData 
+4. Strongly Typed Views
+
+syntax ViewData
+- ViewData["key"] = value;
+key is a string value to identify the object present in viewdata
+Value is the object present in ViewData. This object may be string
+Object list array or a different dtype, such as int, char, float,
+double , datetime etc
+
+syntax ViewBag
+- ViewBag.propertyName = value;
+property is a string value that represents a property of viewbag. 
+
+difference in ViewData in ViewBag
+ViewBag is a dynamic data type .
+ViewBag exists only for the current request and becomes null if 
+the request is redirected.
+ViewData is type casting
+ 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+
+    <style>
+        #box {
+            border: 2px solid;
+        }
+
+        .boxbg {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <input type="text" id="ID_input">
+        <h1 class="mb-2">Jquery Append and Prepend Method</h1>
+        <div id="box" class="p-5 boxbg">
+            <h2>Dummy Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut, officiis laboriosam necessitatibus
+                culpa
+                sapiente vitae aut tempora impedit tenetur eaque laborum natus. Quos porro, vel sit ullam necessitatibus
+                praesentium!</p>
+        </div>
+        <div>
+            <button type="button" id="ID_Append" class="btn btn-primary mt-5">
+                Append
+            </button>
+            <button type="button" id="ID_Prepend" class="btn btn-success mt-5">
+                Prepend
+            </button>
+        </div>
+    </div>
+ 
+    <script>
+
+        $(document).ready(function(){
+            $('#ID_Append').click(function(){
+                var txt = "This is Append text in bottom";
+                var user = $('#ID_input').val()
+                alert(user)
+                $('#box').append("<h2>"+ txt + " </h2>")
+            })
+            $('#ID_Prepend').click(function(){
+                var txt = "This is prepend text in top"
+                $('#box').prepend("<h2>"+ txt + " </h2>")
+            })
+            // $("#ID_Append").click(function(){
+            //     var classTxt = "This is Append Text"
+            //    $("#box").append("<h6>" + classTxt +" </h6>")
+            // })
+            // $("#ID_Prepend").click(function(){
+            //     var classTxt = "This is Prepend Text"
+            //    $("#box").prepend("<h6>" + classTxt +" </h6>")
+            // })
+
+        })
+       
+         // var user =   $("#ID_input").val();
+            // alert(user)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+
+    public class Vehicle
+    {
+        protected string brand;  // Protected member variable
+
+        protected void StartEngine()  // Protected method
+        {
+            Console.WriteLine("Engine started");
+        }
+    }
+
+    public class Car : Vehicle
+    {
+        public void SetBrand(string brand)
+        {
+            this.brand = brand;  // Accessing the protected member variable from the base class
+        }
+
+        public void DisplayBrand()
+        {
+            Console.WriteLine("Brand: " + brand);  // Accessing the protected member variable from the base class
+        }
+
+        public void StartCarEngine()
+        {
+            StartEngine();  // Accessing the protected method from the base class
+        }
+    }
+   
+    //in main method
+ Car myCar = new Car();
+            myCar.SetBrand("Toyota");
+            myCar.DisplayBrand();
+            myCar.StartCarEngine();
+            Console.ReadLine();

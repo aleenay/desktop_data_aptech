@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #ID_box {
+            width: 100px;
+            height: 100px;
+            background: teal;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h2>Localstorage</h2>
+
+    login: <input type="text" id="ID_userlogin">
+    <button type="button" onclick="btnLogin()">login</button>
+
+    <br>
+    <br>
+    Sign up: <input type="text" id="ID_usersignup">
+    <button type="button" onclick="btnSignup()">Sign up</button> -->
+
+    <script>
+      var UserData = ["mursaleen","wajahat","moeez","ubaid"];
+     var j = UserData.join('----')
+     for(var i = 0; i < 4; i++){
+         document.write(i + ' ' + UserData[i] + '<br>')
+     }
+      document.write(j)
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        // class cars{
+        //     message(x){
+        //         alert(x)
+        //     }
+        //     constructor(){
+        //       var id;
+        //     }
+        // }
+
+        // var objCar = new cars();
+        // objCar.message("working 1");
+        // objCar.message("working 2");
+
+
+
+
+        // function btnLogin() {
+        //     var ID_userlogin = document.getElementById("ID_userlogin").value;
+        //     var getUserData = JSON.parse(localStorage.getItem("userData"));
+        //     var loginUserData = getUserData.some(x => x.name  === ID_userlogin);
+
+        //     if (loginUserData) {
+        //         alert("login")
+        //     }
+        //     else { 
+        //         alert("create your account")
+        //     }
+        // }
+        // var UserArray = [];
+        // function btnSignup() {
+        //     var ID_usersignup = document.getElementById("ID_usersignup").value;
+        //     var userObj = {
+        //         name: ID_usersignup
+        //     }
+        //     UserArray.push(userObj);
+        //     console.log(UserArray)
+        //     localStorage.setItem("userData", JSON.stringify(UserArray));
+           
+        // }
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+    <!-- function btnSubmit() {
+    var ID_username = document.getElementById("ID_username").value;
+    var ID_name = document.getElementById("ID_name");
+
+    localStorage.setItem("userData", ID_username);
+    var x = localStorage.getItem("userData"); 
+    ID_name.innerHTML = x;
+} -->
+
+
+    <!-- heading
+<div id="ID_box">
+    hey
+</div>
+
+    <script>
+       setTimeout(() => {
+       document.getElementById("ID_box").style.display = 'block';    
+       }, 5000);
+    </script> -->
+
+
+    <!-- // var tbl = prompt("Enter Table NO");
+// for(var i = 1; i <= 10 ; i++){
+//     document.write(tbl + ' x '+ i+' = ' + tbl*i + '<br>');
+// }
+var num1 = 3;
+while (num1 <= 10) {
+    document.write(num1 + '<br>');
+
+    num1++
+}
+
+
+
+
+
+// var car = prompt("Enter your car");
+// if(car == "car 1"){
+//     document.write("car 1 found")
+// }
+// else if(car == "car 2"){
+//     document.write("car 2 found");
+
+// }
+// else if(car  == "car 3"){
+//     document.write("car 3 found");
+// }
+// else {
+//     document.write("not found");
+// } -->
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MarksheetClassObjConsoleApp1\MarksheetClassObjConsoleApp1\bin\Debug\MarksheetClassObjConsoleApp1.exe.config
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MarksheetClassObjConsoleApp1\MarksheetClassObjConsoleApp1\bin\Debug\MarksheetClassObjConsoleApp1.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MarksheetClassObjConsoleApp1\MarksheetClassObjConsoleApp1\bin\Debug\MarksheetClassObjConsoleApp1.pdb
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MarksheetClassObjConsoleApp1\MarksheetClassObjConsoleApp1\obj\Debug\MarksheetClassObjConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MarksheetClassObjConsoleApp1\MarksheetClassObjConsoleApp1\obj\Debug\MarksheetClassObjConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MarksheetClassObjConsoleApp1\MarksheetClassObjConsoleApp1\obj\Debug\MarksheetClassObjConsoleApp1.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\MarksheetClassObjConsoleApp1\MarksheetClassObjConsoleApp1\obj\Debug\MarksheetClassObjConsoleApp1.pdb

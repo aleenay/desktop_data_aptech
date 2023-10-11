@@ -1,0 +1,55 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.Cl_Nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.Cl_Nav ul li {
+    padding: 10px;
+}
+.Cl_Nav ul li a{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+}
+.Cl_Nav{
+    background: whitesmoke;
+}
+header{
+    background: teal;
+    text-align: center;
+    padding: 10px;
+}
+header h1{
+    margin: 0;
+}
+article{
+    background: rgb(194, 194, 194);
+    float: right;
+    width: 80%;
+    padding: 5%;
+}
+aside{
+    background: whitesmoke;
+    float: left;
+    width: 20%;
+
+}
+footer{
+    clear: both;
+    background: black;
+    color: white;
+}
+.aside ul{
+list-style: none;
+
+}
+.aside ul li a {
+text-decoration: none;
+
+}

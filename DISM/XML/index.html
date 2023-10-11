@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="ID_para"></p>
+    <table id="demo"></table>
+    <script>
+
+        var xmlhttp = new XMLHttpRequest()
+        var url = "namspace.xml"
+        xmlhttp.onreadystatechange = function () {
+
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) { //ok
+                // document.getElementById('ID_para').innerHTML = "<b>" + cd + "</b>" + "<br>";
+                var xmlDoc = xmlhttp.responseXML
+                console.log(xmlDoc)
+                const cd = xmlDoc.getElementsByTagName("book");
+                myFunction(cd)
+            } 
+        }
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+        function myFunction(cd) {
+            let table = "<tr><th>author</th><th>Title</th></tr>";
+            for (let i = 0; i < cd.length; i++) {
+                table += "<tr><td>" +
+                    cd[i].getElementsByTagName("author")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    cd[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+            }
+            document.getElementById("demo").innerHTML = table;
+        }
+
+    </script>
+</body>
+
+</html>
+<!-- // var myArr = JSON.parse(xmlhttp.response) //convert into object
+                // //JSON Foramte text
+                // var arr1 = JSON.stringify(myArr) -->
+
+<!-- <script>
+
+    var xmlhttp = new XMLHttpRequest()
+
+
+    var url = "data.json"
+
+
+    xmlhttp.onreadystatechange = function(){
+
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){ //ok
+
+            var myArr = JSON.parse(xmlhttp.response) //convert into object
+
+            document.getElementById("ImgIns").setAttribute("src",myArr['Poster']) //ImgIns src = 
+            document.getElementById("TitleIns").innerHTML += myArr['Title'];
+            document.getElementById("actor").innerHTML += myArr['Actors'];
+            document.getElementById("genere").innerHTML += myArr['Genre'];
+            document.getElementById("writer").innerHTML += myArr['Writer'];
+            document.getElementById("director").innerHTML += myArr['Director'];
+            document.getElementById("country").innerHTML += myArr['Country'];
+            document.getElementById("boxOffice").innerHTML += myArr['BoxOffice'];
+
+
+
+
+            //JSON Foramte text
+            var arr1 = JSON.stringify(myArr)
+            document.getElementById('para').innerHTML = "<b>" +arr1+ "</b>" + "<br>"
+
+
+
+
+            //Object Formate Text
+            for(var key in myArr){
+                document.getElementById('para2').innerHTML += "<b>"+key+ "</b>"+ " "+myArr[key]+ "<br>"
+            }
+
+
+
+        }
+    }
+    xmlhttp.open("GET",url,true);
+    xmlhttp.send();
+</script> -->

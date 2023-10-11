@@ -1,0 +1,33 @@
+﻿@model asp_core_mvc_2207B2.Models.user
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>User Form</h1>
+<form asp-action="index" asp-controller="user" method="post">
+    <div class="myforma">
+        <label asp-for="name" class="">User name</label>
+        <input asp-for="name"  />
+        
+    </div>
+    <div class="myforma">
+        <label asp-for="email">Your email:</label>
+        <input asp-for="email" />
+      
+    </div>
+      <div class="myforma">
+        <label asp-for="phoneno">Your email:</label>
+        <input asp-for="phoneno" />
+    </div>  <div class="myforma">
+        <label asp-for="password">Your email:</label>
+        <input asp-for="password" />
+    </div>
+    <div>
+        <p></p>
+        <button type="submit">Submit form</button>
+        <p></p>
+    </div>
+
+</form>
+@ViewBag.username
+

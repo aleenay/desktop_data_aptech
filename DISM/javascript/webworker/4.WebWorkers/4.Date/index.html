@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Date: <span id="result"></span></p>
+
+
+
+<script>
+var w;
+
+
+  w = new Worker("workerfile.js"); //initialize
+    w.onmessage = function(event) {
+      document.getElementById("result").innerHTML = event.data;
+    }
+
+
+
+</script>
+
+</body>
+</html>
+
+

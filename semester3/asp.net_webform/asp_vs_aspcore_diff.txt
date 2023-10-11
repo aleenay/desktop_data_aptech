@@ -1,0 +1,13 @@
+Difference Between Asp.net and .net core
+.Net
+Programming framework
+Not open Source 
+Only for windows platform
+--> winforms,  asp.net desktop application .
+=================
+.Net Core with mvc
+=================
+Open source
+cross platform (windows , linex, mac)
+Does not support desktop application
+focusing web, windows mobiles application , universal apps.

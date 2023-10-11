@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE booklist[
+<!ELEMENT booklist ( book*)>
+
+<!ELEMENT book ( title , author , pages )>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT pages (#PCDATA)> <!-- Parse data-->
+<!ATTLIST book id CDATA #REQUIRED> <!-- no parse data -->
+<!-- <!ATTLIST book id CDATA #IMPLIED> -->
+<!-- <!ATTLIST book id CDATA #FIXED "123"> -->
+<!ENTITY HP "hey">
+
+
+]>
+
+<booklist>
+<book id="12">
+<title>English</title>
+<author>john</author>
+<pages> &HP; </pages>
+
+</book>
+<book id="2">
+<title>English</title>
+<author>john</author>
+<pages>120</pages>
+
+</book>
+
+
+</booklist>

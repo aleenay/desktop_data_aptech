@@ -1,0 +1,43 @@
+using System;
+using System.Collections;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+           
+            Hashtable mylist = new Hashtable();
+            mylist.Add(3, "sana");
+            mylist.Add(5, "Studen12345");
+            mylist.Add(1, "2109c1");
+            mylist.Add(8, "aptech");
+            Console.WriteLine("total no of elements: "+mylist.Count);
+            Console.WriteLine(mylist[5]);
+
+            //Using ICollection
+            ICollection koiname_interface = mylist.Keys;
+             foreach(int v in koiname_interface)
+            {
+                Console.WriteLine(mylist[v]);
+            }
+
+            
+            //Using IDictionaryEnumerator
+            if (mylist.ContainsKey("name"))
+            {
+                mylist["name"] = "hira";
+            }
+            IDictionaryEnumerator kuchbhi_interface = mylist.GetEnumerator();
+            while (kuchbhi_interface.MoveNext())
+            {
+                Console.WriteLine(kuchbhi_interface.Key+": "+kuchbhi_interface.Value);
+            }
+
+        }
+
+
+    }
+    }

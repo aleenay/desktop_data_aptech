@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <style>
+     #panel,
+    #btnflip {
+      padding: 5px;
+      text-align: center;
+      background-color: #ebfdff;
+      border: solid 2px blueviolet;
+      cursor: pointer;
+    }
+
+    #panel {
+      padding: 50px;
+     display: none;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="Id_div">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit iste magnam doloremque molestias molestiae illo corrupti odit vitae quibusdam consectetur. Nam excepturi eius aspernatur dolorem totam temporibus commodi rerum accusamus.</div>
+    <button type="button" id="ID_Phtml">Print on html</button>
+   
+    <button type="button" id="ID_btn">hide</button>
+    <button type="button" id="ID_show">show</button>
+    <button type="button" id="ID_hideshow">hide/show</button>
+    <h2>Append Prepend</h2>
+    <input type="text" id="ID_input">
+        <ul id="ID_list"></ul>
+        <button type="button" class="btn" id="ID_append">Append/Prepend</button>
+        <br>
+
+        <div id="btnflip">Click to slide down panel</div>
+        <div id="panel">Hello world!</div>
+
+    <script>
+    $(document).ready(function(){
+        $('#ID_Phtml').click(function(){
+             $('#Id_div').html("its working");
+            
+        })
+        $('#ID_btn').click(function(){
+             $('#Id_div').hide();
+            
+        })
+        $('#ID_show').click(function(){
+             $('#Id_div').show();
+            
+        })
+        $('#ID_hideshow').click(function(){
+             $('#Id_div').toggle();
+            
+        })
+        $('#ID_append').click(function(){
+            var ID_input = $('#ID_input').val();
+          
+            $('#ID_list').append( '<li>' + ID_input + '</li>');
+        })
+
+        $('#btnflip').click(function(){
+            $('#panel').slideDown(2000);
+        })
+    })
+    
+    
+    </script>
+</body>
+</html>

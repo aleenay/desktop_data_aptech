@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+        input{
+            border: 1px solid #d7d7d7;
+    padding: 10px;
+    border-radius: 8px;
+        }
+        
+        </style>
+</head>
+
+<body>
+    <section class="vh-100" style="background-color: #4B515D;">
+        <div class="container py-5 h-100">
+
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-8 col-lg-6 col-xl-4">
+
+                    <div class="card" style="color: #4B515D; border-radius: 35px;">
+                        <div class="card-body p-4">
+
+                            <div class="d-flex">
+                                <h6 class="flex-grow-1">
+                                    <input type="text" class="input" id="ID_Input">
+                                </h6>
+                                <h6> <button type="button" class="btn btn-primary"
+                                        onclick="btnGetWeather()">Submit</button>
+                                </h6>
+                            </div>
+
+
+
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1" style="font-size: 1rem;">
+                                    <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"><span
+                                            id="IDtemp"></span> </h6>
+                                    <span id="ID_weatherDescription" class="small" style="color: #868B94"></span>
+                                    <span id="ID_country" class="small" style="color: #868B94"></span>
+
+                                    <!-- <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1">
+                                            40 km/h
+                                        </span></div>
+                                    <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1">
+                                            84% </span>
+                                    </div>
+                                    <div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1">
+                                            0.2h </span>
+                                    </div> -->
+
+                                </div>
+                                <div >
+                                   <img id="Img" src="" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <p id="name">
+
+    </p>
+    <script>
+        // var api = 'https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}'
+        function btnGetWeather() {
+
+            var ID_Input = document.getElementById("ID_Input")
+            var APIKEY = "3b920372297f4a8b5cf32bda258ce7d4";
+
+            var api = 'https://api.openweathermap.org/data/2.5/weather?q=' + ID_Input.value + '&appid=' + APIKEY;
+            var IDtemp = document.getElementById("IDtemp");
+            var ID_weatherDescription = document.getElementById("ID_weatherDescription");
+            var ID_country = document.getElementById("ID_country");
+            var Img= document.getElementById("Img");
+            fetch(api).then(response => response.json()).then(response => {
+                
+                if (response.cod == 404) {
+                    alert("city not found")
+                }
+                else {
+                    var temp = response.main.temp;
+                    var C = temp - 273.15
+                    IDtemp.innerText = (Math.round(C * 10) / 10).toFixed(1) + '°C';
+                    ID_weatherDescription.innerText = response.weather[0].description
+                    ID_country.innerText = response.sys.country;
+                    debugger
+                    var iconcode = response.weather[0].icon;
+
+                    Img.src = "http://openweathermap.org/img/w/" + iconcode + ".png";
+                    // IDtemp.innerText = C
+
+                    console.log(Math.round(C))
+                    console.log(response)
+                }
+
+            }).catch(error => {
+                console.log(error)
+            })
+        }
+   
+   
+   
+    </script>
+</body>
+
+</html>

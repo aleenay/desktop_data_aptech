@@ -1,0 +1,15 @@
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\bin\Debug\PracticeConsoleApp1.exe.config
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\bin\Debug\PracticeConsoleApp1.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\bin\Debug\PracticeConsoleApp1.pdb
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.exe
+C:\Users\aleena\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.pdb
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\bin\Debug\PracticeConsoleApp1.exe.config
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\bin\Debug\PracticeConsoleApp1.exe
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\bin\Debug\PracticeConsoleApp1.pdb
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.exe
+C:\Users\aleena\Desktop\miss aleena old data\Desktop\DESKSTOP_DATA\semester3\c#\PracticeConsoleApp1\PracticeConsoleApp1\obj\Debug\PracticeConsoleApp1.pdb

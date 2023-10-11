@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\miniproject_2202f2.props" />
+</Project>

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="customcss/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* .Container {
+            background: tomato;
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .Cl_container {
+            background: yellowgreen;
+            color: tomato;
+            font-size: 40px;
+        }
+        .DivClassInput{
+            display: flex;
+        }
+        #ID_errorU , #ID_errorE{
+            display: none;
+        } */
+
+        @media  screen and (max-width : 400px){
+            body {
+                background: blue;
+            }
+            .cl_demo{
+                font-size: 40px;
+            }
+        }
+
+        @media  screen and (min-width:500px) and (max-width : 700px){
+            body {
+                background: red;
+            }
+            .cl_demo{
+                font-size: 400px;
+            }
+        } 
+    </style>
+</head>
+
+<body>
+
+<h2 class="cl_demo">Demo</h2>
+
+
+
+    <!-- <form action="">
+        <input class="form-control" type="text" id="ID_input"/> 
+        <button type="button" class="btn" id="ID_btn" onclick="btn()">Submit</button>
+    </form>
+<script>
+function btn(){
+   var ID_input = document.getElementById("ID_input").value;
+//    var patterUsername = /^[A-z._]{0,}$/ ;
+var patternEmail =/^[A-z._]{0,}[0-9]{0,5}@[A-z]{0,5}[.][A-z]{1,3}$/;
+   var res = patternEmail.test(ID_input);
+
+   alert(res);
+}
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <p id="ID_p"></p>
+    <p id="ID_email"></p>
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" id="ID_username"> 
+        <p id="ID_errorU">*username is empty</p> <br>
+        <label for="">Email</label>
+        <input type="text" id="ID_useremail"> 
+        <p id="ID_errorE">*useremail is empty</p> <br>
+        <button type="button" onclick="btnSubmit()">Save</button>
+    </form>
+    <script>
+        function btnSubmit() {
+            var username = document.getElementById("ID_username").value;
+            var ID_p = document.getElementById("ID_p");
+            var ID_useremail = document.getElementById("ID_useremail").value;
+            var useremail = document.getElementById("ID_email");
+            if (username == '') {
+                document.getElementById("ID_errorU").style.display = 'block'
+                document.getElementById("ID_errorE").style.display = 'none'
+            }
+            else if (ID_useremail == '') {
+                document.getElementById("ID_errorE").style.display = 'block'
+                document.getElementById("ID_errorU").style.display = 'none'
+            }
+            else {
+               ID_p.innerHTML = "Username: " + username;
+                useremail.innerHTML = "Useremail " + ID_useremail;
+                document.getElementById("ID_errorE").style.display = 'none'
+                document.getElementById("ID_errorU").style.display = 'none'
+                alert("succesfully submiteed")
+            }
+        }
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="Container" id="ID_container">
+        Demo Div
+    </div>
+    <br>
+    Password
+    <div class="DivClassInput">
+        <div>
+            <input type="password" id="ID_input" />
+         </div>
+         <div>
+
+        <button type="button" class="" onclick="btnPasswordShow()"><i id="ID_eye" class="fa fa-eye"></i></button>
+    </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <button type="button" class="btn" onclick="BtnClassAdd()">Class Add</button>
+    <button type="button" class="btn" onclick="BtnClassRemove()">Class Remove</button>
+    <button type="button" class="btn" onclick="btnClassToggle()">Class Toggle</button> -->
+
+
+
+
+
+
+
+    <script>
+        // function btnPasswordShow() {
+        //     var ID_input = document.getElementById("ID_input");
+        //     var ID_eye = document.getElementById("ID_eye");
+        //     if (ID_input.type === "password") {
+        //         ID_input.type = "text"
+        //         ID_eye.classList.add("fa-eye-slash")
+        //     }
+        //     else {
+        //         ID_input.type = "password"
+        //         ID_eye.classList.remove("fa-eye-slash")
+
+
+        //     }
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // function BtnClassAdd() {
+        //     var ID_container = document.getElementById("ID_container");
+        //     ID_container.classList.add("Cl_container")
+        // }
+
+        // function BtnClassRemove() {
+        //     var ID_container = document.getElementById("ID_container");
+        //     ID_container.classList.remove("Cl_container")
+        // }
+
+        // function btnClassToggle() {
+        //     var ID_container = document.getElementById("ID_container");
+        //     ID_container.classList.toggle("Cl_container")
+        // }
+
+        // function btnPassword() {
+
+        //     var ID_input = document.getElementById("ID_input");
+        //     var ID_eye = document.getElementById("ID_eye");
+        //     if (ID_input.type === "password") {
+        //         ID_input.type = "text"
+        //         ID_eye.classList.add("fa-eye-slash")
+        //     }
+        //     else {
+        //         ID_input.type = "password"
+        //         ID_eye.classList.remove("fa-eye-slash")
+
+
+        //     }
+        // }
+
+        // function btnHideShow() {
+        //     var ID_container = document.getElementById("ID_container");
+
+        //     if (ID_container.style.display == "block") {
+        //         ID_container.style.display = "none";
+        //     }
+        //     else if (ID_container.style.display == "none") {
+        //         ID_container.style.display = "block";
+
+        //     }
+        // }
+
+        // function btnShow() {
+        //     var ID_container = document.getElementById("ID_container");
+        //     ID_container.style.display = "block";
+
+        // }
+        // function btnHide() {
+        //     var ID_container = document.getElementById("ID_container");
+        //     ID_container.style.display = "none";
+
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var objStdname = [ 
+        //     { name: "Mohtashim", age: 20, center: "AptechNN " } ,
+        //     { name: "Ibad", age: 22, center: "AptechNN 2" } ,
+
+        // ];
+        // var name =[ "Ali",13,"Aptech NN"];
+        // var obj = [ 
+        //     {name : "Ali", age : 13, cnter : "Aptech NN" },
+        //     {name : "Hareem", age :23, cnter : "Aptech NN 2" },
+
+        // ]
+        // alert(obj[1].name)
+
+        // var stdData = [];
+
+        // function btnSignup() {
+        //     var username1 = document.getElementById("ID_inputusername").value;
+        //     var objStd = {
+        //         name: username1
+        //     }
+        //     stdData.push(objStd);
+        //     console.log(stdData);
+        //     localStorage.setItem("userData", JSON.stringify(stdData));
+
+        // }
+
+        // // btnSignup = () => {
+        // //     alert("Hello World!");
+        // // }
+        // function btnLogin() {
+        //     var ID_inputlogin = document.getElementById("ID_inputlogin").value;
+        //     var userData = JSON.parse(localStorage.getItem("userData"));
+        //     var result = userData.some(x => x.name === ID_inputlogin );
+        //     if (result) {
+        //         alert("login");
+        //     }
+        //     else {
+        //         alert("create your account");
+        //     }
+        // }
+
+
+
+
+
+
+
+//         localStorage.setItem("username","ali");
+
+//    var name1  = localStorage.getItem("username");
+// document.write(name1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var StdName = ['Tooba',1234 , 'Hareem',true];
+        // document.write(StdName[1]);
+
+  // var students = new Array("Sarim","Huzaifa","Umer","Ahad")
+        // document.write(students[3])
+
+
+
+
+
+
+        //     document.write(j + '<br>')
+
+        //     j++
+        // }
+
+
+
+        //loops
+        // var tbl = prompt("Enter table no: ");
+        // for(var i = 1;i <= 10;i++){
+
+        //     document.write( tbl +  'x' + i + '=' + i*tbl + '<br>')
+        // }
+//         var i = 0;
+//         while(i < 9){
+// document.write(i + '<br>')
+//             i++
+//         }
+// var a = 0;
+// do {
+//     document.write(a + '<br>')
+//     a++
+// } while (a < 10);
+//  5 x 1 = 5
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <h2>Sign Up</h2>
+    <input class="Input" type="text" id="ID_inputusername">
+    <button type="button" class="btn" onclick="btnSignup()">signup</button>
+    <br>
+    <br>
+    <h2>Login</h2>
+    <input placeholder="Enter your username" class="Input" type="text" id="ID_inputlogin">
+    <button type="button" class="btn" onclick="btnLogin()">login</button> -->
+    <!-- <div id="ID_div"></div>
+    <button onclick="btnIncrement()">+</button>
+    <button onclick="btnDec()">-</button> -->
+
+    <!-- var products = new Array(2);
+products[0] = new Array("Ali", 17);
+products[1] = new Array("Mohtashim", 20);
+document.write("<table border='1'><tr><th>Name</th><th>age</th></tr>");
+
+for (var i = 0; i < products.length; i++) {
+    document.write('<tr>');
+    for (var j = 0; products[i].length; j++) {
+        document.write('<td>' + products[i][j] + '</td>');
+    }
+
+
+    document.write('</tr>')
+}
+document.write('</table>') -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- var total = 0;
+        function btnIncrement() {
+            var ID_div = document.getElementById("ID_div");
+            var numone = 1;
+            total += numone++
+            ID_div.innerHTML = total;
+
+
+        }
+        function btnDec() {
+            var ID_div = document.getElementById("ID_div");
+            var numone = 1;
+            total -= numone--
+            ID_div.innerHTML = total;
+        } -->
+
+
+    <!-- <p id="ID_p"></p>
+    <p id="ID_email"></p>
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" id="ID_username"> 
+        <p id="ID_errorU">*username is empty</p> <br>
+        <label for="">Email</label>
+        <input type="text" id="ID_useremail"> 
+        <p id="ID_errorE">*useremail is empty</p> <br>
+        <button type="button" onclick="btnSubmit()">Save</button>
+    </form>
+    <script>
+        function btnSubmit() {
+            var username = document.getElementById("ID_username").value;
+            var ID_p = document.getElementById("ID_p");
+            var ID_useremail = document.getElementById("ID_useremail").value;
+            var useremail = document.getElementById("ID_email");
+            if (username == '') {
+                document.getElementById("ID_errorU").style.display = 'block'
+                document.getElementById("ID_errorE").style.display = 'none'
+            }
+            else if (ID_useremail == '') {
+                document.getElementById("ID_errorE").style.display = 'block'
+                document.getElementById("ID_errorU").style.display = 'none'
+            }
+            else {
+               ID_p.innerHTML = "Username: " + username;
+                useremail.innerHTML = "Useremail " + ID_useremail;
+                document.getElementById("ID_errorE").style.display = 'none'
+                document.getElementById("ID_errorU").style.display = 'none'
+                alert("succesfully submiteed")
+            }
+        }
+    </script> -->
+
+
+
+
+
+
+
+
+    <!-- 
+//     var car = prompt('Enter your car name') ;
+
+//   switch(car){
+//       case 'car 1':
+//       document.write(car);
+//       break;
+
+//       case 'car 2':
+//       document.write(car);
+//       break;
+
+//       case 'car 3':
+//       document.write(car);
+//       break;
+
+//       default:
+//       document.write(car + " not found");
+//       break;
+
+//   }
+ 
+
+
+
+    // if (name == "ali") {
+    //     document.write(name + " found");
+    // }
+    // else if (name == "shuja") {
+    //     document.write(name + " found");
+
+    // }
+    // else if (name == "Mohtashim") {
+    //     document.write(name + " found");
+
+    // }
+    // else {
+    //     document.write("name not found");
+
+    // } -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- // logical operator && || !
+// relational Operator
+// var x = 230;
+// var y = 200;
+
+
+// if (!x > y) {
+//     alert("this is true")
+// }
+// else{
+//     alert("false")
+// } -->
+
+
+    <!-- <h1 id="ID_h">
+    </h1>
+    <button type="button" class="btn" onclick="btnSave('1')">1</button>
+    <button type="button" class="btn" onclick="btnSave('2')">2</button>
+    <button type="button" class="btn" onclick="btnSave('3')">3</button>
+    <button type="button" class="btn" onclick="btnSave('+')">+</button>
+    <button type="button" class="btn" onclick="btnSolve()">=</button>
+
+
+
+
+    <script>
+
+        function btnSave(x) {
+            document.getElementById("ID_h").innerHTML += x;
+        }
+
+        function btnSolve() {
+            var ID_h = document.getElementById("ID_h").innerHTML;
+            var result = eval(ID_h);
+            alert(result)
+        }
+        var num1 = "1243432";
+        var res = parseInt(num1)
+        var num1 = prompt("Enter number 1");
+        var num2 = prompt("Enter number 2");
+        var result = parseInt(num1) + parseInt(num2);
+        document.write(result)
+        document.write(100000 % 2);
+        alert("hello world")
+        var fname = prompt("Enter your First Name");
+        var lastname = prompt("Enter your Last Name");
+        document.getElementById("ID_h").innerHTML = "First name: " + fname + '<br>' + 'last Name: ' + lastname;
+    </script> -->
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background: rgb(221, 221, 221);
+            display: grid;
+            /* grid-template-columns: 100px auto 300px; */
+            grid-template-columns: repeat(3,300px) auto;
+            grid-template-rows: 100px  auto 400px;
+          grid-gap: 10px;
+        }
+        .item1 {
+            background: lightsalmon;
+
+        }
+        .item5{
+            background: lightsalmon;
+            grid-row: 2/span 3;
+
+        }
+        .item2, .item6{
+            background: yellow;
+        }
+        .item3, .item7{
+            background: lightgreen;
+        }
+        .item4{
+            background: lightcoral;
+
+        }
+        .item8{
+            background: lightcoral;
+        }
+        .item9{
+            background: green;
+            grid-column: 2/span 3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+        <div class="items item5">Five</div>
+        <div class="items item6">Six</div>
+        <div class="items item7">Seven</div>
+        <div class="items item8">Eight</div>
+        <div class="items item9">nine</div>
+       
+
+    </div>
+</body>
+</html>

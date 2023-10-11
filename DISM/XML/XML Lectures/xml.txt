@@ -1,0 +1,30 @@
+xml=(extensible markup language)
+-> meant to store, transport and exchange data.
+-> Software-independent format for exchanging data.
+-> HTML stores & displays data xml, stores data in a text format that is both human and software readable/ hard ware readable 
+-> with xml, data can be separated from display.
+
+ADVANTAGES OF XML:-
+ -> xml keeps content separated from presentation 
+-> xml is an open format that can be read by many application 
+-> xml can be used on both the client and the server.
+-> xml has wide-spread support in multiple languages, runtime 
+-> xml makes bridge between two system for data exchange.
+
+DRAWBACKS OF XML:-
+
+-> XML IS NOT SUITABLE FOR VERY LARGE DATA SETS.
+-> some formats, like JSON, might be better in some cases.
+-> some data type, like images, aren't represented well.
+-> xml can quickly get hard to read when complex.
+
+		DIFFERENCE BETWEEN XML AND HTML
+
+  	XML			  			HTML			
+1) xml is used to exchange data or structure data    1) html is used to structure a webpage
+2) xml uses user define tags,xml doesn't have 	     2) html tags are pre-defined.
+   predefine tags.   
+3) Case-Sensitive 				     3) case-insensitive
+4) xml tags must be closed other wise you will       4) html tags should also be closed but browser won't mind.  
+   get an error.
+5) xml is a strict language.			     5) Html is not a strict language.

@@ -1,0 +1,9 @@
+    Dictionary<string, string> mylist = new Dictionary<string, string>();
+            mylist.Add("name", "sana");
+            mylist.Add("enrol", "Studen12345");
+            mylist.Add("batch", "2109c1");
+            IDictionaryEnumerator obj = mylist.GetEnumerator();
+            while (obj.MoveNext())
+            {
+                Console.WriteLine(obj.Key+": "+obj.Value);
+            }

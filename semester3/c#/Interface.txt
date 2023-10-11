@@ -1,0 +1,19 @@
+An interface is a completely "abstract class", which can only contain 
+abstract methods and properties (with empty bodies):
+// interface
+interface Mobile
+{
+  void messages(); // interface method (does not have a body)
+}
+class nokia : Mobile {
+
+ // The body of messages() is provided here
+public void messages(){
+Console.WriteLine("typing messages working");
+}
+}
+class realme : Mobile {
+public void messages(){
+Console.WriteLine("touch pad messages working");
+}
+}

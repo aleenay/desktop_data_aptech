@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Accessing JSON Object using loop</h1>
+    <p id="ID_p"></p>
+    <script>
+        var obj = {
+            "Name": "Ahmed",
+            "Mobile": "03215656565",
+            "City": "Khi",
+
+        }
+        for (var i in obj) {
+            // document.getElementById("ID_p").innerHTML += i + ': ' + obj[i] + '<br>';
+            document.getElementById("ID_p").innerHTML += i + ' : '+  obj[i] + '<br>';
+        }
+
+
+
+
+
+
+
+    //    for (var index = 5; index < 10; index++) {
+    //       var r = index;
+    //       document.write(r + '<br>')
+
+    //    }
+
+
+    </script>
+</body>
+
+</html>

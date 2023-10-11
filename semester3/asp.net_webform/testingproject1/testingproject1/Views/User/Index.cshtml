@@ -1,0 +1,22 @@
+﻿@model IEnumerable<testingproject1.Models.form>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>User Index</h1>
+@{
+    foreach (var item in (List<empClass>)ViewData["emplist"])
+    {
+        <h2>@item.name</h2>
+    }
+}
+
+@*@{
+    foreach (var item in Model)
+    {
+        <p>@item.Name</p>
+        <p>@item.Email</p>
+        
+    }
+}*@

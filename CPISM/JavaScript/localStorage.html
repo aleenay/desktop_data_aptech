@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text" name="" id="id_username">
+    <script>
+        var classnameData = document.getElementById("id_username").value
+        localStorage.setItem("className",classnameData)
+        var ClassData = localStorage.getItem("className")
+        // alert(ClassData)
+        if(ClassData == "2207G1"){
+            alert("true")
+        }
+        else
+        {
+            alert("false")
+        }
+
+
+
+        // var user = "Arshaman"
+        // localStorage.setItem("user", user)
+
+        // var UserData = localStorage.getItem("user")
+       
+       
+        // // alert(UserData)
+        // if(UserData == "Arshaman"){
+        //     alert("true")
+        // }
+        // else{
+        //     alert("false")
+        // }
+
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h3>Local Storage Sign up</h3>
+    <input type="text" id="ID_input">
+    <button type="button" class="btn" onclick="btnSubmit()">Sign up</button>
+
+    <h3>Local Storage Login</h3>
+    <input type="text" id="ID_inputLogin">
+    <button type="button" class="btn" onclick="btnLogin()">Login</button>
+
+    <script>
+        function btnSubmit() {
+            var items = [];
+            var user = document.getElementById("ID_input").value;
+           JSON.parse(localStorage.getItem("user"))
+
+            var obj = [{
+
+                user : user,
+            }
+            ]
+            items.push(obj)
+            localStorage.setItem("user", JSON.stringify(obj))
+
+        }
+        function btnLogin() {
+            var userData = localStorage.getItem("user");
+            var ID_inputLogin = document.getElementById("ID_inputLogin").value;
+            if (ID_inputLogin == userData) {
+                alert("Login")
+            }
+            else {
+                alert("Incorrect username")
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+// var username  = 'Abdul Moiz'
+// localStorage.setItem("name",username)
+//  console.log(localStorage.getItem("name"))
+
+
+
+
+        // localStorage.setItem('Name' ,'Ahmed');
+        // localStorage.getItem('Name')
+
+
+
+        // localStorage.removeItem('Name')
+        // localStorage.clear()
+        // var List = ['Apple','Mango','banana','Orange','grapes'];
+        // localStorage.setItem('FruitList',JSON.stringify(List));
+        // var fruits = JSON.parse(localStorage.getItem('FruitList'))
+        // console.log(fruits);
+
+
+    </script>
+</body>
+
+</html>
