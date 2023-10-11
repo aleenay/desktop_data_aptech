@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>STUDENT MARKSHEET</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form >
+                    <fieldset>
+                        <legend>STUDENT INFORMATION</legend>
+                        <div class="row">
+                            <div class="col-lg-3 mb-3">
+                                <label>Name:</label>
+                                <input class="form-control" type="text" id="ID_name">
+                            </div>
+                            <div class="col-lg-3 mb-3">
+                                <label>Father Name:</label>
+                                <input class="form-control" type="text" id="ID_fname">
+                            </div>
+
+
+                            <div class="col-lg-3">
+                                <label>Institute Name:</label>
+                                <input class="form-control" type="text" id="ID_iname">
+                            </div>
+                            <div class="col-lg-3">
+                                <label>Batch:</label>
+                                <input class="form-control" type="text" id="ID_batch">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <form action="">
+                    <fieldset>
+                        <legend> SUBJECTS MARKS</legend>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label>Office Automation:</label>
+                                    <input class="form-control" type="text" id="ID_MSO">
+                                </div>
+                                <div class="mb-3">
+                                    <label>Web Desigining</label>
+                                    <input class="form-control" type="text" id="ID_WB">
+                                </div>
+                                <div class="mb-3">
+                                    <label>IT</label>
+                                    <input class="form-control" type="text" id="ID_IT">
+                                </div>
+                                <div class="mb-3">
+                                    <label>Batch:</label>
+                                    <input class="form-control" type="text" id="ID_batch">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button class="btn btn-success" type="button" onclick="btnFunction('s')">Submit </button>
+                                        <button class="btn btn-danger" type="button" onclick="btnFunction('r')">Reset </button>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-6">
+                                <table class="table" id="ID_table" border="2"></table>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+        function btnFunction(param) {
+            var ID_name = document.getElementById("ID_name").value;
+            var ID_fname = document.getElementById("ID_fname").value;
+            var ID_iname = document.getElementById("ID_iname").value;
+            var ID_batch = document.getElementById("ID_batch").value;
+            var ID_MSO = document.getElementById("ID_MSO").value;
+            var ID_WB = document.getElementById("ID_WB").value;
+            var ID_IT = document.getElementById("ID_IT").value;
+        
+
+           
+
+            if (param == 's') {
+                var obj = {
+                name : ID_name,
+                fname : ID_fname,
+                iname :ID_iname,
+                batch :ID_batch,
+                ms_office :ID_MSO,
+                wb :ID_WB,
+                IT:ID_IT
+
+            }
+            var stddata = [];
+            stddata.push(obj);
+            console.log(obj);
+            debugger
+                for (let index = 0; index < stddata.length; index++) {
+                    var  element = stddata[index];
+                    document.getElementById("ID_table").innerHTML += '<tr>' + '<td>' +"Name" + element.name   + '</td>' + '</tr>'
+                      +  '<tr>'   + '<td>' +"Father Name" + element.fname   + '</td>' +'</tr>';
+                    console.log(element)
+                }
+                
+            }
+            else if (param = 'r') {
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

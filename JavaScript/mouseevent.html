@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mouse event</title>
+    <link rel="stylesheet" href="css/keyboardeventstyle.css">
+    <style>
+    .cl{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="FlexContainer">
+<!-- Pg 297 -->
+        <div class="ClBox"   onclick="btnClick('its working now')">
+            On Click here
+        </div>
+        <div class="ClBox" onmousedown="btnMDown('mouse down')">
+            On Mouse down
+        </div>
+        <div class="ClBox" onmouseup="btnMUp('mouse up')">
+            On Mouse Up
+        </div>
+        <div class="ClBox" ondblclick="btnDoubleClick('Double click')">
+            On Double Click
+        </div>
+        <div class="ClBox" onmousemove="btnMouseM('mouse move')">
+            On Mouse Move
+        </div>
+        <div class="ClBox" onmouseover="btnMouseOver('mouse over')">
+            On Mouse Over
+        </div>
+        <div class="ClBox" onmouseout="btnMouseOut('mouse out','hghg')">
+            On Mouse Out
+        </div>
+    </div>
+    <script>
+        function btnClick(x) {
+            alert(x)
+        }
+      
+        function btnMDown(params) {
+            alert(params)
+
+        }
+        function btnMUp(params) {
+            alert(params)
+
+        }
+        function btnDoubleClick(params) {
+            alert(params)
+
+        }
+        function btnMouseM(params) {
+            alert(params)
+
+        }
+        function btnMouseOver(params) {
+            alert(params)
+
+        }
+        function btnMouseOut(params) {
+            alert(params)
+
+        }
+          
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <div class = title > JavaScript Calculator</div>
+  <table border="5">
+  <tr>
+  <td><input type="button" value="c" onclick="clr()"/> </td>
+  <td colspan="3"><input type="text" id="edu"/></td>
+  <!-- clr() function will call clr to clear all value -->
+  </tr>
+  <tr>
+  <!-- creating buttons and assigning values-->
+  <td><input type="button" value="+" onclick="BtnNum('+')"/> </td>
+  <td><input type="button" value="1" onclick="BtnNum('1')"/> </td>
+  <td><input type="button" value="2" onclick="BtnNum('2')"/> </td>
+  <td><input type="button" value="3" onclick="BtnNum('3')"/> </td>
+  </tr>
+  <tr>
+  <td><input type="button" value="-" onclick="BtnNum('-')"/> </td>
+  <td><input type="button" value="4" onclick="BtnNum('4')"/> </td>
+  <td><input type="button" value="5" onclick="BtnNum('5')"/> </td>
+  <td><input type="button" value="6" onclick="BtnNum('6')"/> </td>
+  </tr>
+  <tr>
+  <td><input type="button" value="*" onclick="BtnNum('*')"/> </td>
+  <td><input type="button" value="7" onclick="BtnNum('7')"/> </td>
+  <td><input type="button" value="8" onclick="BtnNum('8')"/> </td>
+  <td><input type="button" value="9" onclick="BtnNum('9')"/> </td>
+  </tr>
+  <tr>
+  <td><input type="button" value="/" onclick="BtnNum('/')"/> </td>
+  <td><input type="button" value="." onclick="BtnNum('.')"/> </td>
+  <td><input type="button" value="0" onclick="BtnNum('0')"/> </td>
+  <!-- Evaluating function call eval()-->
+  <td><input type="button" value="=" onclick="solve()"/> </td>
+  </tr>
+  </table>
+
+<script>
+//function for displaying values
+function BtnNum(val)
+{
+  
+document.getElementById("edu").value+=val
+
+}
+//function for evaluation
+function solve()
+{
+let x = document.getElementById("edu").value
+let y = eval(x)
+document.getElementById("edu").value = y
+}
+//function for clearing the display
+function clr()
+{
+document.getElementById("edu").value = ""
+}
+
+
+</script>
+</body>
+</html>

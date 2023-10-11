@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .droptarget {
+      float: left;
+      width: 100px;
+      height: 35px;
+      margin: 15px;
+      padding: 10px;
+      border: 1px solid #aaaaaa;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="OuterContainer">
+    <div>
+      <h2>
+        Focus and Selection
+
+      </h2>
+
+    </div>
+    <div>
+      <label for="">Focus</label>
+      <input type="text" onfocus="InputFocus()" id="ID_Focus" onblur="OnblurInput()"
+        onselect="OnSelectInput(this.value)">
+      <!-- <label for="">Blur</label>
+            <input type="text" onblur="OnblurInput()">
+            <label for="">On Select Start</label>
+            <input type="text" onselect="OnSelectInput()"> -->
+      <!-- <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
+              </div>
+              <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <p id="demo"></p> -->
+    </div>
+  </div>
+  <script>
+    function InputFocus() {
+      var IDInput = document.getElementById("ID_Focus")
+      IDInput.style.backgroundColor = 'green'
+      IDInput.style.color = 'white'
+
+    }
+    function OnblurInput() {
+      document.getElementById("ID_Focus").style.backgroundColor = 'red'
+      document.getElementById("ID_Focus").style.color = 'black'
+
+
+    }
+    function OnSelectInput(x) {
+      alert(x)
+    }
+    function dragStart(event) {
+      event.dataTransfer.setData("Text", event.target.id);
+    }
+
+    function dragging(event) {
+      document.getElementById("demo").innerHTML = "The p element is being dragged";
+    }
+
+    function allowDrop(event) {
+      event.preventDefault();
+    }
+
+    function drop(event) {
+      event.preventDefault();
+      var data = event.dataTransfer.getData("Text");
+      event.target.appendChild(document.getElementById(data));
+      document.getElementById("demo").innerHTML = "The p element was dropped";
+    }
+  </script>
+
+</body>
+
+</html>

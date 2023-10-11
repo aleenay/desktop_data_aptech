@@ -1,0 +1,16 @@
+.Cl_signup{
+    color: red;
+}
+.Input{
+    border: 1px solid teal;
+    border-radius: 5px;
+    padding: 10px 10px;
+
+}
+
+.btn{
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+}

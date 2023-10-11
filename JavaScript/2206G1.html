@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+   <input type="text" id="ID_weatherinput">
+   <button type="button" onclick="btnGetWeather()">Get Weather</button>
+
+
+    <script>
+
+
+
+
+        function btnGetWeather() {
+
+            var ID_weatherinput = document.getElementById("ID_weatherinput").value;
+            var APIKEY = "3b920372297f4a8b5cf32bda258ce7d4";
+            var api = 'https://api.openweathermap.org/data/2.5/weather?q='+ ID_weatherinput +'&appid=' + APIKEY;
+
+            fetch(api).then(response => response.json()).then(response => {
+                
+                if (response.cod == 404) {
+                    alert("city not found")
+                }
+                else {
+                    console.log(response)
+                }
+
+            }).catch(error => {
+                console.log(error)
+            })
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var userData = [];
+        // function btnSignup() {
+        //     var ID_userinput = document.getElementById("ID_input").value;
+        //     var UserObj = {
+        //         name: ID_userinput,
+        //     }
+        //     userData.push(UserObj);
+        //     localStorage.setItem("user_Data",JSON.stringify(userData));
+        //     console.log(userData)
+        // }
+
+        // function btnLogin(){
+        //     var userLocalStrgData =JSON.parse(localStorage.getItem("user_Data"));
+        //     var ID_login = document.getElementById("ID_login").value;
+        //     var result = userLocalStrgData.some(x => x.name === ID_login);
+        //     if(result){
+        //         alert("login")
+        //     }
+        //     else{
+        //         alert("create your account")
+        //     }
+        //     console.log(userLocalStrgData)
+        // }
+
+
+
+
+
+
+        // var name = "fuzail,zahid";
+        // var namess = ["Fuzail", "zahid", "Rizwan"];
+        // document.write(name + '<br>');
+
+
+
+        // for (var i = 0; i <= 3; i++) {
+        //     var fname = userData[i].name;
+        //     var centername = userData[i].center;
+
+        //     document.write(fname + ' ' + centername + '<br>')
+        // }
+        // document.write(userData[1].id + userData[1].name);
+
+
+
+
+
+
+
+
+
+        // var CarObj = {
+        //     name :"abc",
+        //     age : 13
+        // }
+        // document.write(CarObj.name)
+
+        // document.write(namess[3])
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+    <!-- <p id="ID_para"></p>
+
+   
+    <button type="button" class="btn" onclick="btnNum('1')">1</button>
+    <button type="button" class="btn" onclick="btnNum('2')">2</button>
+    <button type="button" class="btn" onclick="btnNum('3')">3</button>
+    <button type="button" class="btn" onclick="btnNum('4')">4</button>
+    <button type="button" class="btn" onclick="btnNum('5')">5</button>
+    <button type="button" class="btn" onclick="btnNum('+')">+</button>
+    <button type="button" class="btn" onclick="btnSolve()">=</button>
+    <script>
+
+        function btnNum(x) {
+            var ID_p = document.getElementById("ID_para");
+            ID_p.innerHTML += x;
+        //"12+3"
+        }
+        function btnSolve(){
+            var ID_para = document.getElementById("ID_para").innerHTML;
+            var result = eval(ID_para);
+            alert(result);
+
+        }
+    </script> -->
+
+
+
+    <!-- 
+    var car = "civic1"
+        if(car == "City"){
+            alert(car + " found")
+        }
+        else if(car == "civic"){
+            alert(car + " found")
+        }
+        else{
+            alert(car + " not found")
+        }
+//   switch (car) {
+
+//          case "FX1":
+//           document.write(car);
+//           break;
+
+//           case "Civic":
+//           document.write(car);
+//           break;
+
+//           case "City":
+//           document.write(car);
+//           break;
+
+//       default:
+//       document.write("this " + car + " not found");
+
+//           break;
+//   } -->
+    <!-- // var num1 =prompt("Enter your number");
+
+//     var res = parseInt(num1)
+// document.write(typeof res) -->
+
+</body>
+
+</html>

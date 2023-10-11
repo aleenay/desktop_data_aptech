@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="num1">
+
+    </div>
+    <div><br>
+        <input type="button" value="1" onclick="btnNum('1')" />
+        <input type="button" value="2" onclick="btnNum('2')" />
+        <input type="button" value="3" onclick="btnNum('3')" />
+        <input type="button" value="4" onclick="btnNum('4')" />
+
+        <input type="button" value="+" onclick="btnNum('+')" />
+        
+        <input type="button" value="=" onclick="solve()" />
+        <input type="button" value="c" onclick="CLR()" />
+    </div>
+
+
+    <script>
+        function btnNum(params) {
+            document.getElementById("num1").value += params;
+        }
+
+        function solve() {
+         
+            let x = document.getElementById("num1").value ; //1+1 
+            let y = eval(x) //2
+            document.getElementById("num1").value = y
+        }
+        function CLR() {
+            document.getElementById("num1").value = "";
+        }
+
+    </script>
+</body>
+
+</html>

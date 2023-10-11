@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text" id="ID_input">-->
+
+    <p id="ID_para"></p> 
+
+    <button type="button" onclick="btnNumber('1')"> 1</button>
+    <button type="button" onclick="btnNumber('2')"> 2</button>
+    <button type="button" onclick="btnNumber('3')"> 3</button>
+    <button type="button" onclick="btnNumber('4')"> 4</button>
+    <button type="button" onclick="btnNumber('+')"> +</button>
+
+    <button type="button" onclick="btnsolve()"> =</button>
+
+    <script>
+        function btnNumber(x) {
+            var ID_para = document.getElementById("ID_para")
+            ID_para.innerHTML += x 
+          
+            
+        }
+        function btnsolve(){
+            var ID_para = document.getElementById("ID_para").innerHTML; //12+3
+            var result = eval(ID_para);
+            alert(result)
+        }
+
+
+
+        // function btnSubmit() {
+        //     var Idinput = document.getElementById("ID_input").value; //ali
+        //     var id_p = document.getElementById("ID_para");
+
+        //     id_p.innerHTML = Idinput;
+        // }
+
+
+    //var color = red
+    // alert(name)
+ // document.write("First name: " + name);      
+  // var num1 = prompt("Enter num1 name") //6
+        // var num2 = prompt("Enter num2 name") //6
+    </script>
+</body>
+
+
+</html>

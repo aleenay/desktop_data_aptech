@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <style>
+        div {
+            margin-bottom: 20px;
+        }
+
+        #ID_error {
+            color: red;
+            display: none;
+        }
+
+        @media screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: black;
+                color: white;
+            }
+
+        }
+
+        @media screen and (min-width:1000px) and (max-width:1200px) {
+            body {
+                background-color: teal;
+                color: white;
+            }
+
+        }
+    </style> -->
+    <style>
+        .Cl_div {
+            background: teal;
+            color: white;
+            padding: 20px;
+        }
+
+        .Cl_styleDiv {
+            background: tomato;
+            color: thistle;
+            padding: 60px;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <form action="">
+
+        <!-- <input type="text" id="Id_user"> -->
+        <br>
+        <br> mail
+        <input type="text" id="ID_email">
+
+        <button type="button" class="btn" onclick="btnSubmit()">Submit</button>
+
+    </form>
+
+
+
+
+    <script>
+        function btnSubmit() {
+            
+            var ID_email = document.getElementById("ID_email").value;
+            var emailpattern = /^[A-z._]{3,}[0-9]{0,}@[A-z]{4,8}.[A-z]{2,4}$/;
+            var res = emailpattern.test(ID_email);
+            alert(res);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var anyString = "Brave new world";
+        // var a = anyString.indexOf("w"); // result = 8
+        // var b = anyString.lastIndexOf("B"); // result 10
+        // document.write(b + '<br>')
+        // var userData = ["ahmed", "huzaifa", "raffay"];
+
+
+        // userData.lastIndexOf(-1);
+        // document.write(userData)
+        // userData.push("Mohtasham")
+        // userData.pop()
+        // userData.reverse()
+        // document.write(userData  + '<br>')
+        // var j = userData.join(":")
+        // document.write(j)
+
+        // var b = ["Rahil", "samad"]
+        // document.write(userData.concat(b) )
+
+        // userData.pop()
+        // document.write(userData + '<br>')
+        // userData.push("Haris")
+        // document.write(userData + '<br>')
+        // userData.reverse()
+        // document.write(userData + '<br>')
+
+
+
+
+
+
+
+
+
+
+
+
+        // class Batch_2211B2{
+        //     message(x,y){
+        //         alert(x + y);
+        //     }
+        //     // constructor(){
+        //     //    alert("working")
+        //     // }
+
+        // }
+
+        // var ObjBatch = new Batch_2211B2();
+        // ObjBatch.message(10,20);
+        // ObjBatch.message(50,20);
+
+
+
+
+
+
+
+
+// class car {
+//             message() {
+//                 alert("Hello everyone")
+//             }
+//             GetData() {
+//                 alert("get data")
+//             }
+//         }
+
+//         let Obj_car = new car();
+//         Obj_car.GetData();
+//         Obj_car.message();
+
+
+
+
+
+
+
+
+        // function btnClassChange() {
+        //     var ID_div = document.getElementById("ID_div");
+        //     ID_div.classList.toggle("Cl_styleDiv") ;
+
+        // }
+
+
+
+    </script>
+
+    <!-- <div id="ID_div" class="Cl_div">
+        Batch 2211B2
+
+    </div>
+
+    <button type="button" onclick="btnClassChange()">Click here</button> -->
+
+
+    <!-- <h1>DEMO</h1>
+    <h2>Sign up</h2>
+    <input type="text" id="ID_signupInput">
+    <button type="button" onclick="btnSignUp()">Sign Up</button>
+    <br>
+    <br>
+    <h2>Login</h2>
+    <input type="text" id="ID_login">
+    <button type="button" onclick="btnLogin()">Login</button>
+    <p id="ID_useradata"></p> -->
+
+
+    <!-- <script>
+
+         var UserData  = [];
+        function btnSignUp() {
+            // UserData = JSON.parse(localStorage.getItem("Userdata"));
+            var ID_signupInput = document.getElementById("ID_signupInput").value; //hareem
+        
+            var UserObj = {
+                name : ID_signupInput
+            }
+        //    var UserObj = { name : "hareem"};
+            UserData.push(UserObj);
+            // UserData = [{ name : "hareem"},{ name : "hareem"},{ name : "hareem"}];
+            localStorage.setItem("Userdata",JSON.stringify( UserData));
+
+        }
+
+        function btnLogin(){
+            var FetchUserData = JSON.parse(localStorage.getItem("Userdata")); //hareem
+            var ID_login = document.getElementById("ID_login").value; //hareem
+           
+           var res = FetchUserData.some(x =>  x.name === ID_login);
+          if(res ){
+              alert("login")
+          }
+          else{
+              alert("create your account")
+          }
+        }
+       
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+
+        function btnSignUp() {
+
+            var ID_signupInput = document.getElementById("ID_signupInput").value;
+            var studentName = ID_signupInput;
+            localStorage.setItem("stddata", studentName);
+
+            
+        }
+        function btnLogin(){
+            var ID_useradata = document.getElementById("ID_useradata")
+            var ID_login = document.getElementById("ID_login").value;
+            var stdDataGet = localStorage.getItem("stddata");
+
+            if(stdDataGet == ID_login){
+                alert("you are login");
+            }
+            else{
+                alert("fail to login create your account !");
+            }
+
+
+
+            // ID_useradata.innerHTML =  stdDataGet;
+        }
+
+        var stdData = [
+            { ID: 1, name: "Ibrahim", email: "Ibrahim@gmail.com" },
+            { ID: 2, name: "hareem", email: "hareem@gmail.com" },
+            { ID: 3, name: "abdul basit", email: "abdulbasit@gmail.com" },
+
+        ]
+
+        document.write(stdData[2].name + " " + stdData[2].email)
+
+
+
+    </script> -->
+
+    <!-- for(var i = 1 ;i <= 10 ;i++){
+    document.write(i*5 +  ' <br>')
+}
+
+
+   
+while (i < 10) {
+    document.write(i + '<br>');
+    i++
+}
+
+var i = 0;
+do {
+    document.write(i + '<br>');
+    i++;
+} while (i > 100); -->
+
+
+    <!-- var name = "Ibrahim";
+var latecomers = ["Ibrahim", "Abdul basit", "Hassan"];
+document.write(latecomers[2])
+
+        var studentObj = {
+            ID : 1,
+            name : "Ibrahim",
+            email : "Ibrahim@gmail.com"
+        }
+
+document.write(studentObj.name) -->
+
+    <!-- // var students = new Array("Sarim", "Huzaifa", "Umer", "Ahad")
+        // document.write(students[1]) -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+   
+   var carname = prompt("Enter your car name");
+   switch(carname){
+
+    case 'civic':
+    document.write(carname + " found");
+    break;
+
+    case 'city':
+    document.write(carname + " found");
+    break;
+
+    default:
+    document.write("Car not found");
+    break;
+
+
+
+   }
+   
+   
+   
+   </script> -->
+
+
+    <!-- <script>
+        var num1 = 0; 
+       
+        function btnI() {
+
+
+            var ID_p = document.getElementById("ID_p");
+            var x = 1;
+            num1 += x++;
+           
+            ID_p.innerHTML = num1;
+        } 
+
+
+    </script> -->
+
+
+
+    <!-- mouse events and keyboards events -->
+
+
+
+    <!-- <form action="">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <div>
+                <label for="">F Name</label>
+                <input type="text" class="Cl_input" id="ID_fname"> <br>
+                <p id="ID_error">*Enter your First Name </p>
+            </div>
+            <div>
+                <label for="">Last Name</label>
+                <input type="text" class="Cl_input" id="ID_lastname"><br>
+            </div>
+
+            <button type="button" class="btn" onclick="btnSubmit()">Submit</button>
+        </fieldset>
+
+    </form>
+    <script>
+        function btnSubmit() {
+            var ID_fname = document.getElementById("ID_fname").value;
+            var ID_lastname = document.getElementById("ID_lastname").value;
+            var ID_error = document.getElementById("ID_error");
+
+            if (ID_fname == '') {
+                ID_error.style.display = 'block';
+                // alert("Fill first name")
+            }
+            else if (ID_lastname == '') {
+                ID_error.style.display = 'none';
+                alert("Fill last name")
+            }
+            else {
+                alert("successfully submitted")
+            }
+
+        }
+
+
+
+
+
+    </script> -->
+
+
+    <!-- && Logical AND both condition should be true -->
+    <!-- || Logical OR  one condition true -->
+    <!-- ! Logical Not -->
+
+    <!-- <script>
+var x = 10;
+var y =10;
+var result = x != y || x != y ;
+alert(result)
+
+</script> -->
+    <!-- <h3>Lecture 4</h3>
+
+    <h1 id="ID_value"></h1>
+    <button type="button" onclick="btnNum('1')">1</button>
+    <button type="button" onclick="btnNum('2')">2</button>
+    <button type="button" onclick="btnNum('3')">3</button>
+    <button type="button" onclick="btnNum('4')">4</button>
+    <button type="button" onclick="btnNum('5')">5</button>
+    <button type="button" onclick="btnNum('+')">+</button>
+    <button type="button" onclick="btnSolve()">=</button>
+
+    <button type="button" onclick="btnClear()">C</button>
+    <button type="button" onclick="btnOneValueRemove()">X</button>
+
+
+
+    <script>
+        function btnNum(param) {
+
+            var ID_value = document.getElementById("ID_value");
+            ID_value.innerHTML += param;
+        }
+
+        function btnSolve() {
+            var ID_value = document.getElementById("ID_value").innerHTML;
+            var result = eval(ID_value);
+            document.getElementById("ID_value").innerHTML = result;
+        }
+        function btnClear() {
+            document.getElementById("ID_value").innerHTML = "";
+        }
+        function btnOneValueRemove() {
+            var ID_value = document.getElementById("ID_value").innerHTML;
+            document.getElementById("ID_value").innerHTML = ID_value.substring(0, ID_value.length - 1);
+
+        }
+    </script> -->
+
+
+
+
+    <!-- <input type="text" id="ID_input"> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- // function btnNum(param) {
+    //     if(param == 's'){
+
+      
+    //     var name = document.getElementById("ID_input").value;
+    //     alert(name); 
+    //      }
+    //      else if(param == '1'){
+    //          document.getElementById("ID_H1").innerHTML += param;
+    //      }
+
+     
+    // } -->
+
+
+
+
+    <!-- // var num1 = prompt("Enter your num 1");
+            // var num2 = prompt("Enter num 2");
+            // var res = num1 !== num2;
+
+            // document.write(num1 -= num2)
+        //     var grade = "C";
+        //     if (grade == "A") {
+        //         alert("Grade : " + grade)
+        //     }
+        //     else if(grade == "B"){
+        //         alert("Grade : " +  grade)
+        //     }
+        //     else if(grade == "C"){
+        //         alert("Grade : " +  grade)
+        //     }
+        //     else {
+        //         alert("No more grades")
+        //     }
+
+        // }
+
+
+ // var num1 = 40;
+            // var num2 = 40;
+    
+    
+    
+    // var res = num1 !== num2; -->
+
+
+    <!-- lecture 3 -->
+    <!-- assignment Operators -->
+    <!-- document.write(num1 -= num2) -->
+
+
+
+
+
+
+    <!-- lecture 2 -->
+    <!-- var num1 = 10;
+//     var numone = prompt("Enter your number one");
+//     var opr = prompt("enter opeerator");
+//     var num2 = prompt("Enter number two");
+//     var result = parseInt(numone) + opr + parseInt(num2);
+//     var result2 = eval(result);
+
+//     document.write(result2) -->
+    <!-- // Data types
+//         // var num1 = "1234";
+//         // alert( num1 + num2);
+//         // alert(typeof (num1)) -->
+
+    <!-- Lecture 1 -->
+    <!-- document.write("This is Our First Class");
+// document.getElementById("ID_H1").innerHTML = "Demo";
+// console.log("working code")
+// alert("working"); -->
+</body>
+
+</html>
